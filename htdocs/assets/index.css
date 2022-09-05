@@ -1,0 +1,9 @@
+xmp {
+  background: black;
+  color: white;
+
+  overflow: auto;
+  word-wrap: normal;
+  padding: 30px;
+  line-height: 125%;
+}

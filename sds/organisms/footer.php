@@ -1,3 +1,4 @@
+<footer>
   <nav>
     <ul>
       <li>
@@ -11,7 +12,6 @@
       </li>
     </ul>
   </nav>
-
   <nav>
     <ul>
       <li>
@@ -31,3 +31,4 @@
       </li>
     </ul>
   </nav>
+</footer>

@@ -6,6 +6,8 @@
   <meta name="description" content="SURF Design System - Demo site" />
   <meta name="generator" content="LimoenGroen" />
   <title>SURF Design System | Demo en Development</title>
+  <link rel="stylesheet" type="text/css" href="/htdocs/assets/index.css">
+  <link rel="stylesheet" type="text/css" href="/sds/assets/stylesheets/sds.css">
 </head>
 <body>
 
@@ -14,8 +16,8 @@
   <article class="section">
     <h2>Organisms</h2>
     <h3>Footer</h3>
-    <xmp><?php include("assets/organisms/footer.html"); ?></xmp>
-    <?php include("assets/organisms/footer.html"); ?>
+    <xmp><?php include("../sds/organisms/footer.php"); ?></xmp>
+    <?php include("../sds/organisms/footer.php"); ?>
   </article>
 
 </div>
