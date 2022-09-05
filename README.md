@@ -1,6 +1,6 @@
 ## How to use this repo
 
-Run from the command line in the root of this rep:
+Run from the command line in the htdocs folder of this rep:
 
     php -S localhost:8000
 
