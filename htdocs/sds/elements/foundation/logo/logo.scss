@@ -1,0 +1,31 @@
+.branding {
+  display: flex;
+  font-family: $font-nunito-sans;
+  font-weight: 700;
+  font-size: calc(14rem/16);
+
+  &--negative {
+    color: $color-white;
+
+    svg.logo-surf {
+      .text {
+        fill: $color-black;
+      }
+
+      .shape {
+        fill: $color-white;
+      }
+    }
+  }
+
+  &--general {
+    align-items: flex-start;
+    line-height: calc(21/14);
+  }
+
+  &--research {
+    align-items: flex-end;
+    line-height: calc(12/14);
+    gap: rem(8px);
+  }
+}

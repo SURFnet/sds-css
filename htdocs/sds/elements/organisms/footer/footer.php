@@ -38,7 +38,9 @@
             </li>
           </ul>
         </nav>
-        <?php include("./sds/assets/images/logo-surf.svg"); ?>
+        <div class="branding branding--negative">
+          <?php include("./sds/assets/images/logo-surf.svg"); ?>
+        </div>
       </div>
     </div>
   </div>
