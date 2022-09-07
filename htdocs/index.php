@@ -11,24 +11,53 @@
 </head>
 <body>
 
-<div class="page grid-container">
+<div class="demo-page grid-container">
   <h1>SURF Design System</h1>
-  <h2>Organisms</h2>
 
-  <article class="section">
-    <h3>Footer</h3>
-    <div class="breakout-to-page">
-      <?php include("./sds/elements/organisms/footer/footer.php"); ?>
-    </div>
-    <details>
-      <summary>HTML</summary>
-      <xmp><?php include("./sds/elements/organisms/footer/footer.php"); ?></xmp>
-    </details>
-    <details>
-      <summary>SASS</summary>
-      <xmp><?php include("./sds/elements/organisms/footer/footer.scss"); ?></xmp>
-    </details>
-  </article>
+  <ul>
+    <li>Eén gecombineerde css-file <code>sds.css</code></li>
+    <li>Normalize</li>
+    <li>Alle SDS onderdelen...</li>
+  </ul>
+
+  <?php
+    $active_folder = '';
+
+    foreach (glob("./sds/elements/**/**/*.php") as $filename) {
+      $parts = pathinfo($filename);
+
+      $dirname = $parts['dirname'];
+      $folders = explode('/', $dirname);
+      $current_folder = $folders[3];
+      $dirname_and_filename = $parts['dirname'] . "/" . $parts['filename'];
+      $file_content_php = file_get_contents($dirname_and_filename . ".php");
+      $file_content_scss = file_get_contents($dirname_and_filename . ".scss");
+
+      if ($current_folder != $active_folder) {
+        echo '<h2>' . ucfirst($current_folder) . '</h2>';
+        $active_folder = $current_folder;
+      }
+
+      echo '
+        <article>
+          <h3>' . ucfirst($parts['filename']) . '</h3>
+          <h4>Demo</h4>
+      ';
+      include($dirname_and_filename . ".php");
+      echo '
+          <h4>Code</h4>
+          <details>
+            <summary>HTML</summary>
+            <xmp>' . $file_content_php . '</xmp>
+          </details>
+          <details>
+            <summary>SASS</summary>
+            <xmp>' . $file_content_scss . '</xmp>
+          </details>
+        </article>
+      ';
+    }
+  ?>
 
 </div>
 
