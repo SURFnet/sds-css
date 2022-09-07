@@ -1,9 +1,24 @@
-xmp {
-  background: black;
-  color: white;
+
+.demo-page xmp {
+  background-color: #eee;
+  /*color: white;*/
 
   overflow: auto;
   word-wrap: normal;
   padding: 30px;
   line-height: 125%;
+}
+
+.demo-page code {
+  background-color: #eee;
+  font-size: smaller;
+}
+
+/*.demo-page h2 {
+  border-bottom: 1px solid #ccc;
+}
+*/
+
+.demo-page .demo-bg {
+  background-color: #0077C8;
 }
