@@ -1,0 +1,86 @@
+.btn {
+  @include btn-reset();
+  font-weight: 600;
+  padding: rem(14px) rem(24px);
+  border-radius: rem(6px);
+  border: rem(1px) solid transparent;
+  @include align-icon-defaults();
+  flex-wrap: wrap;
+  justify-content: center;
+
+  &--small {
+    padding: rem(10px) rem(24px);
+  }
+
+  &--full {
+    flex: 1 1 auto;
+  }
+
+  &--primary {
+    background-color: var(--color--surf-green--400);
+    color: var(--color--white);
+
+    &:hover {
+      background-color: var(--color--surf-green--500);
+    }
+
+    &:active {
+      background-color: var(--color--surf-green--100);
+      color: var(--color--surf-green--500);
+    }
+
+    &:disabled {
+      background-color: var(--color--gray--100);
+      color: var(--color--gray--300);
+    }
+  }
+
+  &--secondary {
+    border-color: var(--color--surf-green--400);
+    color: var(--color--surf-green--400);
+
+    &:hover {
+      border-color: var(--color--surf-green--500);
+      background-color: var(--color--surf-green--100);
+      color: var(--color--surf-green--500);
+    }
+
+    &:active {
+      border-color: var(--color--surf-green--500);
+      background-color: var(--color--surf-green--400);
+      color: var(--color--white);
+    }
+
+    &:disabled {
+      border-color: var(--color--gray--300);
+      background-color: var(--color--gray--100);
+      color: var(--color--gray--300);
+    }
+  }
+
+  &--tertiary {
+    color: var(--color--surf-green--400);
+
+    &:hover {
+      background-color: var(--color--surf-green--100);
+      color: var(--color--surf-green--500);
+    }
+
+    &:active {
+      background-color: var(--color--surf-green--100);
+      color: var(--color--surf-green--500);
+    }
+
+    &:disabled {
+      background-color: var(--color--gray--100);
+      color: var(--color--gray--300);
+    }
+  }
+}
+
+.actions--outer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: rem(12px) rem(24px);
+}
