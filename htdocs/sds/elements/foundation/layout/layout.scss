@@ -16,10 +16,6 @@ body {
   max-width: $width-grid-max;
   margin-left: auto;
   margin-right: auto;
-
-  .breakout-to-page {
-    @include breakout-to-page();
-  }
 }
 
 .grid-container {
