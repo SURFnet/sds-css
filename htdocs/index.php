@@ -16,9 +16,10 @@
 
   <ul>
     <li>Normalize</li>
-    <li>Eén gecombineerde css-file <code>sds.css</code></li>
+    <li>Eén gecombineerde css-file <a href="./sds/assets/stylesheets/sds.css" target="_blank"><code>sds.css</code></a></li>
     <li>CSS variables</li>
     <li>Naamgeving prefixen?</li>
+    <li>Transitions to be determined</li>
   </ul>
 
   <?php
@@ -62,7 +63,7 @@
             <xmp>' . $file_content_php . '</xmp>
           </details>
           <details>
-            <summary>SASS</summary>
+            <summary>SCSS</summary>
             <xmp>' . $file_content_scss . '</xmp>
           </details>
         </article>
