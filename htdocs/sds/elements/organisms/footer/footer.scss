@@ -1,6 +1,6 @@
 footer {
   .footer--top {
-    background-color: $color-grey-200;
+    background-color: var(--color--gray--200);
     padding-top: rem(26px);
     padding-bottom: rem(26px);
 
@@ -13,8 +13,8 @@ footer {
   }
 
   .footer--bottom {
-    background-color: $color-black;
-    color: $color-white;
+    background-color: var(--color--black);
+    color: var(--color--white);
     padding-top: rem(14px);
     padding-bottom: rem(14px);
 

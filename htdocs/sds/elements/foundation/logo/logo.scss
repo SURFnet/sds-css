@@ -5,15 +5,15 @@
   font-size: calc(14rem/16);
 
   &--negative {
-    color: $color-white;
+    color: var(--color--white);
 
     svg.logo-surf {
       .text {
-        fill: $color-black;
+        fill: var(--color--black);
       }
 
       .shape {
-        fill: $color-white;
+        fill: var(--color--white);
       }
     }
   }

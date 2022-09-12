@@ -1,0 +1,50 @@
+
+// Colors partial
+//
+// Color-related variables should go in this file.
+
+
+// Define.
+:root {
+  // Define base.
+  --color--black: #050E1D;
+  --color--white: #FFFFFF;
+
+  // Gray.
+  --color--gray--100: #F4F6F8;
+  --color--gray--200: #EAECF0;
+  --color--gray--300: #B2B6BE;
+  --color--gray--400: #8C969F;
+  --color--gray--500: #5E6873;
+
+  // Green.
+  --color--surf-green--100: #DCF2E5;
+  --color--surf-green--200: #B8E3C9;
+  --color--surf-green--300: #17A95D;
+  --color--surf-green--400: #008939;
+  --color--surf-green--500: #006731;
+  // Blue.
+  --color--surf-blue--100: #DFF4FF;
+  --color--surf-blue--200: #B3E5FF;
+  --color--surf-blue--300: #78BEFD;
+  --color--surf-blue--400: #0077C8;
+  --color--surf-blue--500: #004C97;
+  // Red.
+  --color--surf-red--100: #FFE5E3;
+  --color--surf-red--200: #FFCDCA;
+  --color--surf-red--300: #EA6059;
+  --color--surf-red--400: #DA362D;
+  --color--surf-red--500: #BE1817;
+  // Orange.
+  --color--surf-orange--100: #FFE6D2;
+  --color--surf-orange--200: #FFC294;
+  --color--surf-orange--300: #FF9A4E;
+  --color--surf-orange--400: #E67300;
+  --color--surf-orange--500: #C15500;
+  // Purple.
+  --color--surf-purple--100: #F1E8F8;
+  --color--surf-purple--200: #EBCEFF;
+  --color--surf-purple--300: #B171CB;
+  --color--surf-purple--400: #772583;
+  --color--surf-purple--500: #45075D;
+}
