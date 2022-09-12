@@ -11,13 +11,13 @@
 </head>
 <body>
 
-<div class="demo-page grid-container">
+<div class="demo-page page-container">
   <h1>SURF Design System</h1>
 
   <ul>
-    <li>Eén gecombineerde css-file <code>sds.css</code></li>
     <li>Normalize</li>
-    <li>Alle SDS onderdelen...</li>
+    <li>Eén gecombineerde css-file <code>sds.css</code></li>
+    <li>CSS variables</li>
   </ul>
 
   <?php
@@ -43,6 +43,9 @@
           <h3>' . ucfirst($parts['filename']) . '</h3>
           <h4>Demo</h4>
       ';
+      if (file_exists($dirname . "/comment.html")) {
+        include($dirname . "/comment.html");
+      }
       include($dirname_and_filename . ".php");
       echo '
           <h4>Code</h4>

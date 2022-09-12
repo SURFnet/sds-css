@@ -1,6 +1,6 @@
 <footer>
   <div class="footer--top">
-    <div class="grid-container">
+    <div class="page-container">
       <nav>
         <ul>
           <li>
@@ -17,7 +17,7 @@
     </div>
   </div>
   <div class="footer--bottom">
-    <div class="grid-container">
+    <div class="page-container">
       <div class="footer--bottom--inner">
         <nav>
           <ul>

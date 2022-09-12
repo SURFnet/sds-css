@@ -1,0 +1,70 @@
+// Layout-level styling
+
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll; // Force scrollbar
+}
+
+.page-container {
+  width: calc(100% - #{$space-page-padding*2}vw);
+  max-width: $width-grid-max;
+  margin-left: auto;
+  margin-right: auto;
+
+  .breakout-to-page {
+    @include breakout-to-page();
+  }
+}
+
+.grid-container {
+  display: grid;
+  gap: 0 rem(24px);
+
+  // See "$grid-sizes" for defined grid-behavior.
+  @each $grid-size, $settings in $grid-sizes {
+    // The mixin "bp-em" can take 1 or 2 values, separated by a comma.
+    // Therefore define variables so we can print the class-names easier.
+    $bp-min: null;
+    $bp-max: null;
+
+    // Check if a range of breakpoints is defined, if not only use single breakpoint.
+    @if map-get($settings, bp-range) {
+      $bp-min: map-get(map-get($settings, bp-range), min);
+      $bp-max: map-get(map-get($settings, bp-range), max);
+    }
+    @else {
+      $bp-min: map-get($settings, bp);
+    }
+
+    // Define number of columns.
+    @include bp-em($bp-min, $bp-max) {
+      grid-template-columns: repeat(#{map-get($settings, columns)}, 1fr);
+    }
+
+    // Create util-classes to be able to place elements on the defined grid above.
+    @for $i from 1 through map-get($settings, columns) {
+      // Span a number of columns.
+      // e.g. ".col-lg--span-6".
+      .col-#{$grid-size}--span-#{$i} {
+        @include bp-em($bp-min, $bp-max) {
+          grid-column: span #{$i} / span #{$i};
+        }
+      }
+    }
+    @for $i from 1 through map-get($settings, columns) {
+      // Start at a specific column.
+      // e.g. ".col-md--start-3".
+      .col-#{$grid-size}--start-#{$i} {
+        @include bp-em($bp-min, $bp-max) {
+          grid-column-start: #{$i};
+        }
+      }
+    }
+  }
+}
