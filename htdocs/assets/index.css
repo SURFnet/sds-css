@@ -17,3 +17,15 @@
   color: white;
   padding: 20px;
 }
+
+.demo-page .demo-row {
+  display: flex;
+  gap: 20px;
+}
+
+.demo-page .demo-comment {
+  margin-bottom: 30px;
+}
+.demo-page .demo-content > * + * {
+  margin-top: 20px;
+}

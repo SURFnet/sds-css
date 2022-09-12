@@ -18,6 +18,7 @@
     <li>Normalize</li>
     <li>Eén gecombineerde css-file <code>sds.css</code></li>
     <li>CSS variables</li>
+    <li>Naamgeving prefixen?</li>
   </ul>
 
   <?php
@@ -43,10 +44,17 @@
           <h3>' . ucfirst($parts['filename']) . '</h3>
           <h4>Demo</h4>
       ';
+
       if (file_exists($dirname . "/comment.html")) {
+        echo '<div class="demo-comment">';
         include($dirname . "/comment.html");
+        echo '</div>';
       }
+
+      echo '<div class="demo-content">';
       include($dirname_and_filename . ".php");
+      echo '</div>';
+
       echo '
           <h4>Code</h4>
           <details>
