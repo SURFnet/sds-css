@@ -1,0 +1,24 @@
+
+// See "$grid-sizes" for defined grid-behavior.
+@each $main, $alt in $color-palettes--alt {
+  .color-palette--#{$main} {
+    // For some reason only one zero is printed when directly behind "--color-palette--main--#{$i}".
+    // Therefore create a variable.
+    $suffix: "00";
+    @for $i from 1 through 5 {
+      --palette--main-color--#{$i}#{$suffix}: var(--color--#{$main}--#{$i}00);
+    }
+    @for $i from 1 through 5 {
+      $bla: true;
+      @if $i == 2 {
+        $bla: false;
+      }
+      @if $i == 3 {
+        $bla: false;
+      }
+      @if $bla {
+        --palette--alt-color--#{$i}#{$suffix}: var(--color--#{$alt}--#{$i}00);
+      }
+    }
+  }
+}

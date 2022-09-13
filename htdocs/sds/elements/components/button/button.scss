@@ -17,16 +17,16 @@
   }
 
   &--primary {
-    background-color: var(--color--surf-green--400);
+    background-color: var(--color--green--400);
     color: var(--color--white);
 
     &:hover {
-      background-color: var(--color--surf-green--500);
+      background-color: var(--color--green--500);
     }
 
     &:active {
-      background-color: var(--color--surf-green--100);
-      color: var(--color--surf-green--500);
+      background-color: var(--color--green--100);
+      color: var(--color--green--500);
     }
 
     &:disabled {
@@ -36,18 +36,18 @@
   }
 
   &--secondary {
-    border-color: var(--color--surf-green--400);
-    color: var(--color--surf-green--400);
+    border-color: var(--color--green--400);
+    color: var(--color--green--400);
 
     &:hover {
-      border-color: var(--color--surf-green--500);
-      background-color: var(--color--surf-green--100);
-      color: var(--color--surf-green--500);
+      border-color: var(--color--green--500);
+      background-color: var(--color--green--100);
+      color: var(--color--green--500);
     }
 
     &:active {
-      border-color: var(--color--surf-green--500);
-      background-color: var(--color--surf-green--400);
+      border-color: var(--color--green--500);
+      background-color: var(--color--green--400);
       color: var(--color--white);
     }
 
@@ -59,16 +59,16 @@
   }
 
   &--tertiary {
-    color: var(--color--surf-green--400);
+    color: var(--color--green--400);
 
     &:hover {
-      background-color: var(--color--surf-green--100);
-      color: var(--color--surf-green--500);
+      background-color: var(--color--green--100);
+      color: var(--color--green--500);
     }
 
     &:active {
-      background-color: var(--color--surf-green--100);
-      color: var(--color--surf-green--500);
+      background-color: var(--color--green--100);
+      color: var(--color--green--500);
     }
 
     &:disabled {
