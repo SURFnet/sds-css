@@ -1,14 +1,9 @@
-// Layout-level styling
-
 html {
-  scroll-behavior: smooth;
-  height: 100%;
+  box-sizing: border-box;
 }
 
-body {
-  height: 100%;
-  overflow-x: hidden;
-  overflow-y: scroll; // Force scrollbar
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
 .page-container {

@@ -16,6 +16,7 @@ $bp-xl                        : 1440px;
 // and stops growing ($width-grid-max plus double $space-page-padding).
 $bp-grid-max                  : $width-grid-max * 100/(100 - ($space-page-padding * 2));
 
+$space-page-padding           : 5;
 
 // Grid settings.
 $grid-sizes: (
