@@ -1,31 +1,43 @@
 <div class="demo-row">
   <div class="branding">
-    <?php include("./sds/assets/images/logo-surf.svg"); ?>
+    <span class="branding--visual">
+      <?php include("./sds/assets/images/logo-surf.svg"); ?>
+    </span>
   </div>
 
   <div class="branding branding--general">
-    <?php include("./sds/assets/images/logo-surf.svg"); ?>
-    <p>Default</p>
+    <span class="branding--visual">
+      <?php include("./sds/assets/images/logo-surf.svg"); ?>
+    </span>
+    <span class="branding--textual">Default</span>
   </div>
 
   <div class="branding branding--research">
-    <?php include("./sds/assets/images/logo-surf.svg"); ?>
-    <p>Research</p>
+    <span class="branding--visual">
+      <?php include("./sds/assets/images/logo-surf.svg"); ?>
+    </span>
+    <span class="branding--textual">Research</span>
   </div>
 </div>
 
 <div class="demo-bg demo-row">
   <div class="branding branding--negative">
-    <?php include("./sds/assets/images/logo-surf.svg"); ?>
+    <span class="branding--visual">
+      <?php include("./sds/assets/images/logo-surf.svg"); ?>
+    </span>
   </div>
 
   <div class="branding branding--negative branding--general">
-    <?php include("./sds/assets/images/logo-surf.svg"); ?>
-    <p>Default</p>
+    <span class="branding--visual">
+      <?php include("./sds/assets/images/logo-surf.svg"); ?>
+    </span>
+    <span class="branding--textual">Default</span>
   </div>
 
   <div class="branding branding--negative branding--research">
-    <?php include("./sds/assets/images/logo-surf.svg"); ?>
-    <p>Research</p>
+    <span class="branding--visual">
+      <?php include("./sds/assets/images/logo-surf.svg"); ?>
+    </span>
+    <span class="branding--textual">Research</span>
   </div>
 </div>

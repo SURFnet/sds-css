@@ -1,0 +1,25 @@
+
+// Typography variables partial
+//
+// Typography-related variables (like font stacks, font sizes) should go in this file.
+
+
+// The following font family declarations are based on the Microsoft core web
+// fonts which are common fonts available on most computer systems. The DejaVu
+// and Nimbus Sans fonts are commonly available on Linux systems where the MS
+// fonts are less common. Tahoma and Helvetica are also widely available.
+//
+// A user's web browser will look at the comma-separated list and will
+// attempt to use each font in turn until it finds one that is available
+// on the user's computer. The final "generic" font (sans-serif, serif or
+// monospace) hints at what type of font to use if the web browser doesn't
+// find any of the fonts in the list.
+
+
+// Project-specific fonts
+// Put any font families here that are specific to your project.
+$font-nunito-sans                 : "Nunito Sans", sans-serif;
+$font-source-sans-pro             : "Source Sans Pro", sans-serif;
+
+// Now create some variables for the font stacks we want to use on this site.
+$font-default                     : $font-source-sans-pro; // The font family set on the body element.

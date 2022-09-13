@@ -1,0 +1,97 @@
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: $font-default;
+}
+
+h1,
+.text--h1 {
+  font-family: $font-nunito-sans;
+  font-weight: 600;
+  font-size: rem(36px);
+  line-height: calc(42/36);
+}
+
+h2,
+.text--h2 {
+  font-family: $font-nunito-sans;
+  font-weight: 600;
+  font-size: rem(30px);
+  line-height: calc(36/30);
+}
+
+h3,
+.text--h3 {
+  font-family: $font-nunito-sans;
+  font-weight: 700;
+  font-size: rem(24px);
+  line-height: calc(30/24);
+}
+
+h4,
+.text--h4 {
+  font-family: $font-nunito-sans;
+  font-weight: 700;
+  font-size: rem(20px);
+  line-height: calc(30/20);
+}
+
+h5,
+.text--h5 {
+  font-weight: 600;
+  font-size: rem(18px);
+  line-height: calc(26/18);
+}
+
+h6,
+.text--h6 {
+  font-weight: 600;
+  font-size: rem(16px);
+  line-height: calc(24/16);
+}
+
+a {
+  color: currentColor;
+}
+
+ul {
+  @include unstyled-list();
+}
+
+ol {
+  @include unstyled-list();
+}
+
+.text--rich {
+  a {
+    @include lnk-decoration(show);
+    color: var(--color--green--400);
+    font-weight: 700;
+  }
+
+  ul {
+    @include styled-ul();
+  }
+
+  ol {
+    @include styled-ol();
+  }
+}
+
+.text--body--large {
+  font-size: rem(18rem);
+  line-height: calc(26/18);
+}
+
+.text--body {
+  font-size: rem(16rem);
+  line-height: calc(24/16);
+}
+
+.text--body--small {
+  font-size: rem(14rem);
+  line-height: calc(18/14);
+}

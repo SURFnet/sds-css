@@ -28,4 +28,13 @@
     line-height: calc(12/14);
     gap: rem(8px);
   }
+
+  &--visual {
+    display: flex;
+    flex-shrink: 0;
+  }
+
+  &--textual {
+    flex-shrink: 0;
+  }
 }
