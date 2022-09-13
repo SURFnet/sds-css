@@ -1,4 +1,4 @@
-<p>Variants</p>
+<h5>Variants</h5>
 <div class="actions--outer">
   <button class="btn btn--primary">Primary button</button>
   <button class="btn btn--primary" disabled>Primary button disabled</button>
@@ -7,7 +7,7 @@
   <button class="btn btn--tertiary">Tertiary button</button>
   <button class="btn btn--tertiary" disabled>Tertiary button disabled</button>
 </div>
-<p>Formats</p>
+<h5>Formats</h5>
 <div class="actions--outer">
   <button class="btn btn--primary">Default</button>
   <button class="btn btn--primary btn--small">Small</button>
