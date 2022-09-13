@@ -43,7 +43,6 @@
       echo '
         <article>
           <h3>' . ucfirst($parts['filename']) . '</h3>
-          <h4>Demo</h4>
       ';
 
       if (file_exists($dirname . "/comment.html")) {
@@ -52,7 +51,10 @@
         echo '</div>';
       }
 
-      echo '<div class="demo-content">';
+      echo '
+          <h4>Demo</h4>
+          <div class="demo-content">
+      ';
       include($dirname_and_filename . ".php");
       echo '</div>';
 

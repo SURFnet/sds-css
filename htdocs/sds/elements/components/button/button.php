@@ -13,4 +13,3 @@
   <button class="btn btn--primary btn--small">Small</button>
   <button class="btn btn--primary btn--full">Full</button>
 </div>
-TODO: add icon.
