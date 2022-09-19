@@ -1,0 +1,18 @@
+.badge {
+  @include align-icon-defaults(0.5em, center);
+  padding: rem(6px) rem(12px);
+  border-radius: rem(16px);
+  border: rem(1px) solid var(--color--gray--400);
+
+  &--visual {
+    display: flex;
+
+    svg {
+      width: rem(17px);
+    }
+  }
+
+  &--textual {
+    font-weight: 600;
+  }
+}
