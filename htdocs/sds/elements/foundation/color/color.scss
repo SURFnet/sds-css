@@ -3,7 +3,7 @@ body {
   color: var(--color--black);
 }
 
-// See "$grid-sizes" for defined grid-behavior.
+// See "$color-palettes--alt" for defined color-palettes.
 @each $main, $alt in $color-palettes--alt {
   .color-palette--#{$main} {
     // For some reason only one zero is printed when directly behind "--color-palette--main--#{$i}".
@@ -12,15 +12,16 @@ body {
     @for $i from 1 through 5 {
       --palette--main-color--#{$i}#{$suffix}: var(--color--#{$main}--#{$i}00);
     }
+    // Some weights have an alt version.
     @for $i from 1 through 5 {
-      $bla: true;
+      $weight-has-alt-version: true;
       @if $i == 2 {
-        $bla: false;
+        $weight-has-alt-version: false;
       }
       @if $i == 3 {
-        $bla: false;
+        $weight-has-alt-version: false;
       }
-      @if $bla {
+      @if $weight-has-alt-version {
         --palette--alt-color--#{$i}#{$suffix}: var(--color--#{$alt}--#{$i}00);
       }
     }
