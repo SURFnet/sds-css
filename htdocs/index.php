@@ -14,13 +14,14 @@
 <div class="demo-page page-container">
   <h1>SURF Design System</h1>
 
-  <ul>
-    <li>Normalize</li>
-    <li>Eén gecombineerde css-file <a href="./sds/assets/stylesheets/sds.css" target="_blank"><code>sds.css</code></a></li>
-    <li>CSS variables</li>
-    <li>Naamgeving prefixen?</li>
-    <li>Transitions to be determined</li>
-  </ul>
+  <div class="text--rich">
+    <ul>
+      <li>Uses normalize 8.0.1</li>
+      <li>One combined css-file <a href="./sds/assets/stylesheets/sds.css" target="_blank"><code>sds.css</code></a></li>
+      <li>CSS variables (colors)</li>
+      <li>Transitions to be determined</li>
+    </ul>
+  </div>
 
   <?php
     $active_folder = '';
@@ -41,13 +42,13 @@
       }
 
       echo '
-        <article>
+        <section class="demo-section-' . $folders[4] . '">
           <h3>' . ucfirst($parts['filename']) . '</h3>
       ';
 
-      if (file_exists($dirname . "/comment.html")) {
-        echo '<div class="demo-comment">';
-        include($dirname . "/comment.html");
+      if (file_exists($dirname . "/_comment.html")) {
+        echo '<div class="demo-comment text--rich">';
+        include($dirname . "/_comment.html");
         echo '</div>';
       }
 
@@ -68,7 +69,7 @@
             <summary>SCSS</summary>
             <xmp>' . $file_content_scss . '</xmp>
           </details>
-        </article>
+        </section>
       ';
     }
   ?>
