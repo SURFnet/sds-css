@@ -1,0 +1,53 @@
+
+.toaster {
+  display: inline-flex;
+  align-items: center;
+  gap: rem(16px);
+  padding: rem(19px) rem(16px);
+  max-width: rem(400px);
+  border-radius: rem(4px);
+  box-shadow: 0 rem(4px) rem(4px) rgba(0, 0, 0, 0.25) ;
+
+  &--has-action {
+    padding: rem(10px) rem(16px);
+  }
+
+  &--visual {
+    flex-shrink: 0;
+    display: flex;
+
+    svg {
+      color: var(--color--white);
+    }
+  }
+
+  &--textual {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: rem(12px) rem(16px);
+
+    p {
+      margin: 0;
+    }
+  }
+
+  // Apply status colors.
+  // See "$status-colors" for defined status-colors.
+  @each $status, $settings in $status-colors {
+    &--status-#{$status} {
+      background-color: map-get($settings, bg);
+
+      p {
+        color: map-get($settings, color);
+      }
+
+      svg {
+        .bg {
+          fill: map-get($settings, icon-bg);
+        }
+      }
+    }
+  }
+}
+
