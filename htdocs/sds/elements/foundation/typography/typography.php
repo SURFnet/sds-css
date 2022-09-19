@@ -1,6 +1,6 @@
 <div class="text--rich">
   <h1>Heading 1 tag</h1>
-  <p class="text--h1">p with heading 1 styling</p>
+  <h2 class="text--h1">Heading 2 with heading 1 styling</h2>
   <h2>Heading 2</h2>
   <h3>Heading 3</h3>
   <h4>Heading 4</h4>

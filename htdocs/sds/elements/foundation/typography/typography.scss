@@ -53,6 +53,10 @@ h6,
   line-height: calc(24/16);
 }
 
+p {
+  margin: 0;
+}
+
 a {
   color: currentColor;
 }
@@ -66,6 +70,12 @@ ol {
 }
 
 .text--rich {
+  p {
+    &:not(:first-child) {
+      margin-top: 1em;
+    }
+  }
+
   a {
     @include lnk-decoration(show);
     color: var(--color--green--400);
@@ -74,10 +84,16 @@ ol {
 
   ul {
     @include styled-ul();
+    &:not(:first-child) {
+      margin-top: 1em;
+    }
   }
 
   ol {
     @include styled-ol();
+    &:not(:first-child) {
+      margin-top: 1em;
+    }
   }
 }
 
