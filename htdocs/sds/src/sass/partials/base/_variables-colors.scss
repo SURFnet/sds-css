@@ -67,3 +67,31 @@ $color-palettes--alt: (
   orange: blue,
   purple: blue,
 );
+
+$status-colors: (
+  default: (
+    bg: var(--color--gray--500),
+    color: var(--color--white),
+    icon-bg: var(--color--black),
+  ),
+  success: (
+    bg: var(--color--green--200),
+    color: var(--color--black),
+    icon-bg: var(--color--green--400),
+  ),
+  warning: (
+    bg: var(--color--yellow--200),
+    color: var(--color--black),
+    icon-bg: var(--color--yellow--500),
+  ),
+  error: (
+    bg: var(--color--red--200),
+    color: var(--color--black),
+    icon-bg: var(--color--red--400),
+  ),
+  info: (
+    bg: var(--color--blue--200),
+    color: var(--color--black),
+    icon-bg: var(--color--blue--400),
+  ),
+);

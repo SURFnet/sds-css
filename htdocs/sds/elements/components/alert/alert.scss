@@ -1,0 +1,54 @@
+
+.alert {
+  padding: rem(19px) 0;
+
+  &--has-action {
+    padding: rem(10px) 0;
+  }
+
+  &--inner {
+    display: flex;
+    align-items: center;
+    gap: rem(24px);
+  }
+
+  &--visual {
+    flex-shrink: 0;
+    display: flex;
+
+    svg {
+      color: var(--color--white);
+    }
+  }
+
+  &--textual {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: rem(12px) rem(24px);
+
+    p {
+      font-weight: 600;
+      margin: 0;
+    }
+  }
+
+  // Apply status colors.
+  // See "$status-colors" for defined status-colors.
+  @each $status, $settings in $status-colors {
+    &--status-#{$status} {
+      background-color: map-get($settings, bg);
+
+      p {
+        color: map-get($settings, color);
+      }
+
+      svg {
+        .bg {
+          fill: map-get($settings, icon-bg);
+        }
+      }
+    }
+  }
+}
+
