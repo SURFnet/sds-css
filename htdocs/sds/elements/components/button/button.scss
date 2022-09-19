@@ -4,7 +4,7 @@
   padding: rem(14px) rem(24px);
   border-radius: rem(6px);
   border: rem(1px) solid transparent;
-  @include align-icon-defaults();
+  @include align-icon-defaults(1em);
   flex-wrap: wrap;
   justify-content: center;
 
@@ -74,6 +74,14 @@
     &:disabled {
       background-color: var(--color--gray--100);
       color: var(--color--gray--300);
+    }
+  }
+
+  svg {
+    width: rem(12px);
+
+    [stroke-width] {
+      stroke-width: rem(3px);
     }
   }
 }

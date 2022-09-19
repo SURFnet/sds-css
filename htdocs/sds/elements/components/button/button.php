@@ -1,3 +1,10 @@
+<h5>Anatomy</h5>
+<div class="actions--outer">
+  <button class="btn btn--primary">
+    <?php include("./sds/assets/images/functional-icons/arrow-down-2.svg"); ?>
+    <span class="textual">Default</span>
+  </button>
+</div>
 <h5>Variants</h5>
 <div class="actions--outer">
   <button class="btn btn--primary">Primary button</button>
