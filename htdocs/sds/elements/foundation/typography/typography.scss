@@ -78,7 +78,7 @@ ol {
 
   a {
     @include lnk-decoration(show);
-    color: var(--color--green--400);
+    color: var(--support-color--400);
     font-weight: 700;
   }
 

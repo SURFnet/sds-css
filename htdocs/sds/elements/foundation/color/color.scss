@@ -9,19 +9,14 @@ body {
     // For some reason only one zero is printed when directly behind "--color-palette--main--#{$i}".
     // Therefore create a variable.
     $suffix: "00";
+    // Set main values.
     @for $i from 1 through 5 {
       --palette--main-color--#{$i}#{$suffix}: var(--color--#{$main}--#{$i}00);
     }
-    // Some weights have an alt version.
+    // Set alt values for some weights.
+    // This could be part of the for-loop above, but it's nicer to have two seperate lists than a merged one.
     @for $i from 1 through 5 {
-      $weight-has-alt-version: true;
-      @if $i == 2 {
-        $weight-has-alt-version: false;
-      }
-      @if $i == 3 {
-        $weight-has-alt-version: false;
-      }
-      @if $weight-has-alt-version {
+      @if $i == 1 or $i == 4 or $i == 5 {
         --palette--alt-color--#{$i}#{$suffix}: var(--color--#{$alt}--#{$i}00);
       }
     }
