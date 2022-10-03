@@ -1,0 +1,33 @@
+.chips {
+  @include align-icon-defaults(em(8px), center);
+  border-radius: rem(16px);
+  background-color: var(--support-color--100);
+  padding: rem(4px) rem(12px);
+
+  &--visual {
+    display: flex;
+  }
+
+  &--textual {
+    display: block;
+    padding: rem(3px) 0;
+    font-weight: 600;
+  }
+
+  &:hover {
+    background-color: var(--support-color--200);
+  }
+
+  @include focus {
+  }
+
+  &--is-active {
+    background-color: var(--support-color--400);
+    color: var(--color--white);
+    &:hover {
+      background-color: var(--support-color--500);
+    }
+    @include focus {
+    }
+  }
+}
