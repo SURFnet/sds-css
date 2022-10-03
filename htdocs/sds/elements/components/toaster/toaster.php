@@ -21,8 +21,6 @@
       <p>Default</p>
     </div>
   </div>
-</div>
-<div class="demo-row">
   <div class="toaster toaster--status-success">
     <div class="toaster--visual">
       <?php include("./sds/assets/images/functional-icons/success.svg"); ?>
@@ -31,8 +29,6 @@
       <p>Default</p>
     </div>
   </div>
-</div>
-<div class="demo-row">
   <div class="toaster toaster--status-warning">
     <div class="toaster--visual">
       <?php include("./sds/assets/images/functional-icons/alert-triangle.svg"); ?>
@@ -41,8 +37,6 @@
       <p>Warning</p>
     </div>
   </div>
-</div>
-<div class="demo-row">
   <div class="toaster toaster--status-error">
     <div class="toaster--visual">
       <?php include("./sds/assets/images/functional-icons/alert-triangle.svg"); ?>
@@ -51,8 +45,6 @@
       <p>Error</p>
     </div>
   </div>
-</div>
-<div class="demo-row">
   <div class="toaster toaster--status-info">
     <div class="toaster--visual">
       <?php include("./sds/assets/images/functional-icons/info.svg"); ?>
