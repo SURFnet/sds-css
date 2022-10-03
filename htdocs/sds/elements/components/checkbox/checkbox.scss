@@ -1,0 +1,100 @@
+input[type="checkbox"] {
+  // Hide browser default checkbox, but keep original position,
+  // for when html form validation tries to reach it.
+  position: absolute;
+  opacity: 0;
+
+  + label {
+    display: flex;
+    align-items: baseline;
+    gap: em(12px);
+
+    .checkbox--visual {
+      flex-shrink: 0;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: rem(18px);
+      height: rem(18px);
+      border-radius: rem(2px);
+    }
+  }
+
+  @include focus {
+    + label {
+      .checkbox--visual {
+        outline: 3px solid #94D6FF;
+      }
+    }
+  }
+
+  &:not(:checked) {
+    + label {
+      .checkbox--visual {
+        .icon {
+          opacity: 0;
+        }
+      }
+    }
+  }
+
+  &:not(:disabled) {
+    &:not(:checked) {
+      + label {
+        .checkbox--visual {
+          border: rem(1px) solid var(--color--gray--400);
+        }
+      }
+
+      &:hover {
+        + label {
+          .checkbox--visual {
+            border-color: var(--palette--main-color--400);
+          }
+        }
+      }
+
+      @include focus {
+        + label {
+          .checkbox--visual {
+            border-color: var(--palette--main-color--500);
+          }
+        }
+      }
+    }
+
+    &:checked {
+      + label {
+        .checkbox--visual {
+          background-color: var(--palette--main-color--400);
+          border-color: transparent;
+          color: var(--color--white);
+        }
+      }
+
+      &:hover {
+        + label {
+          .checkbox--visual {
+            background-color: var(--palette--main-color--500);
+          }
+        }
+      }
+    }
+  }
+
+  &:disabled {
+    + label {
+      .checkbox--visual {
+        background-color: var(--color--gray--100);
+      }
+    }
+
+    &:checked {
+      + label {
+        .checkbox--visual {
+          color: var(--color--gray--400);
+        }
+      }
+    }
+  }
+}
