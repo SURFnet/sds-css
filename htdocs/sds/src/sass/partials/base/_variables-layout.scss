@@ -5,6 +5,8 @@
 
 // Page layout settings.
 $width-grid-max               : 1320px;
+$space-page-padding           : 5vw;
+$space-base-value             : 8px;
 
 // Breakpoint settings.
 $bp-sm                        : 375px;
@@ -14,9 +16,7 @@ $bp-xl                        : 1440px;
 // $bp-layout-section            : 640px;
 // $bp-grid-max is when the grid reached it's max-width ($width-grid-max)
 // and stops growing ($width-grid-max plus double $space-page-padding).
-$bp-grid-max                  : $width-grid-max * 100/(100 - ($space-page-padding * 2));
-
-$space-page-padding           : 5;
+$bp-grid-max                  : $width-grid-max * 100/(100 - (strip-unit($space-page-padding) * 2));
 
 // Grid settings.
 $grid-sizes: (

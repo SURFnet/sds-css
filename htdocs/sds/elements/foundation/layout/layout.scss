@@ -7,7 +7,7 @@ html {
 }
 
 .page-container {
-  width: calc(100% - #{$space-page-padding*2}vw);
+  width: calc(100% - #{$space-page-padding*2});
   max-width: $width-grid-max;
   margin-left: auto;
   margin-right: auto;
@@ -57,5 +57,15 @@ html {
         }
       }
     }
+  }
+}
+
+// Spacing.
+:root {
+  $temp: rem($space-base-value*0.5);
+  --space--half: #{$temp};
+  @for $i from 1 through 12 {
+    $temp: rem($space-base-value*$i);
+    --space--#{$i}: #{$temp};
   }
 }
