@@ -23,3 +23,5 @@ $font-source-sans-pro             : "Source Sans Pro", sans-serif;
 
 // Now create some variables for the font stacks we want to use on this site.
 $font-default                     : $font-source-sans-pro; // The font family set on the body element.
+$font-size-default                : 16px; // The font-size set on the body element.
+$line-height-default              : 24/16; // The line-height set on the body element.
