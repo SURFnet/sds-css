@@ -7,7 +7,20 @@
       </div>
       <div class="alert--textual">
         <p>It’s recommended to add at least one other administrator besides yourself.</p>
-        <button class="btn btn--primary btn--small">Add administrator</button>
+        <button class="btn btn--ghost--light btn--small">Add administrator</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="alert alert--status-success alert--has-action">
+  <div class="page-container">
+    <div class="alert--inner">
+      <div class="alert--visual">
+        <?php include("./sds/assets/images/functional-icons/success.svg"); ?>
+      </div>
+      <div class="alert--textual">
+        <p>It’s recommended to add at least one other administrator besides yourself.</p>
+        <button class="btn btn--ghost--dark btn--small">Add administrator</button>
       </div>
     </div>
   </div>
@@ -33,7 +46,7 @@
         <?php include("./sds/assets/images/functional-icons/success.svg"); ?>
       </div>
       <div class="alert--textual">
-        <p>Sucess</p>
+        <p>Success</p>
       </div>
     </div>
   </div>
@@ -49,7 +62,8 @@
       </div>
     </div>
   </div>
-</div><div class="alert alert--status-error">
+</div>
+<div class="alert alert--status-error">
   <div class="page-container">
     <div class="alert--inner">
       <div class="alert--visual">
@@ -60,7 +74,8 @@
       </div>
     </div>
   </div>
-</div><div class="alert alert--status-info">
+</div>
+<div class="alert alert--status-info">
   <div class="page-container">
     <div class="alert--inner">
       <div class="alert--visual">

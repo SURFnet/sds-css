@@ -77,6 +77,40 @@
     }
   }
 
+  &--ghost--dark {
+    border-color: var(--color--gray--500);
+    color: var(--color--black);
+
+    &:hover {
+      background-color: var(--color--black);
+      border-color: var(--color--black);
+      color: var(--color--white);
+    }
+
+    &:active {
+      border-color: var(--color--black);
+      background-color: var(--color--white);
+      color: var(--color--black);
+    }
+  }
+
+  &--ghost--light {
+    border-color: var(--color--white);
+    color: var(--color--white);
+
+    &:hover {
+      background-color: var(--color--white);
+      border-color: var(--color--white);
+      color: var(--color--black);
+    }
+
+    &:active {
+      border-color: var(--color--white);
+      background-color: var(--color--black);
+      color: var(--color--white);
+    }
+  }
+
   svg {
     width: rem(12px);
 

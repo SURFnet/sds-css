@@ -14,6 +14,13 @@
   <button class="btn btn--tertiary">Tertiary button</button>
   <button class="btn btn--tertiary" disabled>Tertiary button disabled</button>
 </div>
+<div class="actions--outer">
+  <button class="btn btn--ghost--dark">Ghost Dark button</button>
+  <div class="demo-bg">
+    <button class="btn btn--ghost--light">Ghost Light button</button>
+  </div>
+</div>
+
 <h5>Formats</h5>
 <div class="actions--outer">
   <button class="btn btn--primary">Default</button>
