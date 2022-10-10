@@ -58,17 +58,9 @@
   --color--purple--300: #B171CB;
   --color--purple--400: #772583;
   --color--purple--500: #45075D;
-
-  // Apply defined colors.
-  // Support.
-  --support-color--100: var(--color--green--100);
-  --support-color--200: var(--color--green--200);
-  --support-color--300: var(--color--green--300);
-  --support-color--400: var(--color--green--400);
-  --support-color--500: var(--color--green--500);
 }
 
-$color-palettes--alt: (
+$color-palettes--support: (
   green: yellow,
   blue: green,
   red: green,

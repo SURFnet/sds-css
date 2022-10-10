@@ -3,8 +3,8 @@ body {
   color: var(--color--black);
 }
 
-// See "$color-palettes--alt" for defined color-palettes.
-@each $main, $alt in $color-palettes--alt {
+// See "$color-palettes--support" for defined color-palettes.
+@each $main, $support in $color-palettes--support {
   .color-palette--#{$main} {
     // For some reason only one zero is printed when directly behind "--color-palette--main--#{$i}".
     // Therefore create a variable.
@@ -13,11 +13,11 @@ body {
     @for $i from 1 through 5 {
       --palette--main-color--#{$i}#{$suffix}: var(--color--#{$main}--#{$i}00);
     }
-    // Set alt values for some weights.
+    // Set support values for some weights.
     // This could be part of the for-loop above, but it's nicer to have two seperate lists than a merged one.
     @for $i from 1 through 5 {
       @if $i == 1 or $i == 4 or $i == 5 {
-        --palette--alt-color--#{$i}#{$suffix}: var(--color--#{$alt}--#{$i}00);
+        --palette--support-color--#{$i}#{$suffix}: var(--color--#{$support}--#{$i}00);
       }
     }
   }

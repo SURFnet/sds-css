@@ -1,9 +1,9 @@
 
 <h5>Support color</h5>
 <p>Normal text, with no support-color applied</p>
-<p style="color:var(--support-color--400);">Support color (default)</p>
-<div style="--support-color--400: var(--color--gray--500);">
-  <p style="color:var(--support-color--400);">Support color (overridden)</p>
+<p style="color:var(--palette--support-color--400);">Support color (default)</p>
+<div style="--palette--support-color--400: var(--color--gray--500);">
+  <p style="color:var(--palette--support-color--400);">Support color (overridden)</p>
 </div>
 
 <h5>Palette color</h5>

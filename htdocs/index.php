@@ -11,7 +11,7 @@
 </head>
 <body>
 
-<div class="demo-page page-container">
+<div class="demo-page page-container color-palette--blue">
   <h1>SURF Design System</h1>
 
   <div class="text--rich">
