@@ -2,7 +2,7 @@
   display: flex;
   font-family: $font-nunito-sans;
   font-weight: 700;
-  font-size: calc(14rem/16);
+  font-size: rem(14px);
 
   &--negative {
     color: var(--color--white);

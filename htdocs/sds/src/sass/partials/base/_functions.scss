@@ -1,0 +1,16 @@
+
+// Functions Partials
+//
+// All of your functions should go in this file.
+
+@function strip-unit($value) {
+  @return $value / ($value * 0 + 1);
+}
+
+@function rem($pixels, $context: strip-unit($font-size-default)) {
+  @return #{strip-unit($pixels)/$context}rem;
+}
+
+@function em($pixels, $context: strip-unit($font-size-default)) {
+  @return #{strip-unit($pixels)/$context}em;
+}

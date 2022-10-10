@@ -19,6 +19,7 @@
       <li>Uses normalize 8.0.1</li>
       <li>One combined css-file <a href="./sds/assets/stylesheets/sds.css" target="_blank"><code>sds.css</code></a></li>
       <li>CSS variables (colors)</li>
+      <li>All pixel-based values are applied as rem or em</li>
       <li>Transitions to be determined</li>
     </ul>
   </div>
