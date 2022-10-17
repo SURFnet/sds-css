@@ -1,0 +1,122 @@
+input[type="radio"] {
+  // Hide browser default radio, but keep original position,
+  // for when html form validation tries to reach it.
+  position: absolute;
+  opacity: 0;
+
+  + label {
+    display: flex;
+    align-items: baseline;
+    gap: em(12px);
+
+    .radio--visual {
+      flex-shrink: 0;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: rem(18px);
+      height: rem(18px);
+      border-radius: 50%;
+      border: rem(1px) solid transparent;
+
+      &:before {
+        content: "";
+        width: rem(10px);
+        height: rem(10px);
+        border-radius: 50%;
+        background-color: transparent;
+      }
+    }
+  }
+
+  @include focus {
+    + label {
+      .radio--visual {
+        // Simulate border-default.
+        outline-width: rem(1px);
+        outline-offset: rem(1px);
+        outline-style: auto;
+      }
+    }
+  }
+
+  &:not(:disabled) {
+    &:not(:checked) {
+      + label {
+        .radio--visual {
+          border-color: var(--color--gray--400);
+        }
+      }
+
+      &:hover {
+        + label {
+          .radio--visual {
+            border-color: var(--palette--main-color--400);
+          }
+        }
+      }
+
+      @include focus {
+        + label {
+          .radio--visual {
+            border-color: var(--palette--main-color--500);
+          }
+        }
+      }
+    }
+
+    &:checked {
+      + label {
+        .radio--visual {
+          border-color: var(--palette--main-color--400);
+
+          &:before {
+            background-color: var(--palette--main-color--400);
+          }
+        }
+      }
+
+      &:hover {
+        + label {
+          .radio--visual {
+            border-color: var(--palette--main-color--500);
+
+            &:before {
+              background-color: var(--palette--main-color--500);
+            }
+          }
+        }
+      }
+
+      @include focus {
+        + label {
+          .radio--visual {
+            border-color: var(--palette--main-color--400);
+
+            &:before {
+              background-color: var(--palette--main-color--400);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &:disabled {
+    + label {
+      .radio--visual {
+        background-color: var(--color--gray--100);
+      }
+    }
+
+    &:checked {
+      + label {
+        .radio--visual {
+          &:before {
+            background-color: var(--color--gray--400);
+          }
+        }
+      }
+    }
+  }
+}
