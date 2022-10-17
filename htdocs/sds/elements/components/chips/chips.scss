@@ -1,8 +1,9 @@
 .chips {
+  min-height: rem(32px);
+  padding: 0 var(--space--one-and-a-half);
   @include align-icon-defaults(em(8px), center);
-  border-radius: var(--space--2);
+  border-radius: rem(16px);
   background-color: var(--palette--support-color--100);
-  padding: rem(4px) rem(12px);
 
   &--visual {
     display: flex;
@@ -10,7 +11,6 @@
 
   &--textual {
     display: block;
-    padding: rem(3px) 0;
     font-weight: 600;
   }
 

@@ -1,15 +1,11 @@
 
 .alert {
-  padding: rem(19px) 0;
-
-  &--has-action {
-    padding: rem(10px) 0;
-  }
-
   &--inner {
+    min-height: rem(60px);
+    padding: var(--space--one-and-a-half) 0;
     display: flex;
     align-items: center;
-    gap: rem(24px);
+    gap: var(--space--3);
   }
 
   &--visual {
@@ -25,7 +21,7 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    gap: rem(12px) rem(24px);
+    gap: var(--space--one-and-a-half) var(--space--3);
 
     p {
       font-weight: 600;

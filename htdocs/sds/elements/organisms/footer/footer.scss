@@ -1,13 +1,13 @@
 footer {
   .footer--top {
     background-color: var(--color--gray--200);
-    padding-top: rem(26px);
-    padding-bottom: rem(26px);
+    padding-top: var(--space--3);
+    padding-bottom: var(--space--3);
 
     nav {
       ul {
         justify-content: center;
-        gap: rem(8px) rem(24px);
+        gap: var(--space--1) var(--space--3);
       }
     }
   }
@@ -15,19 +15,19 @@ footer {
   .footer--bottom {
     background-color: var(--color--black);
     color: var(--color--white);
-    padding-top: rem(14px);
-    padding-bottom: rem(14px);
+    padding-top: var(--space--2);
+    padding-bottom: var(--space--2);
 
     .footer--bottom--inner {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
       align-items: center;
-      gap: rem(26px) rem(32px);
+      gap: var(--space--3) var(--space--4);
 
       nav {
         ul {
-          gap: rem(6px) rem(32px);
+          gap: var(--space--1) var(--space--4);
         }
       }
     }

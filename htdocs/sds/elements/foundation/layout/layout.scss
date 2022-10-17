@@ -15,7 +15,7 @@ html {
 
 .grid-container {
   display: grid;
-  gap: 0 rem(24px);
+  gap: 0 var(--space--3);
 
   // See "$grid-sizes" for defined grid-behavior.
   @each $grid-size, $settings in $grid-sizes {
@@ -64,6 +64,8 @@ html {
 :root {
   $temp: rem($space-base-value*0.5);
   --space--half: #{$temp};
+  $temp: rem($space-base-value*1.5);
+  --space--one-and-a-half: #{$temp};
   @for $i from 1 through 12 {
     $temp: rem($space-base-value*$i);
     --space--#{$i}: #{$temp};

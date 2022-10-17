@@ -1,16 +1,13 @@
 
 .toaster {
+  max-width: rem(400px);
+  min-height: rem(60px);
+  padding: var(--space--1) var(--space--2);
   display: inline-flex;
   align-items: center;
-  gap: rem(16px);
-  padding: rem(19px) rem(16px);
-  max-width: rem(400px);
+  gap: var(--space--2);
   border-radius: rem(4px);
   box-shadow: 0 rem(4px) rem(4px) rgba(0, 0, 0, 0.25) ;
-
-  &--has-action {
-    padding: rem(10px) rem(16px);
-  }
 
   &--visual {
     flex-shrink: 0;
@@ -25,7 +22,7 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    gap: rem(12px) rem(16px);
+    gap: var(--space--one-and-a-half) var(--space--2);
   }
 
   // Apply status colors.

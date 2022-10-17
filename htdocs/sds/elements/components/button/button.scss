@@ -1,15 +1,16 @@
 .btn {
   @include btn-reset();
   font-weight: 600;
-  padding: rem(14px) rem(24px);
+  padding: var(--space--1) var(--space--3);
+  min-height: rem(48px);
   border-radius: rem(6px);
   border: rem(1px) solid transparent;
-  @include align-icon-defaults(1em);
+  @include align-icon-defaults(1em, center);
   flex-wrap: wrap;
   justify-content: center;
 
   &--small {
-    padding: rem(10px) rem(24px);
+    min-height: rem(40px);
   }
 
   &--full {
@@ -124,5 +125,5 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: rem(12px) rem(24px);
+  gap: var(--space--one-and-a-half) var(--space--3);
 }
