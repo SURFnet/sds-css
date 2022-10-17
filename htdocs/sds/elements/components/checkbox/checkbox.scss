@@ -23,7 +23,9 @@ input[type="checkbox"] {
   @include focus {
     + label {
       .checkbox--visual {
-        outline: 3px solid #94D6FF;
+        // Simulate border-default.
+        outline-width: 0.1rem;
+        outline-style: auto;
       }
     }
   }
