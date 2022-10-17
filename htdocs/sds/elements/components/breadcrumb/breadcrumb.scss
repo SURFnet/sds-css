@@ -1,7 +1,4 @@
 .breadcrumb {
-  font-size: rem(14px);
-  line-height: calc(18/14);
-
   &--list {
     @include align-icon-defaults(em(11px, 14), center);
     color: var(--color--gray--500);

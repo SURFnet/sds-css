@@ -1,4 +1,4 @@
-<nav class="breadcrumb">
+<nav class="breadcrumb text--body--small">
   <ol class="breadcrumb--list">
     <li>
       <a href="#">Level 1</a>
