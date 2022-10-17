@@ -80,8 +80,16 @@ ol {
 
   a {
     @include lnk-decoration(show);
-    color: var(--palette--support-color--400);
+    color: var(--palette--support-color--400, var(--color--black));
     font-weight: 700;
+
+    &:active {
+      background-color: var(--color--gray--200);
+    }
+
+    &:visited {
+      color: var(--palette--support-color--500, var(--color--gray--500));
+    }
   }
 
   ul {
