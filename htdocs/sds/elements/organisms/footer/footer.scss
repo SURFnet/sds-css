@@ -45,6 +45,12 @@ footer {
 
     a {
       @include lnk-decoration(show);
+
+      .icon--go-to-other-website {
+        svg {
+          width: em(16px,14);
+        }
+      }
     }
   }
 }

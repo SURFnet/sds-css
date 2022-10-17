@@ -4,7 +4,12 @@
       <nav>
         <ul>
           <li>
-            <a href="#">Over SURF</a>
+            <a href="#">
+              <span class="text">Over SURF</span>
+              <span class="icon--go-to-other-website">
+                <?php include("./sds/assets/images/functional-icons/go-to-other-website.svg"); ?>
+              </span>
+            </a>
           </li>
           <li>
             <a href="#">Werken bij</a>
