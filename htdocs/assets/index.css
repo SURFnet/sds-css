@@ -30,3 +30,8 @@
 .demo-page .demo-content > * + * {
   margin-top: 20px;
 }
+.demo-page .demo-section-alert .demo-content .alert,
+.demo-page .demo-section-footer .demo-content {
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+}
