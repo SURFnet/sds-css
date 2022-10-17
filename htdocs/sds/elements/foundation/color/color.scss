@@ -1,4 +1,60 @@
 
+:root {
+  // Base.
+  --color--black: #050E1D;
+  --color--white: #FFFFFF;
+
+  // Gray.
+  --color--gray--100: #F4F6F8;
+  --color--gray--200: #EAECF0;
+  --color--gray--300: #B2B6BE;
+  --color--gray--400: #8C969F;
+  --color--gray--500: #5E6873;
+
+  // Yellow.
+  // Note that 300 variant is not defined in the design,
+  // and 100 and 200 have the same value.
+  --color--yellow--100: #FEF8D3;
+  --color--yellow--200: #FEF8D3;
+  --color--yellow--400: #FEDB00;
+  --color--yellow--500: #FFC100;
+
+  // Green.
+  --color--green--100: #DCF2E5;
+  --color--green--200: #B8E3C9;
+  --color--green--300: #17A95D;
+  --color--green--400: #008939;
+  --color--green--500: #006731;
+
+  // Blue.
+  --color--blue--100: #DFF4FF;
+  --color--blue--200: #B3E5FF;
+  --color--blue--300: #78BEFD;
+  --color--blue--400: #0077C8;
+  --color--blue--500: #004C97;
+
+  // Red.
+  --color--red--100: #FFE5E3;
+  --color--red--200: #FFCDCA;
+  --color--red--300: #EA6059;
+  --color--red--400: #DA362D;
+  --color--red--500: #BE1817;
+
+  // Orange.
+  --color--orange--100: #FFE6D2;
+  --color--orange--200: #FFC294;
+  --color--orange--300: #FF9A4E;
+  --color--orange--400: #E67300;
+  --color--orange--500: #C15500;
+
+  // Purple.
+  --color--purple--100: #F1E8F8;
+  --color--purple--200: #EBCEFF;
+  --color--purple--300: #B171CB;
+  --color--purple--400: #772583;
+  --color--purple--500: #45075D;
+}
+
 body {
   color: var(--color--black);
 }
