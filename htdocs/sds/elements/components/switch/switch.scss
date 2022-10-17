@@ -1,0 +1,38 @@
+.switch {
+  background-color: var(--color--gray--300);
+  width: rem(56px);
+  height: rem(32px);
+  border-radius: rem(16px);
+  padding: rem(3px);
+  display: inline-block;
+
+  &:hover {
+    background-color: var(--color--gray--400);
+  }
+
+  &:before {
+    content: "";
+    display: block;
+    background-color: var(--color--white);
+    width: rem(26px);
+    height: rem(26px);
+    border-radius: rem(13px);
+    position: relative;
+  }
+
+  .open & {
+    background-color: var(--palette--main-color--400);
+
+    &:before {
+      left: rem(24px);
+    }
+
+    &:hover {
+      background-color: var(--palette--main-color--500);
+
+      &:before {
+        background-color: var(--palette--main-color--100);
+      }
+    }
+  }
+}
