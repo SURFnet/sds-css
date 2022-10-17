@@ -1,0 +1,17 @@
+
+
+// Base Partials
+//
+// These files will be shared across all three of your output CSS files.
+// Generally included here are only 3rd party library imports and imports
+// for variables, functions and mixins.
+
+// @import 'normalize';
+// @import 'singularitygs';
+// @import 'breakpoint';
+
+// Base Import.
+@import 'partials/base/base';
+
+// Import Component Styling.
+@import '../../elements/**/**/*';

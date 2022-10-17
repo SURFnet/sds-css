@@ -13,7 +13,6 @@ $bp-sm                        : 375px;
 $bp-md                        : 768px;
 $bp-lg                        : 1024px;
 $bp-xl                        : 1440px;
-// $bp-layout-section            : 640px;
 // $bp-grid-max is when the grid reached it's max-width ($width-grid-max)
 // and stops growing ($width-grid-max plus double $space-page-padding).
 $bp-grid-max                  : $width-grid-max * 100/(100 - (strip-unit($space-page-padding) * 2));
@@ -38,14 +37,6 @@ $grid-sizes: (
   ),
   lg: (
     bp: $bp-lg,
-    // bp-range: (
-    //   min: $bp-lg,
-    //   max: $bp-xl,
-    // ),
     columns: 12,
   ),
-  // xl: (
-  //   bp: $bp-xl,
-  //   columns: 12,
-  // ),
 );

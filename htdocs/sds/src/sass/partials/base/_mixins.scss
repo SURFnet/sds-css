@@ -1,0 +1,171 @@
+
+// Mixins Partials
+//
+// All of your mixins should go in this file.
+// These mixins are ment to be a starting point for your theme-instance. If desired, adjust them in your theme-instance.
+
+@mixin bp-em($min:0, $max: false) {
+  $size-min: em($min);
+  @if ($max) {
+    $size-max: em($max - 1);
+    @media (min-width: $size-min) and (max-width: $size-max) {
+      @content;
+    }
+  } @else {
+    @media (min-width: $size-min) {
+      @content;
+    }
+  }
+}
+
+// Visually-hidden as defined by http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+@mixin visually-hidden {
+  position: absolute !important;
+  height: 0px;
+  width: 0px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap;
+}
+
+// Helper mixin to apply all "focus"-like styling variants.
+@mixin focus {
+  // &:hover,
+  // &:focus {
+  &:focus {
+    &:focus-visible {
+      @content;
+    }
+  }
+}
+
+// Links.
+//
+// Link. Ment for text colors and text-decoration.
+//
+// $decoration: set text-decoration behavior | can be "on", "off", "hide" or "show" | not-required, "hide" by default.
+// $base-color: default color | can be any color | not-required, "currentColor" by default.
+// $hover-color: hover- and focus-color | can be any color | not-required, "$base-color" by default.
+// $active-color: active color, like active menu item (not psuedo :active) | can be any color | not-required, "$hover-color" by default.
+// Other variable values are defined in the variables partial.
+@mixin lnk-color($base-color: currentColor, $hover-color: $base-color, $active-color: $hover-color) {
+  // transition: all $easing-default;
+  // Apply colors.
+  color: $base-color;
+  &:hover {
+    color: $hover-color;
+  }
+  &.is-active {
+    color: $active-color;
+  }
+}
+@mixin lnk-decoration($decoration: hide) {
+  // Apply text-decoration.
+  @if ($decoration == hide) {
+    text-decoration: underline;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  @if ($decoration == show) {
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  @if ($decoration == on) {
+    text-decoration: underline;
+  }
+  @if ($decoration == off) {
+    text-decoration: none;
+  }
+}
+
+// Buttons
+//
+// Strip default.
+@mixin btn-reset() {
+  border: none;
+  touch-action: manipulation;
+  // cursor: pointer;
+  //white-space: nowrap;
+  border-radius: 0px;
+  user-select: none;
+  background-color: transparent;
+  padding: 0;
+}
+
+// We use baseline, so alignment can be done relative to the first line of text.
+// By aligning to the first line, the icon is always positioned correctly,
+// even if the text size is adjusted.
+@mixin align-icon-defaults($spacing: 0.5em, $alignment: baseline) {
+  display: inline-flex;
+  align-items: $alignment;
+  gap: $spacing;
+
+  .text {
+    flex: 1 1 auto;
+  }
+}
+
+@mixin unstyled-list() {
+  margin: 0;
+  padding: 0;
+  // Removing list bullets with "list-style: none" removes <ul/ol> semantics in VoiceOver.
+  list-style: none;
+
+  > li {
+    // Adding zero-width space fixes the "list-style: none" accessibility issue.
+    &:before {
+      content: "\200B";
+      position: absolute;
+    }
+  }
+}
+
+@mixin styled-ul() {
+  list-style: disc;
+  padding-left: 1.25em;
+
+  ::marker {
+    font-weight: 700;
+    color: currentColor;
+  }
+
+  > li {
+    &:before {
+      content: none;
+    }
+
+    + li {
+      margin-top: 0.5em;
+    }
+
+    > ul {
+      margin-top: 0.5em;
+    }
+  }
+}
+
+@mixin styled-ol() {
+  list-style: decimal;
+  padding-left: 1.25em;
+
+  ::marker {
+    color: currentColor;
+  }
+
+  > li {
+    &:before {
+      content: none;
+    }
+
+    + li {
+      margin-top: 0.5em;
+    }
+
+    > ol {
+      margin-top: 0.5em;
+    }
+  }
+}

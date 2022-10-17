@@ -1,0 +1,430 @@
+
+// Style Guide Partials
+//
+// Your Style Guide
+//
+// All Style Guide selectors should go in here.
+// Headings, body text, lists, code, and more for a versatile and durable
+// typography system.
+
+// html {
+//   box-sizing: border-box;
+// }
+
+// *, *:before, *:after {
+//   box-sizing: inherit;
+// }
+
+// html {
+//   // font-size: 62.5%; // Sets up the Base 10 stuff
+//   -webkit-font-smoothing: antialiased; // maxvoltar.com/archive/-webkit-font-smoothing
+//   -moz-osx-font-smoothing: grayscale;
+// }
+
+// body {
+//   font-family: $font-default;
+//   color: var(--color--black);
+// }
+
+// html {
+//   scroll-behavior: smooth;
+//   height: 100%;
+// }
+
+// body {
+//   height: 100%;
+//   overflow-x: hidden;
+//   overflow-y: scroll; // Force scrollbar
+// }
+
+
+// .page {
+//   @include font-size-resp();
+//   font-family: $font-default;
+//   color: $color-text;
+// }
+
+// // Headings.
+// h1, h2, h3, h4, h5, h6,
+// .h1, .h2, .h3, .h4, .h5, .h6 {
+//   font-family: $font-dm-sans;
+//   font-weight: 700;
+//   @include hyphens();
+//   margin: 0;
+
+//   > a {
+//     @include lnk-decoration(show);
+//   }
+
+//   em {
+//     font-style: normal;
+//   }
+// }
+
+// h1, .h1 {
+//   font-family: $font-nunito-sans;
+//   // @include font-size-resp($font-size-h1-l, $line-height-heading, $font-size-h1-s);
+// }
+
+// h2, .h2 {
+//   font-family: $font-nunito-sans;
+//   // @include font-size-resp($font-size-h2-l, $line-height-heading, $font-size-h2-s);
+//   // @include formatted-text() {
+//   //   margin-bottom: .5em;
+//   // }
+// }
+
+// h3, .h3 {
+//   font-family: $font-nunito-sans;
+//   // @include font-size-resp($font-size-h3-l, $line-height-heading, $font-size-h3-s);
+//   // @include formatted-text() {
+//   //   margin-bottom: .35em;
+//   // }
+// }
+
+// h4, .h4 {
+//   // @include font-size-resp($font-size-h4-l, $line-height-heading, $font-size-h4-s);
+//   // @include formatted-text() {
+//   //   margin-bottom: .35em;
+//   // }
+// }
+
+// .heading--with-margin-bottom {
+//   margin-bottom: 4rem;
+// }
+
+// .text--small {
+//   @include font-size($font-size-s);
+// }
+
+// .text--medium {
+//   @include font-size-resp($font-size-m, $line-height-default, $font-size-s);
+// }
+
+// .text--default {
+//   @include font-size-resp();
+// }
+
+// .text--centered {
+//   text-align: center;
+// }
+
+// .text--label {
+//   font-family: $font-dm-sans;
+//   font-weight: 700;
+// }
+
+// [class*="label--with-bg"] {
+//   font-weight: 600;
+//   padding: 0.35em 1em;
+//   border-radius: $radius-small;
+// }
+
+// .label--with-bg--turquoise {
+//   background-color: $color-turquoise-green;
+//   color: $color-forest-green;
+// }
+
+// .label--with-bg--brown {
+//   background-color: $color-bobby-brown;
+//   color: $color-white;
+// }
+
+// * {
+//   & + * {
+//     @include formatted-text() {
+//       margin-top: $base-line-rhythm;
+//     }
+//   }
+// }
+
+p {
+  // margin: 0;
+}
+
+// img,
+// video {
+//   display: block;
+//   max-width: 100%;
+//   height: auto;
+//   font-size: smaller;
+// }
+
+// svg {
+//   fill: currentColor;
+
+//   &.svg-use {
+//     display: inline-flex;
+//   }
+// }
+
+// .svg-use--wrapper {
+//   display: inline-flex;
+// }
+
+// figure {
+//   margin: 0;
+
+//   blockquote {
+//     + figcaption {
+//       font-family: $font-caveat;
+//       @include font-size-resp(24, 28/24, 20);
+//       margin-top: 0.5em;
+
+//       cite {
+//         display: block;
+//       }
+//     }
+//   }
+
+//   &.quote {
+//     blockquote {
+//       position: relative;
+//       display: inline-block;
+
+//       .icon {
+//         opacity: 0.1;
+//         position: absolute;
+//         left: -1em;
+//         top: -1em;
+
+//         @include bp-em($bp-large) {
+//           left: -2.75em;
+//         }
+
+//         svg {
+//           width: 3.5em;
+//           height: auto;
+//         }
+//       }
+//     }
+//   }
+// }
+
+// Links.
+// a {
+//   color: currentColor;
+//   // text-underline-offset: 0.075em;
+
+//   // @include formatted-text() {
+//   //   @include lnk-color(currentColor, map-get($color-smile-green--safe-on-white, text));
+//   //   font-weight: 600;
+//   // }
+
+//   // img {
+//   //   outline: 0 none;
+//   //   border: 0 none;
+//   // }
+// }
+
+// // // Lists.
+// ul {
+//   @include unstyled-list();
+//   // @include formatted-text() {
+//   //   @include styled-ul();
+//   // }
+// }
+
+// ol {
+//   @include unstyled-list();
+//   // @include formatted-text() {
+//   //   @include styled-ol();
+//   // }
+// }
+
+// dl {
+//   margin: 0;
+
+//   dt {
+//     font-weight: 700;
+//   }
+
+//   dd {
+//     margin-left: 0;
+//   }
+
+//   display: flex;
+//   flex-wrap: wrap;
+//   gap: 1rem 3rem;
+
+//   &.data--3-col {
+//     > * {
+//       flex: 0 1 calc(30%);
+//     }
+//   }
+
+//   &.data--with-disc {
+//     .list-item {
+
+//       &.with-hidden-dt {
+//         display: inline-flex;
+
+//         > dt {
+//           height: $line-height-default+em;
+//         }
+
+//         > dd {
+//           padding-left: 0;
+//         }
+//       }
+
+//       > dt {
+//         @include align-icon-defaults(1.14em, center);
+//       }
+
+//       > dd {
+//         display: block;
+//         padding-left: 2.28em;
+//       }
+
+//       .disc {
+//         display: block;
+//         width: 1.14em;
+//         height: 1.14em;
+//         border-radius: 50%;
+//         background-color: $color-turquoise-green;
+//       }
+
+//       .social-media-links--platforms {
+//         &.horizontal {
+//           li {
+//             + li {
+//               margin-left: 1rem;
+//             }
+//           }
+//         }
+
+//         li {
+//           padding: 0;
+
+//           .text {
+//             font-weight: 700;
+//           }
+
+//           .icon {
+//             display: flex;
+//             align-items: center;
+//             justify-content: center;
+//             height: 4rem;
+//             width: 4rem;
+//             border-radius: 50%;
+//             margin-top: 0.5rem;
+//             background-color: $color-forest-green;
+//             color: $color-white;
+//             transition: box-shadow $easing-default;
+//             @include lnk-decoration(off);
+
+//             @include focus {
+//               box-shadow: 0 0 0 .3rem $color-forest-green;
+//               outline: 0;
+//             }
+
+//             .fa {
+//               font-size: 1.5em;
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+
+// // Misc.
+// hr {
+//   border: none;
+//   height: 1px;
+//   width: 100%;
+//   background-color: $color-black;
+// }
+
+// strong {
+//   font-weight: 700;
+// }
+
+// em {
+//   font-style: italic;
+// }
+
+// blockquote {
+//   position: relative;
+//   margin: 0;
+//   quotes: "\201C""\201D""\2018""\2019";
+
+//   p {
+//     font-family: $font-dm-sans;
+//     font-style: normal;
+//     @include font-size-resp(30, $line-height-heading);
+//     position: relative;
+//     z-index: 1;
+//   }
+
+//   @include formatted-text() {
+//     padding-top: 1em;
+
+//     @include bp-em(0, $bp-large) {
+//       padding-left: 2em;
+//     }
+
+//     @include bp-em($bp-large) {
+//       padding-left: 4em;
+//     }
+
+//     &:after {
+//       @include icon-inline(5.5, 5.2);
+//       background-image: url("../images/quote--forest-green.svg");
+//       position: absolute;
+//       left: -1em;
+//       top: 0em;
+//       opacity: 0.1;
+
+//       @include bp-em($bp-large) {
+//         @include icon-inline(10.5, 9.8);
+//       }
+//     }
+//   }
+// }
+
+// .table-wrapper {
+//   width: 100%;
+//   margin: -1rem -1rem 0 -1rem;
+//   padding: 1rem;
+//   overflow-x: auto;
+// }
+
+// table {
+//   width: 100%;
+//   border-collapse: collapse;
+//   border-spacing: 0;
+
+//   caption {
+//     margin-bottom: 1.5rem;
+//     text-align: left;
+//     font-weight: 600;
+//   }
+
+//   th,
+//   td {
+//     border: 0.1rem solid $color-text;
+//     padding: 1rem 1.5rem;
+//     text-align: left;
+//     vertical-align: top;
+//   }
+
+//   th {
+//     background-color: $color-panache;
+//   }
+// }
+
+// .address {
+//   .address__item {
+//     display: block;
+//   }
+
+//   br {
+//     display: none;
+//   }
+// }
+
+// details {
+//   border: none;
+// }
