@@ -1,0 +1,44 @@
+.modal {
+  background-color: rgba(0, 0, 0, 0.15);
+  padding: $space-page-padding;
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: auto;
+
+  &--container {
+    max-width: rem(510px);
+    margin: auto;
+    border-radius: rem(8px);
+    overflow: hidden;
+    box-shadow: 0 rem(4px) rem(4px) rem(1px) rgba(0, 0, 0, 0.25);
+  }
+
+  &--title {
+    background-color: var(--palette--main-color--400);
+    color: var(--color--white);
+    padding: var(--space--2) var(--space--3);
+    display: flex;
+    justify-content: space-between;
+    gap: var(--space--1);
+  }
+
+  &--content {
+    background-color: var(--color--white);
+    padding: var(--space--3);
+  }
+
+  &--actions {
+    justify-content: flex-end;
+    margin-top: var(--space--5);
+  }
+
+  .alert {
+    .alert--inner {
+      padding: var(--space--one-and-a-half);
+      gap: var(--space--one-and-a-half);
+    }
+  }
+}
