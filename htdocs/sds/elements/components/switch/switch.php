@@ -1,5 +1,3 @@
 <span class="switch"></span>
 
-<span class="open">
-  <span class="switch"></span>
-</span>
+<span class="switch switch--active"></span>

@@ -20,7 +20,7 @@
     position: relative;
   }
 
-  .open & {
+  &--active {
     background-color: var(--palette--main-color--400);
 
     &:before {
