@@ -1,0 +1,12 @@
+.tooltip {
+  padding: 0 var(--space--one-and-a-half);
+  border-radius: rem(6px);
+  background-color: var(--color--gray--500);
+  color: var(--color--white);
+  display: inline-flex;
+  align-items: center;
+
+  &--textual {
+    padding: var(--space--1) 0;
+  }
+}
