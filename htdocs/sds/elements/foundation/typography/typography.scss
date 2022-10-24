@@ -111,7 +111,10 @@ p {
 }
 
 a {
-  color: currentColor;
+  &:link,
+  &:visited {
+    color: currentColor;
+  }
 }
 
 ul {
@@ -131,15 +134,18 @@ ol {
 
   a {
     @include lnk-decoration(show);
-    color: var(--palette--support-color--400, var(--color--black));
     font-weight: 700;
 
-    &:active {
-      background-color: var(--color--gray--200);
+    &:link {
+      color: var(--palette--support-color--400, var(--color--black));
     }
 
     &:visited {
       color: var(--palette--support-color--500, var(--color--gray--500));
+    }
+
+    &:active {
+      background-color: var(--color--gray--200);
     }
   }
 

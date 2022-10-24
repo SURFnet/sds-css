@@ -55,9 +55,6 @@
   &:hover {
     color: $hover-color;
   }
-  &.is-active {
-    color: $active-color;
-  }
 }
 @mixin lnk-decoration($decoration: hide) {
   // Apply text-decoration.

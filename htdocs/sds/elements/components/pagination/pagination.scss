@@ -1,0 +1,39 @@
+.pagination {
+  &--nav {
+    ul {
+      display: flex;
+      gap: var(--space--1);
+    }
+
+    a {
+      width: rem(40px);
+      height: rem(40px);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border: rem(1px) solid transparent;
+      border-radius: rem(6px);
+      text-decoration: none;
+
+      &:not(:link) {
+        background-color: var(--color--gray--100);
+        border-color: var(--color--gray--300);
+        color: var(--color--gray--300);
+      }
+
+      &:link,
+      &:visited {
+        border-color: var(--color--gray--400);
+        color: var(--color--gray--500);
+
+        &.is-active,
+        &:active,
+        &:hover {
+          background-color: var(--palette--support-color--100);
+          color: var(--palette--support-color--500);
+          border-color: var(--palette--support-color--500);
+        }
+      }
+    }
+  }
+}
