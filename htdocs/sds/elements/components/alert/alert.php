@@ -3,7 +3,7 @@
   <div class="page-container">
     <div class="alert--inner">
       <div class="alert--visual">
-        <?php include("./sds/assets/images/functional-icons/info.svg"); ?>
+        <?php sizeable_svg("functional-icons/info", 22.5/16 . "em", 22.5/16 . "em"); ?>
       </div>
       <div class="alert--textual">
         <p>It’s recommended to add at least one other administrator besides yourself.</p>
@@ -16,7 +16,7 @@
   <div class="page-container">
     <div class="alert--inner">
       <div class="alert--visual">
-        <?php include("./sds/assets/images/functional-icons/success.svg"); ?>
+        <?php sizeable_svg("functional-icons/success", 22.5/16 . "em", 22.5/16 . "em"); ?>
       </div>
       <div class="alert--textual">
         <p>It’s recommended to add at least one other administrator besides yourself.</p>
@@ -31,7 +31,7 @@
   <div class="page-container">
     <div class="alert--inner">
       <div class="alert--visual">
-        <?php include("./sds/assets/images/functional-icons/info.svg"); ?>
+        <?php sizeable_svg("functional-icons/info", 22.5/16 . "em", 22.5/16 . "em"); ?>
       </div>
       <div class="alert--textual">
         <p>Default</p>
@@ -43,7 +43,7 @@
   <div class="page-container">
     <div class="alert--inner">
       <div class="alert--visual">
-        <?php include("./sds/assets/images/functional-icons/success.svg"); ?>
+        <?php sizeable_svg("functional-icons/success", 22.5/16 . "em", 22.5/16 . "em"); ?>
       </div>
       <div class="alert--textual">
         <p>Success</p>
@@ -55,7 +55,7 @@
   <div class="page-container">
     <div class="alert--inner">
       <div class="alert--visual">
-        <?php include("./sds/assets/images/functional-icons/alert-triangle.svg"); ?>
+        <?php sizeable_svg("functional-icons/alert-triangle", 22.5/16 . "em", 22.5/16 . "em"); ?>
       </div>
       <div class="alert--textual">
         <p>Warning</p>
@@ -67,7 +67,7 @@
   <div class="page-container">
     <div class="alert--inner">
       <div class="alert--visual">
-        <?php include("./sds/assets/images/functional-icons/alert-triangle.svg"); ?>
+        <?php sizeable_svg("functional-icons/alert-triangle", 22.5/16 . "em", 22.5/16 . "em"); ?>
       </div>
       <div class="alert--textual">
         <p>Error</p>
@@ -79,7 +79,7 @@
   <div class="page-container">
     <div class="alert--inner">
       <div class="alert--visual">
-        <?php include("./sds/assets/images/functional-icons/info.svg"); ?>
+        <?php sizeable_svg("functional-icons/info", 22.5/16 . "em", 22.5/16 . "em"); ?>
       </div>
       <div class="alert--textual">
         <p>Info</p>

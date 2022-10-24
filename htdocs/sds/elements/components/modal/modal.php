@@ -2,12 +2,12 @@
   <div class="modal--container">
     <div class="modal--title">
       <p class="text--h4">Title</p>
-      <?php include("./sds/assets/images/functional-icons/close.svg"); ?>
+      <?php sizeable_svg("functional-icons/close", 12/16 . "em", 12/16 . "em"); ?>
     </div>
     <div class="alert alert--status-info">
       <div class="alert--inner">
         <div class="alert--visual">
-          <?php include("./sds/assets/images/functional-icons/info.svg"); ?>
+          <?php sizeable_svg("functional-icons/info",  22.5/16 . "em", 22.5/16 . "em"); ?>
         </div>
         <div class="alert--textual">
           <p>Info</p>

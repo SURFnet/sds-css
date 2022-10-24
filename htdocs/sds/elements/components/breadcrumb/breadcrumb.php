@@ -3,13 +3,13 @@
     <li>
       <a href="#">Level 1</a>
       <span class="breadcrumb--divider">
-        <?php include("./sds/assets/images/functional-icons/arrow-right-2.svg"); ?>
+        <?php sizeable_svg("functional-icons/arrow-right-2", 5.47/14 . "em", 11.25/14 . "em"); ?>
       </span>
     </li>
     <li>
       <a href="#">Level 2</a>
       <span class="breadcrumb--divider">
-        <?php include("./sds/assets/images/functional-icons/arrow-right-2.svg"); ?>
+        <?php sizeable_svg("functional-icons/arrow-right-2", 5.47/14 . "em", 11.25/14 . "em"); ?>
       </span>
     </li>
     <li class="breadcrumb--current">

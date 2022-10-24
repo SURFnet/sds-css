@@ -44,7 +44,7 @@
       }
 
       echo '
-        <section class="demo-section-' . $folders[4] . '">
+        <section id=' . $folders[4] . ' class="demo-section-' . $folders[4] . '">
           <h3>' . ucfirst($parts['filename']) . '</h3>
       ';
 
@@ -73,6 +73,19 @@
           </details>
         </section>
       ';
+    }
+  ?>
+
+  <?php
+    function sizeable_svg($path, $width = null, $height = null) {
+      $base_path = file_get_contents("./sds/assets/images/" . $path . ".svg");
+      if ($width && $height) {
+        $adjust_width = preg_replace("/( width)=\".*?\"/", "\${1}=\"$width\"", $base_path );
+        $adjust_width_and_height = preg_replace("/( height)=\".*?\"/", "\${1}=\"$height\"", $adjust_width );
+        echo ($adjust_width_and_height);
+      } else {
+        echo ($base_path);
+      }
     }
   ?>
 

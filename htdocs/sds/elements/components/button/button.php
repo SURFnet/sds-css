@@ -1,7 +1,7 @@
 <h5>Anatomy</h5>
 <div class="actions--outer">
   <button class="btn btn--primary">
-    <?php include("./sds/assets/images/functional-icons/arrow-down-2.svg"); ?>
+    <?php sizeable_svg("functional-icons/arrow-down-2", 11.25/16 . "em", 5.47/16 . "em"); ?>
     <span class="textual">Default</span>
   </button>
 </div>

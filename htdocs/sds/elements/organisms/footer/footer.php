@@ -7,7 +7,7 @@
             <a href="#">
               <span class="text">Over SURF</span>
               <span class="icon--go-to-other-website">
-                <?php include("./sds/assets/images/functional-icons/go-to-other-website.svg"); ?>
+                <?php sizeable_svg("functional-icons/go-to-other-website", 16/14 . "em", 16/14 . "em"); ?>
               </span>
             </a>
           </li>
