@@ -10,8 +10,9 @@
 
     button {
       @include btn-reset();
-      padding: var(--space--1) var(--space--2);
+      padding: var(--space--one-and-a-half) var(--space--2);
       min-height: rem(48px);
+      font-weight: 600;
     }
   }
 
