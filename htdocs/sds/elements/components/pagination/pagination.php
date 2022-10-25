@@ -1,5 +1,5 @@
 <div class="pagination">
-  <nav class="pagination--nav text--body--large">
+  <nav class="pagination--nav text--body--large" aria-label="pagination">
     <ul>
       <li>
         <a href="#">
