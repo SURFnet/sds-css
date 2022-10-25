@@ -14,6 +14,7 @@ button {
   justify-content: center;
 
   &--small {
+    padding: var(--space--1) var(--space--3);
     min-height: rem(40px);
   }
 
