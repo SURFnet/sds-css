@@ -1,0 +1,68 @@
+.select {
+  // Set variable to be able to nest "&" inside "&".
+  $self: &;
+
+  label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: var(--space--1);
+  }
+
+  select {
+    width: 100%;
+    min-height: rem(48px);
+    padding: var(--space--one-and-a-half);
+    padding-right: calc(var(--space--one-and-a-half) + var(--space--one-and-a-half) + #{rem(15px)});
+    border: rem(1px) solid var(--color--gray--400);
+    border-radius: rem(6px);
+    appearance: none;
+
+    &:not(:disabled) {
+      border-color: var(--color--gray--400);
+
+      &:hover {
+        border-color: var(--color--black);
+      }
+    }
+
+    &:disabled {
+      background-color: var(--color--gray--100);
+      border-color: var(--color--gray--100);
+
+      + #{$self}--icon {
+        color: var(--color--gray--300);
+      }
+    }
+  }
+
+  &--message {
+    margin-top: var(--space--1);
+  }
+
+  &--status-error {
+    #{$self}--message {
+      color: var(--color--red--400);
+    }
+
+    select {
+      &:not(:disabled) {
+        border-color: var(--color--red--400);
+      }
+    }
+  }
+
+  &--input-and-icon {
+    // To position icon.
+    position: relative;
+
+    #{$self}--icon {
+      pointer-events: none;
+      position: absolute;
+      right: var(--space--one-and-a-half);
+      top: 50%;
+      transform: translateY(-50%);
+      // Take correct own height.
+      display: flex;
+    }
+  }
+}
