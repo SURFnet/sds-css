@@ -32,10 +32,8 @@ input[type="radio"] {
   @include focus {
     + label {
       .radio--visual {
-        // Simulate border-default.
-        outline-width: rem(1px);
-        outline-offset: rem(1px);
-        outline-style: auto;
+        // Apply browser-default outline styling.
+        @include outline-browser-default();
       }
     }
   }
