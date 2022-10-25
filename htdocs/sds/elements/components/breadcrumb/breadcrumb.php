@@ -1,4 +1,4 @@
-<nav class="breadcrumb text--body--small">
+<nav class="breadcrumb text--body--small" aria-label="breadcrumbs">
   <ol class="breadcrumb--list">
     <li>
       <a href="#">Level 1</a>
@@ -12,8 +12,8 @@
         <?php sizeable_svg("functional-icons/arrow-right-2", 5.47/14 . "em", 11.25/14 . "em"); ?>
       </span>
     </li>
-    <li class="breadcrumb--current">
-      <span>Level 3</span>
+    <li>
+      <a href="#" aria-current="page">Level 3</a>
     </li>
   </ol>
 </nav>

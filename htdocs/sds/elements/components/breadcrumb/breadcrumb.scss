@@ -20,12 +20,12 @@
     }
   }
 
-  &--current {
-    font-weight: 700;
-  }
-
   a {
     @include lnk-decoration(show);
     @include lnk-color($hover-color: var(--color--black));
+
+    &[aria-current="page"] {
+      font-weight: 700;
+    }
   }
 }
