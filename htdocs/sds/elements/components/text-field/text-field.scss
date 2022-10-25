@@ -1,0 +1,84 @@
+.text-field {
+  // Set variable to be able to nest "&" inside "&".
+  $self: &;
+
+  label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: var(--space--1);
+  }
+
+  // Target input via class, because it can be of many types.
+  input#{$self}--input {
+    width: 100%;
+    min-height: rem(48px);
+    padding: var(--space--one-and-a-half);
+    border: rem(1px) solid transparent;
+    border-radius: rem(6px);
+
+    &::-moz-placeholder {
+      opacity: 1;
+    }
+    &::placeholder {
+      opacity: 1;
+      color: var(--color--gray--400);
+    }
+
+    &:not(:disabled) {
+      border-color: var(--color--gray--400);
+
+      &:hover {
+        border-color: var(--color--black);
+      }
+    }
+
+    &:disabled {
+      background-color: var(--color--gray--100);
+      border-color: var(--color--gray--100);
+    }
+  }
+
+  &--shape {
+    display: flex;
+    gap: var(--space--2);
+  }
+
+  &--message {
+    margin-top: var(--space--1);
+  }
+
+  &--status-error {
+    #{$self}--message {
+      color: var(--color--red--400);
+    }
+
+    input#{$self}--input {
+      &:not(:disabled) {
+        border-color: var(--color--red--400);
+      }
+    }
+  }
+
+  &--has-icon {
+    #{$self}--input-and-icon {
+      flex-grow: 1;
+
+      // To position icon.
+      position: relative;
+
+      input#{$self}--input {
+        padding-right: calc(var(--space--one-and-a-half) + #{rem(25px)});
+        flex-grow: 1;
+      }
+
+      #{$self}--icon {
+        position: absolute;
+        right: var(--space--one-and-a-half);
+        top: 50%;
+        transform: translateY(-50%);
+        // Take correct own height.
+        display: flex;
+      }
+    }
+  }
+}
