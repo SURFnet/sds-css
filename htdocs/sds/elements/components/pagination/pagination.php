@@ -7,7 +7,7 @@
         </a>
       </li>
       <li>
-        <a href="#" class="is-active">1</a>
+        <a href="#" class="is-active" aria-current="page">1</a>
       </li>
       <li>
         <a href="#">2</a>
