@@ -1,0 +1,83 @@
+.application-header {
+  // Set variable to be able to nest "&" inside "&".
+  $self: &;
+
+  background-color: var(--color--gray--200);
+
+  &--inner {
+    display: flex;
+    gap: var(--space--5);
+  }
+
+  &--branding {
+    padding: var(--space--one-and-a-half) 0;
+  }
+
+  &--user {
+    padding: var(--space--one-and-a-half) 0;
+    margin-left: auto;
+  }
+
+  &--nav {
+    font-family: $font-nunito-sans;
+    font-weight: 700;
+
+    > ul {
+      height: 100%;
+      display: flex;
+      gap: var(--space--3);
+
+      > li {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-bottom: rem(2px) solid transparent;
+
+        > a {
+          // height: 100%;
+          @include lnk-decoration(off);
+
+          &:link,
+          &:visited {
+            @include lnk-color(var(--color--gray--500), var(--palette--main-color--400));
+          }
+        }
+
+        &.is-active {
+          border-bottom-color: var(--palette--main-color--400);
+
+          &:link,
+          &:visited {
+            @include lnk-color(var(--palette--main-color--400));
+          }
+        }
+      }
+    }
+  }
+
+  &--negative {
+    background-color: var(--palette--main-color--400);
+
+    #{$self}--nav {
+      > ul {
+        > li {
+          > a {
+            &:link,
+            &:visited {
+              @include lnk-color(var(--color--white));
+            }
+          }
+
+          &.is-active {
+            border-bottom-color: var(--color--white);
+
+            &:link,
+            &:visited {
+              @include lnk-color(var(--color--white));
+            }
+          }
+        }
+      }
+    }
+  }
+}

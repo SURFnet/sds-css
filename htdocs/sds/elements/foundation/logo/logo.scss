@@ -18,12 +18,12 @@
     }
   }
 
-  &--general {
+  &--name-top {
     align-items: flex-start;
     line-height: calc(21/14);
   }
 
-  &--research {
+  &--name-bottom {
     align-items: flex-end;
     line-height: calc(12/14);
     gap: var(--space--1);

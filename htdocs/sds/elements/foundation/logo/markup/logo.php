@@ -5,14 +5,14 @@
     </span>
   </div>
 
-  <div class="branding branding--general">
+  <div class="branding branding--name-top">
     <span class="branding--visual">
       <?php include("./sds/assets/images/logo-surf.svg"); ?>
     </span>
     <span class="branding--textual">Default</span>
   </div>
 
-  <div class="branding branding--research">
+  <div class="branding branding--name-bottom">
     <span class="branding--visual">
       <?php include("./sds/assets/images/logo-surf.svg"); ?>
     </span>
@@ -27,14 +27,14 @@
     </span>
   </div>
 
-  <div class="branding branding--negative branding--general">
+  <div class="branding branding--negative branding--name-top">
     <span class="branding--visual">
       <?php include("./sds/assets/images/logo-surf.svg"); ?>
     </span>
     <span class="branding--textual">Default</span>
   </div>
 
-  <div class="branding branding--negative branding--research">
+  <div class="branding branding--negative branding--name-bottom">
     <span class="branding--visual">
       <?php include("./sds/assets/images/logo-surf.svg"); ?>
     </span>

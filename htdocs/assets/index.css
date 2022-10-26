@@ -69,6 +69,7 @@
 }
 .demo-page .demo-section-alert .demo-content .alert,
 .demo-page .demo-section-footer .demo-content,
+.demo-page .demo-section-application-header .demo-content,
 .demo-page .demo-section-object-header .demo-content {
   margin-left: calc(50% - 50vw);
   margin-right: calc(50% - 50vw);
