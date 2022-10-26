@@ -63,13 +63,24 @@
   margin-top: 20px;
 }
 
-.demo-page section {
-  margin-top: var(--space--8);
-  border-top: 1px solid var(--color--gray--300);
-  padding-top: var(--space--8);
+.demo-page > h1 {
+  /*color:  var(--palette--main-color--400);*/
+  margin-bottom:  0.5em;
 }
+.demo-page > h2 {
+  margin-top: var(--space--10);
+  /*color:  var(--palette--main-color--400);*/
+}
+
+.demo-page section {
+  margin-top: var(--space--10);
+  border-top: 1px solid var(--color--gray--300);
+  padding-top: var(--space--10);
+}
+
 .demo-page section > h3,
 .demo-page section > h4 {
+  /*color:  var(--palette--main-color--400);*/
   margin-bottom:  0.5em;
 }
 

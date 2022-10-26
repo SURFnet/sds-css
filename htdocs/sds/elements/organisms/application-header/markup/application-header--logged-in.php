@@ -1,4 +1,4 @@
-<header class="application-header">
+<header class="application-header color-palette--red">
   <div class="page-container">
     <div class="application-header--inner">
       <div class="application-header--branding">
@@ -29,7 +29,18 @@
         </ul>
       </nav>
       <div class="application-header--user">
-        <button type="button" class="btn btn--small btn--ghost--dark">Login</button>
+        <button type="button">
+          <?php sizeable_svg("functional-icons/alarm-bell", 18/16 . "em", 18/16 . "em"); ?>
+        </button>
+        <div class="user-info">
+          <div class="user-info--textual">
+            <p class="name">Username</p>
+            <p class="role text--body--small">Role or Organization</p>
+          </div>
+          <button type="button" class="user-info--button">
+            <?php sizeable_svg("functional-icons/arrow-down-2", 11.25/16 . "em", 5.47/16 . "em"); ?>
+          </button>
+        </div>
       </div>
     </div>
   </div>
