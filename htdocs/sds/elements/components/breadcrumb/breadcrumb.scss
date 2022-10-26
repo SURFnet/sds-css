@@ -22,7 +22,10 @@
 
   a {
     @include lnk-decoration(show);
-    @include lnk-color($hover-color: var(--color--black));
+
+    &:link {
+      @include lnk-color($hover-color: var(--color--black));
+    }
 
     &[aria-current="page"] {
       font-weight: 700;
