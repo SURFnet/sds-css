@@ -25,26 +25,41 @@
     </ul>
   </div>
 
+  <div class="demo-page--main-nav">
+    <ul>
+      <?php
+        // Quicklinks to existing SDS elements.
+        foreach (glob("./sds/elements/**/**/") as $foldername) {
+          $parts = pathinfo($foldername);
+          echo '<li><a href=#' . $parts["filename"] . '>' . $parts["filename"] . '</a></li>';
+        }
+      ?>
+    </ul>
+  </div>
+
   <?php
+    // Existing SDS elements.
     $active_folder = '';
 
-    foreach (glob("./sds/elements/**/**/*.php") as $filename) {
-      $parts = pathinfo($filename);
-
+    foreach (glob("./sds/elements/**/**/") as $foldername) {
+      $parts = pathinfo($foldername);
       $dirname = $parts['dirname'];
       $folders = explode('/', $dirname);
       $current_folder = $folders[3];
-      $dirname_and_filename = $parts['dirname'] . "/" . $parts['filename'];
-      $file_content_php = file_get_contents($dirname_and_filename . ".php");
+      $dirname_and_filename = $foldername . "/" . $parts['filename'];
+      $dirname_markup_files = $foldername . "/markup/*.php";
+      $file_content_php = '';
       $file_content_scss = file_get_contents($dirname_and_filename . ".scss");
-
+      foreach (glob($dirname_markup_files) as $foldername) {
+        $file_content_php .= file_get_contents($foldername);
+      }
       if ($current_folder != $active_folder) {
         echo '<h2>' . ucfirst($current_folder) . '</h2>';
         $active_folder = $current_folder;
       }
 
       echo '
-        <section id=' . $folders[4] . ' class="demo-section-' . $folders[4] . '">
+        <section id=' . $parts['filename'] . ' class="demo-section-' . $parts['filename'] . '">
           <h3>' . ucfirst($parts['filename']) . '</h3>
       ';
 
@@ -58,7 +73,9 @@
           <h4>Demo</h4>
           <div class="demo-content">
       ';
-      include($dirname_and_filename . ".php");
+      foreach (glob($dirname_markup_files) as $foldername) {
+        include($foldername);
+      }
       echo '</div>';
 
       echo '
