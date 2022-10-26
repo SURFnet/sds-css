@@ -1,8 +1,7 @@
 input[type="radio"] {
   // Hide browser default radio, but keep original position,
   // for when html form validation tries to reach it.
-  position: absolute;
-  opacity: 0;
+  @include visually-hidden();
 
   + label {
     display: flex;

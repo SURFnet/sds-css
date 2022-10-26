@@ -71,3 +71,7 @@ html {
     --space--#{$i}: #{$temp};
   }
 }
+
+.visually-hidden {
+  @include visually-hidden();
+}
