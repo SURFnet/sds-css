@@ -12,6 +12,18 @@
 <body>
 
 <div class="demo-page page-container color-palette--blue">
+  <div class="demo-page--main-nav">
+    <ul>
+      <?php
+        // Quicklinks to existing SDS elements.
+        foreach (glob("./sds/elements/**/**/") as $foldername) {
+          $parts = pathinfo($foldername);
+          echo '<li><a href=#' . $parts["filename"] . '>' . ucfirst($parts["filename"]) . '</a></li>';
+        }
+      ?>
+    </ul>
+  </div>
+
   <h1>SURF Design System</h1>
 
   <div class="text--rich">
@@ -22,18 +34,6 @@
       <li>All pixel-based values are applied as rem or em</li>
       <li>No specific focus styling, use browser default</li>
       <li>Transitions to be determined</li>
-    </ul>
-  </div>
-
-  <div class="demo-page--main-nav">
-    <ul>
-      <?php
-        // Quicklinks to existing SDS elements.
-        foreach (glob("./sds/elements/**/**/") as $foldername) {
-          $parts = pathinfo($foldername);
-          echo '<li><a href=#' . $parts["filename"] . '>' . $parts["filename"] . '</a></li>';
-        }
-      ?>
     </ul>
   </div>
 
