@@ -1,4 +1,4 @@
-<footer>
+<footer class="footer footer--multiple-bars">
   <div class="footer--top">
     <div class="page-container">
       <nav>
@@ -28,9 +28,14 @@
           <ul>
             <li>
               <a href="#">Auteursrecht</a>
+              </a>
             </li>
             <li>
-              <a href="#">Voorwaarden</a>
+              <a href="#">
+                <span class="text">Voorwaarden</span>
+                <span class="icon--go-to-other-website">
+                  <?php sizeable_svg("functional-icons/go-to-other-website", 16/14 . "em", 16/14 . "em"); ?>
+                </span>
             </li>
             <li>
               <a href="#">Cookies</a>
