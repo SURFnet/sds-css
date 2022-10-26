@@ -41,7 +41,7 @@
 }
 
 .demo-page .demo-bg {
-  background-color: var(--palette--support-color--400);
+  background-color: var(--palette--main-color--400);
   color: white;
   padding: 20px;
 }
