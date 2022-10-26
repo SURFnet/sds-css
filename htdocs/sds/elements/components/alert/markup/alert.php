@@ -7,7 +7,7 @@
       </div>
       <div class="alert--textual">
         <p>It’s recommended to add at least one other administrator besides yourself.</p>
-        <button class="btn btn--ghost--light btn--small">Add administrator</button>
+        <button type="button" class="btn btn--ghost--light btn--small">Add administrator</button>
       </div>
     </div>
   </div>
@@ -20,7 +20,7 @@
       </div>
       <div class="alert--textual">
         <p>It’s recommended to add at least one other administrator besides yourself.</p>
-        <button class="btn btn--ghost--dark btn--small">Add administrator</button>
+        <button type="button" class="btn btn--ghost--dark btn--small">Add administrator</button>
       </div>
     </div>
   </div>

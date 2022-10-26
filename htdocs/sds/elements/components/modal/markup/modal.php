@@ -20,8 +20,8 @@
         <p>Second paragraph can be used if there is more text.</p>
       </div>
       <div class="modal--actions actions--outer">
-        <button class="btn btn--secondary">Secondary button</button>
-        <button class="btn btn--primary">Primary button</button>
+        <button type="button" class="btn btn--secondary">Secondary button</button>
+        <button type="button" class="btn btn--primary">Primary button</button>
       </div>
     </div>
   </div>

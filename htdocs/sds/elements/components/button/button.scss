@@ -1,9 +1,12 @@
 button {
+  @include btn-reset();
+  font-weight: inherit;
   color: currentColor;
+  // Take correct own height.
+  display: inline-flex;
 }
 
 .btn {
-  @include btn-reset();
   font-weight: 600;
   padding: var(--space--one-and-a-half) var(--space--3);
   min-height: rem(48px);

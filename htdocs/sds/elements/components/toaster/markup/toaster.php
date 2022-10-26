@@ -6,7 +6,7 @@
     </div>
     <div class="toaster--textual">
       <p>Toaster with single line</p>
-      <button class="btn btn--ghost--dark btn--small">Action</button>
+      <button type="button" class="btn btn--ghost--dark btn--small">Action</button>
     </div>
   </div>
 </div>

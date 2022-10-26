@@ -17,7 +17,7 @@
         <?php sizeable_svg("functional-icons/search", 15/16 . "em", 15/16 . "em"); ?>
       </span>
     </div>
-    <button class="btn btn--primary">Search</button>
+    <button type="button" class="btn btn--primary">Search</button>
   </div>
   <p class="text-field--message">Helper text</p>
 </div>
