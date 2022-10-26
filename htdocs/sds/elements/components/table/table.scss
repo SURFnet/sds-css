@@ -1,60 +1,65 @@
-table {
-  width: 100%;
-  border-collapse: collapse;
-  border-spacing: 0;
+.table {
+  // Set variable to be able to nest "&" inside "&".
+  $self: &;
 
-  th,
-  td {
-    padding: var(--space--2) var(--space--1);
-    text-align: left;
-    vertical-align: top;
-  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
 
-  th {
-    font-weight: 600;
-    border-bottom: rem(1px) solid var(--color--black);
-  }
+    th,
+    td {
+      padding: var(--space--2) var(--space--1);
+      text-align: left;
+      vertical-align: top;
+    }
 
-  td {
-    border-bottom: rem(1px) solid var(--color--gray--300);
-  }
+    th {
+      font-weight: 600;
+      border-bottom: rem(1px) solid var(--color--black);
+    }
 
-  tbody {
-    tr {
-      &.is-active,
-      &:hover {
-        background-color: var(--color--gray--200);
+    td {
+      border-bottom: rem(1px) solid var(--color--gray--300);
+    }
+
+    tbody {
+      tr {
+        &.is-active,
+        &:hover {
+          background-color: var(--color--gray--200);
+        }
       }
     }
-  }
 
-  a {
-    @include lnk-decoration(show);
-    font-weight: 600;
+    a {
+      @include lnk-decoration(show);
+      font-weight: 600;
 
-    &:link,
-    &:visited {
-      color: var(--palette--main-color--400);
-    }
-  }
-
-  .table-tr--actions {
-    button {
-      @include align-icon-defaults(rem(5px), center);
-
-      .visual {
-        display: flex;
-        flex-direction: column;
-        gap: rem(3px);
+      &:link,
+      &:visited {
+        color: var(--palette--main-color--400);
       }
     }
-  }
 
-  .table-td--actions {
-    display: flex;
-    gap: var(--space--2);
-    align-items: center;
-    justify-content: flex-end;
-    padding-right: var(--space--1);
+    #{$self}-tr--actions {
+      button {
+        @include align-icon-defaults(rem(5px), center);
+
+        .visual {
+          display: flex;
+          flex-direction: column;
+          gap: rem(3px);
+        }
+      }
+    }
+
+    #{$self}-td--actions {
+      display: flex;
+      gap: var(--space--2);
+      align-items: center;
+      justify-content: flex-end;
+      padding-right: var(--space--1);
+    }
   }
 }
