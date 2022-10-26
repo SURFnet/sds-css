@@ -46,12 +46,12 @@
       $dirname = $parts['dirname'];
       $folders = explode('/', $dirname);
       $current_folder = $folders[3];
-      $dirname_and_filename = $foldername . "/" . $parts['filename'];
-      $dirname_markup_files = $foldername . "/markup/*.php";
+      $dirname_and_filename = $foldername . $parts['filename'];
+      $dirname_markup_files = $foldername . "markup/*.php";
       $file_content_php = '';
       $file_content_scss = file_get_contents($dirname_and_filename . ".scss");
-      foreach (glob($dirname_markup_files) as $foldername) {
-        $file_content_php .= file_get_contents($foldername);
+      foreach (glob($dirname_markup_files) as $markup_file) {
+        $file_content_php .= file_get_contents($markup_file);
       }
       if ($current_folder != $active_folder) {
         echo '<h2>' . ucfirst($current_folder) . '</h2>';
@@ -62,10 +62,9 @@
         <section id=' . $parts['filename'] . ' class="demo-section-' . $parts['filename'] . '">
           <h3>' . ucfirst($parts['filename']) . '</h3>
       ';
-
-      if (file_exists($dirname . "/_comment.html")) {
+      if (file_exists($foldername . "_comment.html")) {
         echo '<div class="demo-comment text--rich">';
-        include($dirname . "/_comment.html");
+        include($foldername . "_comment.html");
         echo '</div>';
       }
 
