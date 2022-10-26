@@ -1,3 +1,50 @@
 .object-header {
+  // Set variable to be able to nest "&" inside "&".
+  $self: &;
+
   background-color: var(--color--gray--200);
+
+  &:not(#{$self}--has-header) {
+    padding-top: var(--space--4);
+  }
+
+  &:not(#{$self}--has-footer) {
+    padding-bottom: var(--space--3);
+  }
+
+  &--header {
+    .breadcrumb {
+      padding-top: var(--space--1);
+      margin-bottom: var(--space--2);
+    }
+  }
+  &--main {
+    display: flex;
+    gap: var(--space--5);
+
+    &--textual {
+      > * {
+        + * {
+          margin-top: var(--space--1);
+        }
+      }
+    }
+
+    #{$self}--input {
+      flex: 1 1 auto;
+    }
+
+    #{$self}--actions {
+      flex: 0 0 auto;
+      margin-left: auto;
+      display: flex;
+      flex-direction: column;
+      gap: var(--space--2);
+    }
+  }
+  &--footer {
+    .tab-navigation {
+      margin-top: var(--space--3);
+    }
+  }
 }

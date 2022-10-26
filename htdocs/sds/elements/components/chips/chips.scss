@@ -2,7 +2,7 @@
   padding: 0 var(--space--one-and-a-half);
   @include align-icon-defaults(em(8px), center);
   border-radius: rem(16px);
-  background-color: var(--palette--support-color--100);
+  background-color: var(--palette--main-color--100);
 
   &--visual {
     display: flex;
@@ -15,15 +15,15 @@
   }
 
   &:hover {
-    background-color: var(--palette--support-color--100);
+    background-color: var(--palette--main-color--200);
   }
 
   &--is-active {
-    background-color: var(--palette--support-color--400);
+    background-color: var(--palette--main-color--400);
     color: var(--color--white);
 
     &:hover {
-      background-color: var(--palette--support-color--500);
+      background-color: var(--palette--main-color--500);
     }
   }
 }

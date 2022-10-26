@@ -56,10 +56,21 @@
   margin-bottom: 30px;
 }
 
+.demo-page .demo-content {
+  margin-bottom: 30px;
+}
+.demo-page .demo-content > * + * {
+  margin-top: 20px;
+}
+
 .demo-page section {
   margin-top: var(--space--8);
   border-top: 1px solid var(--color--gray--300);
   padding-top: var(--space--8);
+}
+.demo-page section > h3,
+.demo-page section > h4 {
+  margin-bottom:  0.5em;
 }
 
 /* Adjust styling to make some components work for demo page. */

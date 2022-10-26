@@ -1,4 +1,4 @@
-<div class="application-header">
+<header class="application-header">
   <div class="page-container">
     <div class="application-header--inner">
       <div class="application-header--branding">
@@ -30,4 +30,4 @@
       </div>
     </div>
   </div>
-</div>
+</header>
