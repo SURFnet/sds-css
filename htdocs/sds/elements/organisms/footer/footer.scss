@@ -12,33 +12,6 @@
       align-items: flex-end;
       gap: var(--space--3) var(--space--4);
 
-      nav.language-switcher {
-        ul {
-          @include align-icon-defaults(em(9px, 14), center);
-          flex-wrap: wrap;
-
-          li {
-            @include align-icon-defaults(em(9px, 14), center);
-          }
-
-          a {
-            &:link,
-            &:visited {
-              @include lnk-decoration(show);
-
-              &:not(.is-active) {
-                font-weight: 600;
-                @include lnk-color(var(--palette--main-color--400));
-              }
-
-              &.is-active {
-                @include lnk-color();
-              }
-            }
-          }
-        }
-      }
-
       nav.menu {
         a {
           font-weight: 600;
@@ -91,7 +64,7 @@
     nav {
       font-family: $font-nunito-sans;
       font-size: rem(14px);
-      line-height: calc(19/14);
+      line-height: calc(19 / 14);
 
       ul {
         display: flex;
