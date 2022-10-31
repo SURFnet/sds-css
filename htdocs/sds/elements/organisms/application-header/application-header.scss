@@ -18,39 +18,6 @@
     padding: var(--space--one-and-a-half) 0;
     margin-left: auto;
     @include align-icon-defaults(var(--space--5), center);
-
-    .user-info {
-      @include align-icon-defaults(var(--space--1), center);
-
-      &--textual {
-        text-align: right;
-
-        .name {
-          font-weight: 600;
-          line-height: calc(22/16);
-        }
-
-        .role {
-          color: var(--palette--main-color--400);
-        }
-      }
-
-      &--button {
-        @include align-icon-defaults(1em, center);
-        justify-content: center;
-        background-color: var(--palette--main-color--400);
-        color: var(--color--white);
-        width: rem(32px);
-        height: rem(32px);
-        border-radius: 50%;
-
-        svg {
-          [stroke-width] {
-            stroke-width: rem(3px);
-          }
-        }
-      }
-    }
   }
 
   &--nav {
