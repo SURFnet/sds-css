@@ -29,6 +29,7 @@
         </ul>
       </nav>
       <div class="application-header--user">
+        <?php include("./sds/elements/additional/language-switcher/markup/language-switcher.php"); ?>
         <button type="button">
           <?php sizeable_svg("functional-icons/alarm-bell", 18/16 . "em", 18/16 . "em"); ?>
         </button>
