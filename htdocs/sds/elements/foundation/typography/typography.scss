@@ -139,20 +139,7 @@ ol {
   }
 
   a {
-    @include lnk-decoration(show);
-    font-weight: 700;
-
-    &:link {
-      color: var(--palette--support-color--400, var(--color--black));
-    }
-
-    &:visited {
-      color: var(--palette--support-color--500, var(--color--gray--500));
-    }
-
-    &:active {
-      background-color: var(--color--gray--200);
-    }
+    @include text-link();
   }
 
   ul {

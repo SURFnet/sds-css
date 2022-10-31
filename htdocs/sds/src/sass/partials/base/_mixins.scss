@@ -48,7 +48,7 @@
 // $hover-color: hover- and focus-color | can be any color | not-required, "$base-color" by default.
 // $active-color: active color, like active menu item (not psuedo :active) | can be any color | not-required, "$hover-color" by default.
 // Other variable values are defined in the variables partial.
-@mixin lnk-color($base-color: currentColor, $hover-color: $base-color, $active-color: $hover-color) {
+@mixin lnk-color($base-color: currentColor, $hover-color: $base-color) {
   // transition: all $easing-default;
   // Apply colors.
   color: $base-color;
@@ -75,6 +75,29 @@
   }
   @if ($decoration == off) {
     text-decoration: none;
+  }
+}
+@mixin text-link($uses-palette-colors: true) {
+  $color-main: var(--color--black);
+  $color-visited: var(--color--gray--500);
+
+  @if ($uses-palette-colors) {
+    $color-main: var(--palette--support-color--400);
+    $color-visited: var(--palette--support-color--500);
+  }
+
+  font-weight: 700;
+
+  &:link {
+    @include lnk-color($color-main);
+  }
+
+  &:visited {
+    @include lnk-color($color-visited);
+  }
+
+  &:active {
+    background-color: var(--color--gray--200);
   }
 }
 
