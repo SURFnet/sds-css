@@ -19,7 +19,7 @@
         <p>This is an example text that can be replaced when using a simple modal. You can also use a <a href="#">hyperlink</a> if it’s necessary. For more complex modals we advise you to use a Blank modal as base.</p>
         <p>Second paragraph can be used if there is more text.</p>
       </div>
-      <div class="modal--actions actions--outer">
+      <div class="modal--actions actions--outer space--top--5">
         <button type="button" class="btn btn--secondary">Secondary button</button>
         <button type="button" class="btn btn--primary">Primary button</button>
       </div>

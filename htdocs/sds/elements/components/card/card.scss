@@ -1,0 +1,28 @@
+.card {
+  // Set variable to be able to nest "&" inside "&".
+  $self: &;
+
+  background-color: var(--color--white);
+  border: rem(1px) solid var(--color--gray--300);
+
+  &--big {
+    #{$self}--inner {
+      padding: var(--space--4);
+    }
+  }
+
+  &--inner {
+    padding: var(--space--3);
+  }
+
+  &--price-and-contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: var(--space--2);
+
+    .contact {
+      margin-left: auto;
+    }
+  }
+}
