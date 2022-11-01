@@ -32,7 +32,7 @@
 
   &--content {
     // Simulate the space before the textual part of the trigger.
-    // Space before icon, icon itself and spaxce after.
+    // Space before icon, icon itself and space after.
     padding-left: calc(var(--space--1-and-a-half) + #{em(12px, 18)} + #{em(20px, 18)});
     padding-right: var(--space--1-and-a-half);
     padding-bottom: var(--space--1-and-a-half);
