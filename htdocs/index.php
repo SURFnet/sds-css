@@ -30,9 +30,11 @@
     <ul>
       <li>Uses normalize 8.0.1</li>
       <li>One combined css-file <a href="./sds/assets/stylesheets/sds.css" target="_blank"><code>sds.css</code></a></li>
-      <li>CSS variables (colors)</li>
+      <li>CSS variables (for colors and spacing)</li>
       <li>All pixel-based values are applied as rem or em</li>
       <li>No specific focus styling, use browser default</li>
+      <li>Mobile design to be determined</li>
+      <li>Interaction (javascript) to be determined</li>
       <li>Transitions to be determined</li>
     </ul>
   </div>

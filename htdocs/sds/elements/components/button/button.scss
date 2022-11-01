@@ -1,5 +1,6 @@
 button {
   @include btn-reset();
+  text-align: left;
   font-weight: inherit;
   color: currentColor;
   // Take correct own height.
