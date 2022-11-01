@@ -1,0 +1,20 @@
+.loading {
+  // Set variable to be able to nest "&" inside "&".
+  $self: &;
+  display: flex;
+  gap: rem(2px);
+
+  &--dot {
+    display: block;
+    width: rem(8px);
+    height: rem(8px);
+    border-radius: 50%;;
+
+    border: rem(2px) solid var(--color--gray--400);
+    background-color: var(--color--gray--400);
+
+    &.is-active {
+      background-color: transparent;
+    }
+  }
+}
