@@ -62,13 +62,40 @@ html {
 
 // Spacing.
 :root {
-  $temp: rem($space-base-value*0.5);
-  --space--half: #{$temp};
-  $temp: rem($space-base-value*1.5);
-  --space--one-and-a-half: #{$temp};
-  @for $i from 1 through 12 {
-    $temp: rem($space-base-value*$i);
-    --space--#{$i}: #{$temp};
+  // Increments of base-value.
+  @for $i from 1 through $space-scale-max {
+    $value: rem($space-base-value*$i);
+    --space--#{$i}: #{$value};
+  }
+  // Increments of base-value plus a half.
+  @for $i from 1 through $space-half-scale-max {
+    $value: rem($space-base-value*($i - 0.5));
+    @if($i == 1) {
+      --space--half: #{$value};
+    }
+    @else {
+      --space--#{$i - 1}-and-a-half: #{$value};
+    }
+  }
+}
+
+// Spacing util-classes.
+@for $i from 1 through $space-scale-max {
+  @each $direction in $space-directions {
+    .space--#{$direction}--#{$i} {
+      margin-#{$direction}: var(--space--#{$i});
+    }
+  }
+}
+@for $i from 1 through $space-half-scale-max {
+  @each $direction in $space-directions {
+    $value: #{$i - 1}-and-a-half;
+    @if($i == 1) {
+      $value: half;
+    }
+    .space--#{$direction}--#{$value} {
+      margin-#{$direction}: var(--space--#{$i - 1}-and-a-half);
+    }
   }
 }
 

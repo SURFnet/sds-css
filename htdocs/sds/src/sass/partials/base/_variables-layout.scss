@@ -6,7 +6,6 @@
 // Page layout settings.
 $width-grid-max               : 1320px;
 $space-page-padding           : 5vw;
-$space-base-value             : 8px;
 
 // Breakpoint settings.
 $bp-sm                        : 375px;
@@ -39,4 +38,15 @@ $grid-sizes: (
     bp: $bp-lg,
     columns: 12,
   ),
+);
+
+// Space.
+$space-base-value             : 8px;
+$space-scale-max              : 12;
+$space-half-scale-max         : 2;
+$space-directions: (
+  top,
+  right,
+  bottom,
+  left,
 );

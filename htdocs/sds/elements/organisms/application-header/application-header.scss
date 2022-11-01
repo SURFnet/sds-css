@@ -10,12 +10,12 @@
   }
 
   &--branding {
-    padding: var(--space--one-and-a-half) 0;
+    padding: var(--space--1-and-a-half) 0;
     align-self: center;
   }
 
   &--user {
-    padding: var(--space--one-and-a-half) 0;
+    padding: var(--space--1-and-a-half) 0;
     margin-left: auto;
     @include align-icon-defaults(var(--space--5), center);
   }

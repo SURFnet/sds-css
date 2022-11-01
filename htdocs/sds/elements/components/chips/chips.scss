@@ -1,5 +1,5 @@
 .chips {
-  padding: 0 var(--space--one-and-a-half);
+  padding: 0 var(--space--1-and-a-half);
   @include align-icon-defaults(em(8px), center);
   border-radius: rem(16px);
   background-color: var(--palette--main-color--100);

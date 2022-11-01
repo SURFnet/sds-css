@@ -15,20 +15,11 @@
   &--header {
     .breadcrumb {
       padding-top: var(--space--1);
-      margin-bottom: var(--space--2);
     }
   }
   &--main {
     display: flex;
     gap: var(--space--5);
-
-    &--textual {
-      > * {
-        + * {
-          margin-top: var(--space--1);
-        }
-      }
-    }
 
     #{$self}--input {
       flex: 1 1 auto;
@@ -40,11 +31,6 @@
       display: flex;
       flex-direction: column;
       gap: var(--space--2);
-    }
-  }
-  &--footer {
-    .tab-navigation {
-      margin-top: var(--space--3);
     }
   }
 }

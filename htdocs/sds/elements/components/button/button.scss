@@ -8,7 +8,7 @@ button {
 
 .btn {
   font-weight: 600;
-  padding: var(--space--one-and-a-half) var(--space--3);
+  padding: var(--space--1-and-a-half) var(--space--3);
   min-height: rem(48px);
   border-radius: rem(6px);
   border: rem(1px) solid transparent;
@@ -131,5 +131,5 @@ button {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: var(--space--one-and-a-half) var(--space--3);
+  gap: var(--space--1-and-a-half) var(--space--3);
 }

@@ -12,7 +12,7 @@
   input#{$self}--input {
     width: 100%;
     min-height: rem(48px);
-    padding: var(--space--one-and-a-half);
+    padding: var(--space--1-and-a-half);
     border: rem(1px) solid transparent;
     border-radius: rem(6px);
 
@@ -67,13 +67,13 @@
       position: relative;
 
       input#{$self}--input {
-        padding-right: calc(var(--space--one-and-a-half) + #{rem(25px)});
+        padding-right: calc(var(--space--1-and-a-half) + #{rem(25px)});
         flex-grow: 1;
       }
 
       #{$self}--icon {
         position: absolute;
-        right: var(--space--one-and-a-half);
+        right: var(--space--1-and-a-half);
         top: 50%;
         transform: translateY(-50%);
         // Take correct own height.

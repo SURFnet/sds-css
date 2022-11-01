@@ -4,7 +4,7 @@
 
   &--single-bar {
     background-color: var(--color--gray--200);
-    padding: var(--space--one-and-a-half) 0;
+    padding: var(--space--1-and-a-half) 0;
 
     #{$self}--inner {
       display: flex;

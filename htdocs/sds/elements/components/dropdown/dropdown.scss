@@ -11,8 +11,8 @@
   select {
     width: 100%;
     min-height: rem(48px);
-    padding: var(--space--one-and-a-half);
-    padding-right: calc(var(--space--one-and-a-half) + var(--space--one-and-a-half) + #{rem(15px)});
+    padding: var(--space--1-and-a-half);
+    padding-right: calc(var(--space--1-and-a-half) + var(--space--1-and-a-half) + #{rem(15px)});
     border: rem(1px) solid var(--color--gray--400);
     border-radius: rem(6px);
     appearance: none;
@@ -58,7 +58,7 @@
     #{$self}--icon {
       pointer-events: none;
       position: absolute;
-      right: var(--space--one-and-a-half);
+      right: var(--space--1-and-a-half);
       top: 50%;
       transform: translateY(-50%);
       // Take correct own height.

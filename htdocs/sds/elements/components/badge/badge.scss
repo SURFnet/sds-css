@@ -1,6 +1,6 @@
 .badge {
   background-color: var(--color--white);
-  padding: 0 var(--space--one-and-a-half);
+  padding: 0 var(--space--1-and-a-half);
   @include align-icon-defaults(em(8px), center);
   border-radius: rem(18px);
   border: rem(1px) solid var(--color--gray--400);

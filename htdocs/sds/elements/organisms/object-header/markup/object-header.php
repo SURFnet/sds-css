@@ -1,7 +1,9 @@
 <header class="object-header object-header--has-header object-header--has-footer">
   <div class="page-container">
     <div class="object-header--header">
-      <?php include("./sds/elements/components/breadcrumb/markup/breadcrumb.php"); ?>
+      <div class="space--bottom--2">
+        <?php include("./sds/elements/components/breadcrumb/markup/breadcrumb.php"); ?>
+      </div>
     </div>
     <div class="object-header--main">
       <div class="object-header--main--visual">
@@ -16,7 +18,9 @@
       </div>
     </div>
     <div class="object-header--footer">
-      <?php include("./sds/elements/components/tab-navigation/markup/tab-navigation--default.php"); ?>
+      <div class="space--top--3">
+        <?php include("./sds/elements/components/tab-navigation/markup/tab-navigation--default.php"); ?>
+      </div>
     </div>
   </div>
 </header>

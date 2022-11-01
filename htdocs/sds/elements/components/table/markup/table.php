@@ -132,5 +132,7 @@
       </tr>
     </tbody>
   </table>
-  <?php include("./sds/elements/components/pagination/markup/pagination.php"); ?>
+  <div class="space--top--3">
+    <?php include("./sds/elements/components/pagination/markup/pagination.php"); ?>
+  </div>
 </div>
