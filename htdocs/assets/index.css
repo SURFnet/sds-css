@@ -87,7 +87,6 @@
 /* Adjust styling to make some components work for demo page. */
 .demo-page .demo-section-modal .modal {
   position:  unset;
-  inset:  unset;
 }
 .demo-page .demo-section-alert .demo-content .alert,
 .demo-page .demo-section-footer .demo-content,
