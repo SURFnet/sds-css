@@ -33,13 +33,7 @@
     }
 
     a {
-      @include lnk-decoration(show);
-      font-weight: 600;
-
-      &:link,
-      &:visited {
-        color: var(--palette--main-color--400);
-      }
+      @include text-link();
     }
 
     #{$self}-tr--actions {
