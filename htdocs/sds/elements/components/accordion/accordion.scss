@@ -1,0 +1,40 @@
+.accordion {
+  // Set variable to be able to nest "&" inside "&".
+  $self: &;
+
+  border-top: rem(3px) solid var(--color--gray--300);
+
+  &--item {
+    border-bottom: rem(1px) solid var(--color--gray--300);
+
+    &:not(.is-open) {
+      #{$self}--content {
+        display: none;
+      }
+    }
+  }
+
+  &--trigger {
+    @include align-icon-defaults(em(20px, 18));
+    width: 100%;
+    padding: var(--space--1-and-a-half);
+
+    .icon {
+      color: var(--palette--support-color--400);
+
+      svg {
+        [stroke-width] {
+          stroke-width: rem(3px);
+        }
+      }
+    }
+  }
+
+  &--content {
+    // Simulate the space before the textual part of the trigger.
+    // Space before icon, icon itself and spaxce after.
+    padding-left: calc(var(--space--1-and-a-half) + #{em(12px, 18)} + #{em(20px, 18)});
+    padding-right: var(--space--1-and-a-half);
+    padding-bottom: var(--space--1-and-a-half);
+  }
+}
