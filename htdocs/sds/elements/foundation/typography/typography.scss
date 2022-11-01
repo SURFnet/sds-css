@@ -133,7 +133,7 @@ ol {
 
 .text--rich {
   p {
-    &:not(:first-child) {
+    + * {
       margin-top: 1em;
     }
   }
@@ -144,14 +144,14 @@ ol {
 
   ul {
     @include styled-ul();
-    &:not(:first-child) {
+    + * {
       margin-top: 1em;
     }
   }
 
   ol {
     @include styled-ol();
-    &:not(:first-child) {
+    + * {
       margin-top: 1em;
     }
   }
