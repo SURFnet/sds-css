@@ -1,0 +1,24 @@
+.sds--badge--number {
+  @include align-icon-defaults($alignment: center);
+  justify-content: center;
+  width: rem(26px);
+  height: rem(26px);
+  border-radius: 50%;
+  border: rem(1px) solid var(--sds--color--white);
+  background-color: var(--sds--color--black);
+  color: var(--sds--color--white);
+  font-family: $font-nunito-sans;
+  font-weight: 800;
+  font-size: rem(10px);
+  line-height: 1;
+
+  &--colored {
+    background-color: var(--sds--palette--main-color--400);
+  }
+
+  &--small {
+    width: rem(18px);
+    height: rem(18px);
+    font-size: rem(8px);
+  }
+}
