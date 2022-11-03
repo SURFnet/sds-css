@@ -5,7 +5,7 @@
     </span>
     <span class="sds--chips--textual sds--text--body--small">Chip text</span>
   </div>
-  <div class="sds--chips sds--chips--is-active">
+  <div class="sds--chips is-active">
     <span class="sds--chips--textual sds--text--body--small">Chip text</span>
   </div>
 </div>

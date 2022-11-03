@@ -18,7 +18,7 @@
     background-color: var(--sds--palette--main-color--200);
   }
 
-  &--is-active {
+  &.is-active {
     background-color: var(--sds--palette--main-color--400);
     color: var(--sds--color--white);
 

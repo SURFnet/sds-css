@@ -1,0 +1,29 @@
+.sds--view-switch {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sds--space--2);
+
+  &--button {
+    @include align-icon-defaults($alignment: center);
+    justify-content: center;
+    width: rem(40px);
+    height: rem(40px);
+    border-radius: rem(8px);
+    border: rem(1px) solid var(--sds--palette--support-color--400);
+    color: var(--sds--palette--support-color--400);
+
+    &:hover {
+      background-color: var(--sds--palette--support-color--500);
+      color: var(--sds--color--white);
+    }
+
+    &.is-active {
+      background-color: var(--sds--palette--support-color--400);
+      color: var(--sds--color--white);
+
+      &:hover {
+        background-color: var(--sds--palette--support-color--500);
+      }
+    }
+  }
+}
