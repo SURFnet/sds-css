@@ -9,6 +9,10 @@
         <p>It’s recommended to add at least one other administrator besides yourself.</p>
         <button type="button" class="sds--btn sds--btn--ghost--light sds--btn--small">Add administrator</button>
       </div>
+      <button class="sds--alert--actions">
+        <span class="text sds--visually-hidden">Close alert</span>
+        <?php sizeable_svg("functional-icons/close", 12/16 . "em", 12/16 . "em"); ?>
+      </button>
     </div>
   </div>
 </div>

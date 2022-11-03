@@ -39,15 +39,16 @@
     }
   }
 
+  &--actions {
+    margin-left: auto;
+  }
+
   // Apply status colors.
   // See "$status-colors" for defined status-colors.
   @each $status, $settings in $status-colors {
     &--status-#{$status} {
       background-color: map-get($settings, bg);
-
-      p {
-        color: map-get($settings, color);
-      }
+      color: map-get($settings, color);
 
       svg {
         .bg {
