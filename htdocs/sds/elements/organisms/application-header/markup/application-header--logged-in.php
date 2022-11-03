@@ -1,4 +1,4 @@
-<header class="application-header color-palette--red">
+<header class="application-header sds--color-palette--red">
   <div class="page-container">
     <div class="application-header--inner">
       <div class="application-header--branding">

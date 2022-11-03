@@ -2,29 +2,29 @@
   // Set variable to be able to nest "&" inside "&".
   $self: &;
 
-  background-color: var(--color--gray--200);
+  background-color: var(--sds--color--gray--200);
 
   &--inner {
     display: flex;
-    gap: var(--space--5);
+    gap: var(--sds--space--5);
   }
 
   &--branding {
-    padding: var(--space--1-and-a-half) 0;
+    padding: var(--sds--space--1-and-a-half) 0;
     align-self: center;
   }
 
   &--user {
-    padding: var(--space--1-and-a-half) 0;
+    padding: var(--sds--space--1-and-a-half) 0;
     margin-left: auto;
-    @include align-icon-defaults(var(--space--5), center);
+    @include align-icon-defaults(var(--sds--space--5), center);
   }
 
   &--nav {
     > ul {
       height: 100%;
       display: flex;
-      gap: var(--space--3);
+      gap: var(--sds--space--3);
 
       > li {
         flex: 0 0 auto;
@@ -44,7 +44,7 @@
 
           &:link,
           &:visited {
-            @include lnk-color(var(--color--gray--500), currentColor);
+            @include lnk-color(var(--sds--color--gray--500), currentColor);
           }
 
           svg {
@@ -55,12 +55,12 @@
         }
 
         &.is-active {
-          border-bottom-color: var(--palette--main-color--400);
+          border-bottom-color: var(--sds--palette--main-color--400);
 
           > a {
             &:link,
             &:visited {
-              @include lnk-color(var(--palette--main-color--400), currentColor);
+              @include lnk-color(var(--sds--palette--main-color--400), currentColor);
             }
           }
         }
@@ -78,14 +78,14 @@
           left: 0;
           top: calc(100% + #{rem(2px)});
           width: rem(300px);
-          background-color: var(--color--white);
-          padding: var(--space--3);
+          background-color: var(--sds--color--white);
+          padding: var(--sds--space--3);
           border-radius: 0 0 rem(6px) rem(6px);
           box-shadow: 0 rem(4px) rem(4px) 0 rgba(0, 0, 0, 0.25);
 
           > li {
             + li {
-              margin-top: var(--space--3);
+              margin-top: var(--sds--space--3);
             }
 
             > a {
@@ -99,8 +99,8 @@
   }
 
   &--negative {
-    background-color: var(--palette--main-color--400);
-    color: var(--color--white);
+    background-color: var(--sds--palette--main-color--400);
+    color: var(--sds--color--white);
 
     #{$self}--nav {
       > ul {
@@ -108,16 +108,16 @@
           > a {
             &:link,
             &:visited {
-              @include lnk-color(var(--color--white));
+              @include lnk-color(var(--sds--color--white));
             }
           }
 
           &.is-active {
-            border-bottom-color: var(--color--white);
+            border-bottom-color: var(--sds--color--white);
 
             &:link,
             &:visited {
-              @include lnk-color(var(--color--white));
+              @include lnk-color(var(--sds--color--white));
             }
           }
         }

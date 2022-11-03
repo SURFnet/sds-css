@@ -17,17 +17,17 @@
   }
 
   &--title {
-    background-color: var(--palette--main-color--400);
-    color: var(--color--white);
-    padding: var(--space--2) var(--space--3);
+    background-color: var(--sds--palette--main-color--400);
+    color: var(--sds--color--white);
+    padding: var(--sds--space--2) var(--sds--space--3);
     display: flex;
     justify-content: space-between;
-    gap: var(--space--1);
+    gap: var(--sds--space--1);
   }
 
   &--content {
-    background-color: var(--color--white);
-    padding: var(--space--3);
+    background-color: var(--sds--color--white);
+    padding: var(--sds--space--3);
   }
 
   &--actions {

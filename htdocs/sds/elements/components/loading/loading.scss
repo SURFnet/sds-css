@@ -10,8 +10,8 @@
     height: rem(8px);
     border-radius: 50%;;
 
-    border: rem(2px) solid var(--color--gray--400);
-    background-color: var(--color--gray--400);
+    border: rem(2px) solid var(--sds--color--gray--400);
+    background-color: var(--sds--color--gray--400);
 
     &.is-active {
       background-color: transparent;

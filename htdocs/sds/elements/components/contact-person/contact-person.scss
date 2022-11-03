@@ -1,13 +1,13 @@
 .contact-person {
   display: flex;
-  gap: var(--space--1);
+  gap: var(--sds--space--1);
   align-items: flex-start;
 
   &--visual {
     width: rem(40px);
     height: rem(40px);
     border-radius: 50%;
-    border: rem(1px) solid var(--color--gray--300);
+    border: rem(1px) solid var(--sds--color--gray--300);
     overflow: hidden;
   }
 

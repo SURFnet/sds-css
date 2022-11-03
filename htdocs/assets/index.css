@@ -1,25 +1,25 @@
 
 .demo-page {
-  padding-bottom: var(--space--10);
+  padding-bottom: var(--sds--space--10);
 }
 
 .demo-page .demo-page--main-nav {
   position: sticky;
   top:  0;
-  background-color: var(--color--black);
-  color: var(--color--white);
-  padding: var(--space--2) var(--space--4);
+  background-color: var(--sds--color--black);
+  color: var(--sds--color--white);
+  padding: var(--sds--space--2) var(--sds--space--4);
   margin-left: calc(50% - 50vw);
   margin-right: calc(50% - 50vw);
   box-shadow: 0 0 5px 0 rgba(0,0,0,0.3);
   z-index: 10;
-  margin-bottom: var(--space--10);
+  margin-bottom: var(--sds--space--10);
 }
 
 .demo-page .demo-page--main-nav ul {
   display: flex;
   flex-wrap: wrap;
-  gap: 0 var(--space--3);
+  gap: 0 var(--sds--space--3);
   font-weight: 600;
 }
 
@@ -41,7 +41,7 @@
 }
 
 .demo-page .demo-bg {
-  background-color: var(--palette--main-color--400);
+  background-color: var(--sds--palette--main-color--400);
   color: white;
   padding: 20px;
 }
@@ -64,23 +64,23 @@
 }
 
 .demo-page > h1 {
-  /*color:  var(--palette--main-color--400);*/
+  /*color:  var(--sds--palette--main-color--400);*/
   margin-bottom:  0.5em;
 }
 .demo-page > h2 {
-  margin-top: var(--space--10);
-  /*color:  var(--palette--main-color--400);*/
+  margin-top: var(--sds--space--10);
+  /*color:  var(--sds--palette--main-color--400);*/
 }
 
 .demo-page section {
-  margin-top: var(--space--10);
-  border-top: 1px solid var(--color--gray--300);
-  padding-top: var(--space--10);
+  margin-top: var(--sds--space--10);
+  border-top: 1px solid var(--sds--color--gray--300);
+  padding-top: var(--sds--space--10);
 }
 
 .demo-page section > h3,
 .demo-page section > h4 {
-  /*color:  var(--palette--main-color--400);*/
+  /*color:  var(--sds--palette--main-color--400);*/
   margin-bottom:  0.5em;
 }
 

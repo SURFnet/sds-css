@@ -14,28 +14,28 @@ $color-palettes--support: (
 
 $status-colors: (
   default: (
-    bg: var(--color--gray--500),
-    color: var(--color--white),
-    icon-bg: var(--color--black),
+    bg: var(--sds--color--gray--500),
+    color: var(--sds--color--white),
+    icon-bg: var(--sds--color--black),
   ),
   success: (
-    bg: var(--color--green--200),
-    color: var(--color--black),
-    icon-bg: var(--color--green--400),
+    bg: var(--sds--color--green--200),
+    color: var(--sds--color--black),
+    icon-bg: var(--sds--color--green--400),
   ),
   warning: (
-    bg: var(--color--yellow--200),
-    color: var(--color--black),
-    icon-bg: var(--color--yellow--500),
+    bg: var(--sds--color--yellow--200),
+    color: var(--sds--color--black),
+    icon-bg: var(--sds--color--yellow--500),
   ),
   error: (
-    bg: var(--color--red--200),
-    color: var(--color--black),
-    icon-bg: var(--color--red--400),
+    bg: var(--sds--color--red--200),
+    color: var(--sds--color--black),
+    icon-bg: var(--sds--color--red--400),
   ),
   info: (
-    bg: var(--color--blue--200),
-    color: var(--color--black),
-    icon-bg: var(--color--blue--400),
+    bg: var(--sds--color--blue--200),
+    color: var(--sds--color--black),
+    icon-bg: var(--sds--color--blue--400),
   ),
 );

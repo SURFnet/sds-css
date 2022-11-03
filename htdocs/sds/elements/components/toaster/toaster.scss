@@ -2,10 +2,10 @@
 .toaster {
   max-width: rem(400px);
   min-height: rem(60px);
-  padding: var(--space--1) var(--space--2);
+  padding: var(--sds--space--1) var(--sds--space--2);
   display: inline-flex;
   align-items: center;
-  gap: var(--space--2);
+  gap: var(--sds--space--2);
   border-radius: rem(4px);
   box-shadow: 0 rem(4px) rem(4px) rgba(0, 0, 0, 0.25) ;
 
@@ -14,7 +14,7 @@
     display: flex;
 
     svg {
-      color: var(--color--white);
+      color: var(--sds--color--white);
     }
   }
 
@@ -22,7 +22,7 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    gap: var(--space--1-and-a-half) var(--space--2);
+    gap: var(--sds--space--1-and-a-half) var(--sds--space--2);
   }
 
   // Apply status colors.

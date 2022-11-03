@@ -41,14 +41,14 @@ input[type="radio"] {
     &:not(:checked) {
       + label {
         .radio--visual {
-          border-color: var(--color--gray--400);
+          border-color: var(--sds--color--gray--400);
         }
       }
 
       &:hover {
         + label {
           .radio--visual {
-            border-color: var(--palette--main-color--400);
+            border-color: var(--sds--palette--main-color--400);
           }
         }
       }
@@ -56,7 +56,7 @@ input[type="radio"] {
       @include focus {
         + label {
           .radio--visual {
-            border-color: var(--palette--main-color--500);
+            border-color: var(--sds--palette--main-color--500);
           }
         }
       }
@@ -65,10 +65,10 @@ input[type="radio"] {
     &:checked {
       + label {
         .radio--visual {
-          border-color: var(--palette--main-color--400);
+          border-color: var(--sds--palette--main-color--400);
 
           &:before {
-            background-color: var(--palette--main-color--400);
+            background-color: var(--sds--palette--main-color--400);
           }
         }
       }
@@ -76,10 +76,10 @@ input[type="radio"] {
       &:hover {
         + label {
           .radio--visual {
-            border-color: var(--palette--main-color--500);
+            border-color: var(--sds--palette--main-color--500);
 
             &:before {
-              background-color: var(--palette--main-color--500);
+              background-color: var(--sds--palette--main-color--500);
             }
           }
         }
@@ -88,10 +88,10 @@ input[type="radio"] {
       @include focus {
         + label {
           .radio--visual {
-            border-color: var(--palette--main-color--400);
+            border-color: var(--sds--palette--main-color--400);
 
             &:before {
-              background-color: var(--palette--main-color--400);
+              background-color: var(--sds--palette--main-color--400);
             }
           }
         }
@@ -102,7 +102,7 @@ input[type="radio"] {
   &:disabled {
     + label {
       .radio--visual {
-        background-color: var(--color--gray--100);
+        background-color: var(--sds--color--gray--100);
       }
     }
 
@@ -110,7 +110,7 @@ input[type="radio"] {
       + label {
         .radio--visual {
           &:before {
-            background-color: var(--color--gray--400);
+            background-color: var(--sds--color--gray--400);
           }
         }
       }

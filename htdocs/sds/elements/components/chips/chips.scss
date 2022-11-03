@@ -1,29 +1,29 @@
 .chips {
-  padding: 0 var(--space--1-and-a-half);
+  padding: 0 var(--sds--space--1-and-a-half);
   @include align-icon-defaults(em(8px), center);
   border-radius: rem(16px);
-  background-color: var(--palette--main-color--100);
+  background-color: var(--sds--palette--main-color--100);
 
   &--visual {
     display: flex;
   }
 
   &--textual {
-    padding: var(--space--1) 0;
+    padding: var(--sds--space--1) 0;
     display: block;
     font-weight: 600;
   }
 
   &:hover {
-    background-color: var(--palette--main-color--200);
+    background-color: var(--sds--palette--main-color--200);
   }
 
   &--is-active {
-    background-color: var(--palette--main-color--400);
-    color: var(--color--white);
+    background-color: var(--sds--palette--main-color--400);
+    color: var(--sds--color--white);
 
     &:hover {
-      background-color: var(--palette--main-color--500);
+      background-color: var(--sds--palette--main-color--500);
     }
   }
 }

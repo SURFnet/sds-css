@@ -11,7 +11,7 @@
 </head>
 <body>
 
-<div class="demo-page page-container color-palette--blue">
+<div class="demo-page page-container sds--color-palette--blue">
   <div class="demo-page--main-nav">
     <ul>
       <?php

@@ -41,14 +41,14 @@ input[type="checkbox"] {
     &:not(:checked) {
       + label {
         .checkbox--visual {
-          border: rem(1px) solid var(--color--gray--400);
+          border: rem(1px) solid var(--sds--color--gray--400);
         }
       }
 
       &:hover {
         + label {
           .checkbox--visual {
-            border-color: var(--palette--main-color--400);
+            border-color: var(--sds--palette--main-color--400);
           }
         }
       }
@@ -56,7 +56,7 @@ input[type="checkbox"] {
       @include focus {
         + label {
           .checkbox--visual {
-            border-color: var(--palette--main-color--500);
+            border-color: var(--sds--palette--main-color--500);
           }
         }
       }
@@ -65,16 +65,16 @@ input[type="checkbox"] {
     &:checked {
       + label {
         .checkbox--visual {
-          background-color: var(--palette--main-color--400);
+          background-color: var(--sds--palette--main-color--400);
           border-color: transparent;
-          color: var(--color--white);
+          color: var(--sds--color--white);
         }
       }
 
       &:hover {
         + label {
           .checkbox--visual {
-            background-color: var(--palette--main-color--500);
+            background-color: var(--sds--palette--main-color--500);
           }
         }
       }
@@ -84,14 +84,14 @@ input[type="checkbox"] {
   &:disabled {
     + label {
       .checkbox--visual {
-        background-color: var(--color--gray--100);
+        background-color: var(--sds--color--gray--100);
       }
     }
 
     &:checked {
       + label {
         .checkbox--visual {
-          color: var(--color--gray--400);
+          color: var(--sds--color--gray--400);
         }
       }
     }

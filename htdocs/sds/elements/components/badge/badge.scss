@@ -1,16 +1,16 @@
 .badge {
-  background-color: var(--color--white);
-  padding: 0 var(--space--1-and-a-half);
+  background-color: var(--sds--color--white);
+  padding: 0 var(--sds--space--1-and-a-half);
   @include align-icon-defaults(em(8px), center);
   border-radius: rem(18px);
-  border: rem(1px) solid var(--color--gray--400);
+  border: rem(1px) solid var(--sds--color--gray--400);
 
   &--visual {
     display: flex;
   }
 
   &--textual {
-    padding: var(--space--1) 0;
+    padding: var(--sds--space--1) 0;
     font-weight: 600;
   }
 }

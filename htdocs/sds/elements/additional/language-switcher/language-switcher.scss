@@ -14,7 +14,7 @@ nav.language-switcher {
 
         &:not(.is-active) {
           font-weight: 600;
-          @include lnk-color(var(--palette--main-color--400));
+          @include lnk-color(var(--sds--palette--main-color--400));
         }
 
         &.is-active {

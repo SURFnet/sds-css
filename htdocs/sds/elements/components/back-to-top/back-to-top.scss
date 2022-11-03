@@ -1,15 +1,15 @@
 .back-to-top {
   @include align-icon-defaults($alignment: center);
   justify-content: center;
-  background-color: var(--palette--support-color--400);
-  color: var(--color--white);
+  background-color: var(--sds--palette--support-color--400);
+  color: var(--sds--color--white);
   width: rem(24px);
   height: rem(24px);
   border-radius: 50%;
-  border: rem(1px) solid var(--color--white);
+  border: rem(1px) solid var(--sds--color--white);
 
   &:hover {
-    background-color: var(--palette--support-color--500);
+    background-color: var(--sds--palette--support-color--500);
   }
 
   svg {

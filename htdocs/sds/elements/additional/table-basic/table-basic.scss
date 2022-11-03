@@ -3,15 +3,15 @@
     width: 100%;
     border-collapse: collapse;
     border-spacing: 0;
-    background-color: var(--color--gray--100);
+    background-color: var(--sds--color--gray--100);
 
     td {
-      padding: var(--space--1) var(--space--2);
+      padding: var(--sds--space--1) var(--sds--space--2);
     }
 
     tr {
       + tr {
-        border-top: rem(1px) solid var(--color--white);
+        border-top: rem(1px) solid var(--sds--color--white);
       }
     }
   }

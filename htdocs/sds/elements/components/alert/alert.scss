@@ -6,17 +6,17 @@
   .page-container {
     #{$self}--inner {
       min-height: rem(60px);
-      gap: var(--space--3);
+      gap: var(--sds--space--3);
       padding-left: unset;
       padding-right: unset;
     }
   }
 
   &--inner {
-    padding: var(--space--1) var(--space--2);
+    padding: var(--sds--space--1) var(--sds--space--2);
     display: flex;
     align-items: center;
-    gap: var(--space--1-and-a-half);
+    gap: var(--sds--space--1-and-a-half);
   }
 
   &--visual {
@@ -24,7 +24,7 @@
     display: flex;
 
     svg {
-      color: var(--color--white);
+      color: var(--sds--color--white);
     }
   }
 
@@ -32,7 +32,7 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    gap: var(--space--1-and-a-half) var(--space--3);
+    gap: var(--sds--space--1-and-a-half) var(--sds--space--3);
 
     p {
       font-weight: 600;

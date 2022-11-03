@@ -2,7 +2,7 @@
   &--nav {
     ul {
       display: flex;
-      gap: var(--space--1);
+      gap: var(--sds--space--1);
     }
 
     a {
@@ -16,22 +16,22 @@
       text-decoration: none;
 
       &:not(:link) {
-        background-color: var(--color--gray--100);
-        border-color: var(--color--gray--300);
-        color: var(--color--gray--300);
+        background-color: var(--sds--color--gray--100);
+        border-color: var(--sds--color--gray--300);
+        color: var(--sds--color--gray--300);
       }
 
       &:link,
       &:visited {
-        border-color: var(--color--gray--400);
-        color: var(--color--gray--500);
+        border-color: var(--sds--color--gray--400);
+        color: var(--sds--color--gray--500);
 
         &.is-active,
         &:active,
         &:hover {
-          background-color: var(--palette--support-color--100);
-          color: var(--palette--support-color--500);
-          border-color: var(--palette--support-color--500);
+          background-color: var(--sds--palette--support-color--100);
+          color: var(--sds--palette--support-color--500);
+          border-color: var(--sds--palette--support-color--500);
         }
       }
     }

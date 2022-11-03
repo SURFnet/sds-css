@@ -5,15 +5,15 @@
   font-size: rem(14px);
 
   &--negative {
-    color: var(--color--white);
+    color: var(--sds--color--white);
 
     svg.logo-surf {
       .text {
-        fill: var(--color--black);
+        fill: var(--sds--color--black);
       }
 
       .shape {
-        fill: var(--color--white);
+        fill: var(--sds--color--white);
       }
     }
   }
@@ -26,7 +26,7 @@
   &--name-bottom {
     align-items: flex-end;
     line-height: calc(12/14);
-    gap: var(--space--1);
+    gap: var(--sds--space--1);
   }
 
   &--visual {

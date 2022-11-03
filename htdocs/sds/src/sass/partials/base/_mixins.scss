@@ -78,12 +78,12 @@
   }
 }
 @mixin text-link($uses-palette-colors: true) {
-  $color-main: var(--color--black);
-  $color-visited: var(--color--gray--500);
+  $color-main: var(--sds--color--black);
+  $color-visited: var(--sds--color--gray--500);
 
   @if ($uses-palette-colors) {
-    $color-main: var(--palette--support-color--400);
-    $color-visited: var(--palette--support-color--500);
+    $color-main: var(--sds--palette--support-color--400);
+    $color-visited: var(--sds--palette--support-color--500);
   }
 
   font-weight: 700;
@@ -97,7 +97,7 @@
   }
 
   &:active {
-    background-color: var(--color--gray--200);
+    background-color: var(--sds--color--gray--200);
   }
 }
 

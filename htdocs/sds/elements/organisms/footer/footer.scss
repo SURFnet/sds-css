@@ -3,14 +3,14 @@
   $self: &;
 
   &--single-bar {
-    background-color: var(--color--gray--200);
-    padding: var(--space--1-and-a-half) 0;
+    background-color: var(--sds--color--gray--200);
+    padding: var(--sds--space--1-and-a-half) 0;
 
     #{$self}--inner {
       display: flex;
       justify-content: space-between;
       align-items: flex-end;
-      gap: var(--space--3) var(--space--4);
+      gap: var(--sds--space--3) var(--sds--space--4);
 
       nav.menu {
         a {
@@ -19,7 +19,7 @@
           &:link,
           &:visited {
             @include lnk-decoration(show);
-            @include lnk-color(var(--palette--main-color--400));
+            @include lnk-color(var(--sds--palette--main-color--400));
           }
         }
       }
@@ -28,34 +28,34 @@
 
   &--multiple-bars {
     .footer--top {
-      background-color: var(--color--gray--200);
-      padding-top: var(--space--3);
-      padding-bottom: var(--space--3);
+      background-color: var(--sds--color--gray--200);
+      padding-top: var(--sds--space--3);
+      padding-bottom: var(--sds--space--3);
 
       nav {
         ul {
           justify-content: center;
-          gap: var(--space--1) var(--space--3);
+          gap: var(--sds--space--1) var(--sds--space--3);
         }
       }
     }
 
     .footer--bottom {
-      background-color: var(--color--black);
-      color: var(--color--white);
-      padding-top: var(--space--2);
-      padding-bottom: var(--space--2);
+      background-color: var(--sds--color--black);
+      color: var(--sds--color--white);
+      padding-top: var(--sds--space--2);
+      padding-bottom: var(--sds--space--2);
 
       .footer--bottom--inner {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
-        gap: var(--space--3) var(--space--4);
+        gap: var(--sds--space--3) var(--sds--space--4);
 
         nav {
           ul {
-            gap: var(--space--1) var(--space--4);
+            gap: var(--sds--space--1) var(--sds--space--4);
           }
         }
       }

@@ -15,7 +15,7 @@ html {
 
 .grid-container {
   display: grid;
-  gap: 0 var(--space--3);
+  gap: 0 var(--sds--space--3);
 
   // See "$grid-sizes" for defined grid-behavior.
   @each $grid-size, $settings in $grid-sizes {
@@ -65,16 +65,16 @@ html {
   // Increments of base-value.
   @for $i from 1 through $space-scale-max {
     $value: rem($space-base-value*$i);
-    --space--#{$i}: #{$value};
+    --sds--space--#{$i}: #{$value};
   }
   // Increments of base-value plus a half.
   @for $i from 1 through $space-half-scale-max {
     $value: rem($space-base-value*($i - 0.5));
     @if($i == 1) {
-      --space--half: #{$value};
+      --sds--space--half: #{$value};
     }
     @else {
-      --space--#{$i - 1}-and-a-half: #{$value};
+      --sds--space--#{$i - 1}-and-a-half: #{$value};
     }
   }
 }
@@ -83,7 +83,7 @@ html {
 @for $i from 1 through $space-scale-max {
   @each $direction in $space-directions {
     .space--#{$direction}--#{$i} {
-      margin-#{$direction}: var(--space--#{$i});
+      margin-#{$direction}: var(--sds--space--#{$i});
     }
   }
 }
@@ -94,7 +94,7 @@ html {
       $value: half;
     }
     .space--#{$direction}--#{$value} {
-      margin-#{$direction}: var(--space--#{$i - 1}-and-a-half);
+      margin-#{$direction}: var(--sds--space--#{$i - 1}-and-a-half);
     }
   }
 }

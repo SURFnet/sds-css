@@ -1,7 +1,7 @@
 .breadcrumb {
   &--list {
     @include align-icon-defaults(em(11px, 14), center);
-    color: var(--color--gray--500);
+    color: var(--sds--color--gray--500);
     flex-wrap: wrap;
 
     > li {
@@ -24,7 +24,7 @@
     @include lnk-decoration(show);
 
     &:link {
-      @include lnk-color($hover-color: var(--color--black));
+      @include lnk-color($hover-color: var(--sds--color--black));
     }
 
     &[aria-current="page"] {
