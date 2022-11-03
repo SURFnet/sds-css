@@ -1,6 +1,6 @@
-<footer class="footer footer--multiple-bars">
-  <div class="footer--top">
-    <div class="page-container">
+<footer class="sds--footer sds--footer--multiple-bars">
+  <div class="sds--footer--top">
+    <div class="sds--page-container">
       <nav>
         <ul>
           <li>
@@ -21,9 +21,9 @@
       </nav>
     </div>
   </div>
-  <div class="footer--bottom">
-    <div class="page-container">
-      <div class="footer--bottom--inner">
+  <div class="sds--footer--bottom">
+    <div class="sds--page-container">
+      <div class="sds--footer--bottom--inner">
         <nav>
           <ul>
             <li>
@@ -48,7 +48,7 @@
             </li>
           </ul>
         </nav>
-        <div class="branding branding--negative">
+        <div class="sds--branding sds--branding--negative">
           <?php include("./sds/assets/images/logo-surf.svg"); ?>
         </div>
       </div>

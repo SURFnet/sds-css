@@ -12,7 +12,7 @@ button {
   }
 }
 
-.btn {
+.sds--btn {
   font-weight: 600;
   padding: var(--sds--space--1-and-a-half) var(--sds--space--3);
   min-height: rem(48px);
@@ -133,7 +133,7 @@ button {
   }
 }
 
-.actions--outer {
+.sds--actions--outer {
   display: flex;
   flex-wrap: wrap;
   align-items: center;

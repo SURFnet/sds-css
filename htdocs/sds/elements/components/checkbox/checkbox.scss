@@ -8,7 +8,7 @@ input[type="checkbox"] {
     align-items: baseline;
     gap: em(12px);
 
-    .checkbox--visual {
+    .sds--checkbox--visual {
       flex-shrink: 0;
       display: inline-flex;
       align-items: center;
@@ -21,7 +21,7 @@ input[type="checkbox"] {
 
   @include focus {
     + label {
-      .checkbox--visual {
+      .sds--checkbox--visual {
         // Apply browser-default outline styling.
         @include outline-browser-default();
       }
@@ -29,7 +29,7 @@ input[type="checkbox"] {
   }
   &:not(:checked) {
     + label {
-      .checkbox--visual {
+      .sds--checkbox--visual {
         svg {
           opacity: 0;
         }
@@ -40,14 +40,14 @@ input[type="checkbox"] {
   &:not(:disabled) {
     &:not(:checked) {
       + label {
-        .checkbox--visual {
+        .sds--checkbox--visual {
           border: rem(1px) solid var(--sds--color--gray--400);
         }
       }
 
       &:hover {
         + label {
-          .checkbox--visual {
+          .sds--checkbox--visual {
             border-color: var(--sds--palette--main-color--400);
           }
         }
@@ -55,7 +55,7 @@ input[type="checkbox"] {
 
       @include focus {
         + label {
-          .checkbox--visual {
+          .sds--checkbox--visual {
             border-color: var(--sds--palette--main-color--500);
           }
         }
@@ -64,7 +64,7 @@ input[type="checkbox"] {
 
     &:checked {
       + label {
-        .checkbox--visual {
+        .sds--checkbox--visual {
           background-color: var(--sds--palette--main-color--400);
           border-color: transparent;
           color: var(--sds--color--white);
@@ -73,7 +73,7 @@ input[type="checkbox"] {
 
       &:hover {
         + label {
-          .checkbox--visual {
+          .sds--checkbox--visual {
             background-color: var(--sds--palette--main-color--500);
           }
         }
@@ -83,14 +83,14 @@ input[type="checkbox"] {
 
   &:disabled {
     + label {
-      .checkbox--visual {
+      .sds--checkbox--visual {
         background-color: var(--sds--color--gray--100);
       }
     }
 
     &:checked {
       + label {
-        .checkbox--visual {
+        .sds--checkbox--visual {
           color: var(--sds--color--gray--400);
         }
       }

@@ -85,10 +85,10 @@
 }
 
 /* Adjust styling to make some components work for demo page. */
-.demo-page .demo-section-modal .modal {
+.demo-page .demo-section-modal .sds--modal {
   position:  unset;
 }
-.demo-page .demo-section-alert .demo-content .alert,
+.demo-page .demo-section-alert .demo-content .sds--alert,
 .demo-page .demo-section-footer .demo-content,
 .demo-page .demo-section-application-header .demo-content,
 .demo-page .demo-section-object-header .demo-content {

@@ -1,1 +1,1 @@
-<div class="divider"></div>
+<div class="sds--divider"></div>

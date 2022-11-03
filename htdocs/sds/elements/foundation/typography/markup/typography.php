@@ -1,14 +1,14 @@
-<div class="text--rich">
+<div class="sds--text--rich">
   <h1>Heading 1 tag</h1>
-  <h2 class="text--h1">Heading 2 with heading 1 styling</h2>
+  <h2 class="sds--text--h1">Heading 2 with heading 1 styling</h2>
   <h2>Heading 2</h2>
   <h3>Heading 3</h3>
   <h4>Heading 4</h4>
   <h5>Heading 5</h5>
   <h6>Heading 6</h6>
-  <p class="text--body--large">Body large</p>
-  <p class="text--body">Body</p>
-  <p class="text--body--small">Body small</p>
+  <p class="sds--text--body--large">Body large</p>
+  <p class="sds--text--body">Body</p>
+  <p class="sds--text--body--small">Body small</p>
 
   <p>Suspendisse nisl elit, rhoncus eget, elementum ac, condimentum eget, diam. Fusce fermentum. In hac habitasse platea dictumst. Nulla sit amet est. Sed mollis, eros et ultrices tempus, mauris ipsum aliquam libero, non adipiscing dolor urna a orci.</p>
 

@@ -1,5 +1,5 @@
-<div class="tab-navigation tab-navigation--basic">
-  <nav class="tab-navigation--nav">
+<div class="sds--tab-navigation sds--tab-navigation--basic">
+  <nav class="sds--tab-navigation--nav">
     <ul>
       <li>
         <button type="button" id="unique-button-item--11" class="active" role="tab" aria-controls="unique-tab-item--11" aria-selected="true">Tab-item 1</button>
@@ -18,6 +18,6 @@
       </li>
     </ul>
   </nav>
-  <div id="unique-tab-item--11" class="tab-navigation--content" role="tabpanel" aria-labelledby="unique-button-item--11">
+  <div id="unique-tab-item--11" class="sds--tab-navigation--content" role="tabpanel" aria-labelledby="unique-button-item--11">
   </div>
 </div>

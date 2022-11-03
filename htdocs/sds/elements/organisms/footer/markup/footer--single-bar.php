@@ -1,7 +1,7 @@
-<footer class="footer footer--single-bar">
-  <div class="page-container">
-    <div class="footer--inner">
-      <nav class="menu text--body--small">
+<footer class="sds--footer sds--footer--single-bar">
+  <div class="sds--page-container">
+    <div class="sds--footer--inner">
+      <nav class="menu sds--text--body--small">
         <ul>
           <li>
             <a href="#">Terms of Use</a>
@@ -12,7 +12,7 @@
         </ul>
       </nav>
       <?php include("./sds/elements/additional/language-switcher/markup/language-switcher.php"); ?>
-      <div class="branding">
+      <div class="sds--branding">
         <?php include("./sds/assets/images/logo-surf.svg"); ?>
       </div>
     </div>

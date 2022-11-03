@@ -1,9 +1,9 @@
 
-.alert {
+.sds--alert {
   // Set variable to be able to nest "&" inside "&".
   $self: &;
 
-  .page-container {
+  .sds--page-container {
     #{$self}--inner {
       min-height: rem(60px);
       gap: var(--sds--space--3);

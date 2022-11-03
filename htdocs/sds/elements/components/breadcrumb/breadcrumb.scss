@@ -1,4 +1,4 @@
-.breadcrumb {
+.sds--breadcrumb {
   &--list {
     @include align-icon-defaults(em(11px, 14), center);
     color: var(--sds--color--gray--500);
@@ -9,7 +9,7 @@
     }
   }
 
-  &--divider {
+  &--sds--divider {
     flex-shrink: 0;
     display: flex;
 

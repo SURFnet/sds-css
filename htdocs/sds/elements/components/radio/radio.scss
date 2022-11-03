@@ -8,7 +8,7 @@ input[type="radio"] {
     align-items: baseline;
     gap: em(12px);
 
-    .radio--visual {
+    .sds--radio--visual {
       flex-shrink: 0;
       display: inline-flex;
       align-items: center;
@@ -30,7 +30,7 @@ input[type="radio"] {
 
   @include focus {
     + label {
-      .radio--visual {
+      .sds--radio--visual {
         // Apply browser-default outline styling.
         @include outline-browser-default();
       }
@@ -40,14 +40,14 @@ input[type="radio"] {
   &:not(:disabled) {
     &:not(:checked) {
       + label {
-        .radio--visual {
+        .sds--radio--visual {
           border-color: var(--sds--color--gray--400);
         }
       }
 
       &:hover {
         + label {
-          .radio--visual {
+          .sds--radio--visual {
             border-color: var(--sds--palette--main-color--400);
           }
         }
@@ -55,7 +55,7 @@ input[type="radio"] {
 
       @include focus {
         + label {
-          .radio--visual {
+          .sds--radio--visual {
             border-color: var(--sds--palette--main-color--500);
           }
         }
@@ -64,7 +64,7 @@ input[type="radio"] {
 
     &:checked {
       + label {
-        .radio--visual {
+        .sds--radio--visual {
           border-color: var(--sds--palette--main-color--400);
 
           &:before {
@@ -75,7 +75,7 @@ input[type="radio"] {
 
       &:hover {
         + label {
-          .radio--visual {
+          .sds--radio--visual {
             border-color: var(--sds--palette--main-color--500);
 
             &:before {
@@ -87,7 +87,7 @@ input[type="radio"] {
 
       @include focus {
         + label {
-          .radio--visual {
+          .sds--radio--visual {
             border-color: var(--sds--palette--main-color--400);
 
             &:before {
@@ -101,14 +101,14 @@ input[type="radio"] {
 
   &:disabled {
     + label {
-      .radio--visual {
+      .sds--radio--visual {
         background-color: var(--sds--color--gray--100);
       }
     }
 
     &:checked {
       + label {
-        .radio--visual {
+        .sds--radio--visual {
           &:before {
             background-color: var(--sds--color--gray--400);
           }

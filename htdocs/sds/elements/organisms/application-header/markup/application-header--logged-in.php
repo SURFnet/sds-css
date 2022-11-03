@@ -1,15 +1,15 @@
-<header class="application-header sds--color-palette--red">
-  <div class="page-container">
-    <div class="application-header--inner">
-      <div class="application-header--branding">
-        <div class="branding branding--name-bottom">
-          <span class="branding--visual">
+<header class="sds--application-header sds--color-palette--red">
+  <div class="sds--page-container">
+    <div class="sds--application-header--inner">
+      <div class="sds--application-header--branding">
+        <div class="sds--branding sds--branding--name-bottom">
+          <span class="sds--branding--visual">
             <?php include("./sds/assets/images/logo-surf.svg"); ?>
           </span>
-          <span class="branding--textual">Productnaam</span>
+          <span class="sds--branding--textual">Productnaam</span>
         </div>
       </div>
-      <nav class="application-header--nav">
+      <nav class="sds--application-header--nav">
         <ul>
           <li class="is-active">
             <a href="#">
@@ -28,7 +28,7 @@
           </li>
         </ul>
       </nav>
-      <div class="application-header--user">
+      <div class="sds--application-header--user">
         <?php include("./sds/elements/additional/language-switcher/markup/language-switcher.php"); ?>
         <button type="button">
           <?php sizeable_svg("functional-icons/alarm-bell", 18/16 . "em", 18/16 . "em"); ?>

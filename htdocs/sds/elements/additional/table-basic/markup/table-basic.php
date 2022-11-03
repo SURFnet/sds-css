@@ -1,4 +1,4 @@
-<div class="table-basic text--body--small">
+<div class="sds--table-basic sds--text--body--small">
   <table>
     <tbody>
       <tr>

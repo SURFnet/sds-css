@@ -1,1 +1,1 @@
-<span class="switch" role="switch" aria-checked="false"></span>
+<span class="sds--switch" role="switch" aria-checked="false"></span>

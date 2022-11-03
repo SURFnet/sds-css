@@ -1,15 +1,15 @@
-<header class="application-header application-header--negative">
-  <div class="page-container">
-    <div class="application-header--inner">
-      <div class="application-header--branding">
-        <div class="branding branding--negative branding--name-bottom">
-          <span class="branding--visual">
+<header class="sds--application-header sds--application-header--negative">
+  <div class="sds--page-container">
+    <div class="sds--application-header--inner">
+      <div class="sds--application-header--branding">
+        <div class="sds--branding sds--branding--negative sds--branding--name-bottom">
+          <span class="sds--branding--visual">
             <?php include("./sds/assets/images/logo-surf.svg"); ?>
           </span>
-          <span class="branding--textual">Productnaam</span>
+          <span class="sds--branding--textual">Productnaam</span>
         </div>
       </div>
-      <nav class="application-header--nav">
+      <nav class="sds--application-header--nav">
         <ul>
           <li class="is-active">
             <a href="#">Menu-item 1</a>
@@ -28,8 +28,8 @@
           </li>
         </ul>
       </nav>
-      <div class="application-header--user">
-        <button type="button" class="btn btn--small btn--ghost--light">Login</button>
+      <div class="sds--application-header--user">
+        <button type="button" class="sds--btn sds--btn--small sds--btn--ghost--light">Login</button>
       </div>
     </div>
   </div>

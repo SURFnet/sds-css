@@ -1,4 +1,4 @@
-.object-header {
+.sds--object-header {
   // Set variable to be able to nest "&" inside "&".
   $self: &;
 
@@ -13,7 +13,7 @@
   }
 
   &--header {
-    .breadcrumb {
+    .sds--breadcrumb {
       padding-top: var(--sds--space--1);
     }
   }

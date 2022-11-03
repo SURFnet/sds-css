@@ -11,7 +11,7 @@
 </head>
 <body>
 
-<div class="demo-page page-container sds--color-palette--blue">
+<div class="demo-page sds--page-container sds--color-palette--blue">
   <div class="demo-page--main-nav">
     <ul>
       <?php
@@ -26,7 +26,7 @@
 
   <h1>SURF Design System</h1>
 
-  <div class="text--rich">
+  <div class="sds--text--rich">
     <ul>
       <li>Uses normalize 8.0.1</li>
       <li>One combined css-file <a href="./sds/assets/stylesheets/sds.css" target="_blank"><code>sds.css</code></a></li>
@@ -65,7 +65,7 @@
           <h3>' . ucfirst($parts['filename']) . '</h3>
       ';
       if (file_exists($foldername . "_comment.html")) {
-        echo '<div class="demo-comment text--rich">';
+        echo '<div class="demo-comment sds--text--rich">';
         include($foldername . "_comment.html");
         echo '</div>';
       }
