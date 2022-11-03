@@ -7,7 +7,7 @@
   align-items: center;
   gap: var(--sds--space--2);
   border-radius: rem(4px);
-  box-shadow: 0 rem(4px) rem(4px) rgba(0, 0, 0, 0.25) ;
+  box-shadow: 0 rem(4px) rem(4px) var(--sds--color--pitch-black--dimmed--25);
 
   &--visual {
     flex-shrink: 0;

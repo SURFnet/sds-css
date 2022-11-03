@@ -1,19 +1,20 @@
 .sds--modal {
-  background-color: rgba(0, 0, 0, 0.15);
-  padding: $space-page-padding;
-  position: fixed;
-  inset: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: auto;
+  &.sds--backdrop {
+    padding: $space-page-padding;
+    position: fixed;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: auto;
+  }
 
   &--container {
     max-width: rem(510px);
     margin: auto;
     border-radius: rem(8px);
     overflow: hidden;
-    box-shadow: 0 rem(4px) rem(4px) rem(1px) rgba(0, 0, 0, 0.25);
+    box-shadow: 0 rem(4px) rem(4px) rem(1px) var(--sds--color--pitch-black--dimmed--25);
   }
 
   &--title {

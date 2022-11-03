@@ -1,4 +1,4 @@
-<div class="sds--modal">
+<div class="sds--modal sds--backdrop">
   <div class="sds--modal--container">
     <div class="sds--modal--title">
       <p class="sds--text--h4">Title</p>

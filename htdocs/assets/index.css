@@ -85,6 +85,8 @@
 }
 
 /* Adjust styling to make some components work for demo page. */
+.demo-page .demo-section-background-blur .sds--background-blur,
+.demo-page .demo-section-backdrop .sds--backdrop,
 .demo-page .demo-section-modal .sds--modal {
   position:  unset;
 }
