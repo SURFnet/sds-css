@@ -1,10 +1,10 @@
 .sds--language-switcher {
   ul {
     @include align-icon-defaults(em(9px, 14), center);
-    flex-wrap: wrap;
 
     li {
       @include align-icon-defaults(em(9px, 14), center);
+      flex-shrink: 0;
     }
 
     a {
