@@ -1,4 +1,4 @@
-<header class="sds--object-header sds--object-header--has-header">
+<header class="sds--object-header sds--object-header--has-header sds--object-header--bg-is-lighter">
   <div class="sds--page-container">
     <div class="sds--object-header--header">
       <div class="sds--space--bottom--2">

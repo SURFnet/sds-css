@@ -4,6 +4,10 @@
 
   background-color: var(--sds--color--gray--200);
 
+  &--bg-is-lighter {
+    background-color: var(--sds--color--gray--100);
+  }
+
   &:not(#{$self}--has-header) {
     padding-top: var(--sds--space--4);
   }
