@@ -15,6 +15,7 @@
   }
 
   &--button {
+    flex-shrink: 0;
     @include align-icon-defaults(1em, center);
     justify-content: center;
     background-color: var(--sds--palette--main-color--400);
