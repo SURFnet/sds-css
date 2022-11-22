@@ -5,7 +5,8 @@
       gap: var(--sds--space--1);
     }
 
-    a {
+    a,
+    .link-placeholder {
       width: rem(40px);
       height: rem(40px);
       display: inline-flex;
@@ -13,6 +14,9 @@
       justify-content: center;
       border: rem(1px) solid transparent;
       border-radius: rem(6px);
+    }
+
+    a {
       text-decoration: none;
 
       &:not(:link) {
@@ -34,6 +38,11 @@
           border-color: var(--sds--palette--support-color--500);
         }
       }
+    }
+
+    .link-placeholder {
+      border-color: var(--sds--color--gray--400);
+      color: var(--sds--color--gray--500);
     }
   }
 }

@@ -25,7 +25,7 @@
         <a href="#">6</a>
       </li>
       <li>
-        <a href="#">...</a>
+        <span class="link-placeholder">...</span>
       </li>
       <li>
         <a href="#">
