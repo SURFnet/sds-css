@@ -22,6 +22,18 @@
               <span class="text">Menu-item 3</span>
               <?php sizeable_svg("functional-icons/arrow-down-2", 11.25/16 . "em", 5.47/16 . "em"); ?>
             </a>
+            <ul>
+              </li>
+              <li>
+                <a href="#">Sub-menu-item 1</a>
+              </li>
+              <li>
+                <a href="#">Sub-menu-item 3</a>
+              </li>
+              <li>
+                <a href="#">Sub-menu-item 4</a>
+              </li>
+            </ul>
           </li>
           <li>
             <a href="#">Menu-item 4</a>

@@ -73,6 +73,12 @@
           }
         }
 
+        &:not(.is-open) {
+          > ul {
+            display: none;
+          }
+        }
+
         > ul {
           position: absolute;
           left: 0;
@@ -110,6 +116,10 @@
             &:visited {
               @include lnk-color(var(--sds--color--white));
             }
+          }
+
+          > ul {
+            color: var(--sds--color--black);
           }
 
           &.is-active {
