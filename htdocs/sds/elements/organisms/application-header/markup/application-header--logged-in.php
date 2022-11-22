@@ -45,7 +45,7 @@
         <button type="button">
           <?php sizeable_svg("functional-icons/alarm-bell", 18/16 . "em", 18/16 . "em"); ?>
         </button>
-        <?php include("./sds/elements/additional/user-info/markup/user-info.php"); ?>
+        <?php include("./sds/elements/additional/user-info/markup/user-info--logged-in.php"); ?>
       </div>
     </div>
   </div>

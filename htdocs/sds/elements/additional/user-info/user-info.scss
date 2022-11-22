@@ -1,5 +1,25 @@
 .sds--user-info {
+  // Set variable to be able to nest "&" inside "&".
+  $self: &;
+
   @include align-icon-defaults(var(--sds--space--1), center);
+
+  // To position dropdown.
+  position: relative;
+
+  &:not(.is-open) {
+    #{$self}--dropdown {
+      display: none;
+    }
+  }
+
+  &.is-open {
+    #{$self}--button {
+      svg {
+        transform: rotate(180deg);
+      }
+    }
+  }
 
   &--textual {
     text-align: right;
@@ -27,6 +47,36 @@
     svg {
       [stroke-width] {
         stroke-width: rem(3px);
+      }
+    }
+  }
+
+  &--dropdown {
+    position: absolute;
+    right: 0;
+    top: 100%;
+    width: rem(190px);
+    background-color: var(--sds--color--white);
+    padding: var(--sds--space--3);
+    border-radius: 0 0 rem(6px) rem(6px);
+    box-shadow: 0 rem(4px) rem(4px) 0 var(--sds--color--pitch-black--dimmed--25);
+
+    > ul {
+      > li {
+        + li {
+          margin-top: var(--sds--space--3);
+        }
+
+        > a {
+          font-weight: 600;
+          @include lnk-decoration(off);
+        }
+
+      }
+      + ul {
+        margin-top: var(--sds--space--3);
+        border-top: rem(1px) solid var(--sds--color--gray--200);
+        padding-top: var(--sds--space--3);
       }
     }
   }

@@ -18,6 +18,10 @@
     padding: var(--sds--space--1-and-a-half) 0;
     margin-left: auto;
     @include align-icon-defaults(var(--sds--space--5), center);
+
+    .sds--user-info--dropdown {
+      top: calc(100% + var(--sds--space--1-and-a-half));
+    }
   }
 
   &--nav {

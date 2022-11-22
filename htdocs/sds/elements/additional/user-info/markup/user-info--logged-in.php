@@ -1,4 +1,4 @@
-<nav class="sds--user-info">
+<nav class="sds--user-info is-open">
   <div class="sds--user-info--textual">
     <p class="name">Username</p>
     <p class="role sds--text--body--small">Role or Organization</p>
