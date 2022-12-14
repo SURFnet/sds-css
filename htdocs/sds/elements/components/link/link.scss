@@ -1,0 +1,10 @@
+.sds--lnk {
+  @include text-link();
+
+  // When applying link-styling via this class,
+  // we assume the element is not a link.
+  // A link would have text-decoration by default.
+  &:not(:link) {
+    text-decoration: underline;
+  }
+}

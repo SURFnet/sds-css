@@ -88,6 +88,10 @@
 
   font-weight: 700;
 
+  &:not(:link) {
+    color: $color-main;
+  }
+
   &:link {
     @include lnk-color($color-main);
   }
