@@ -22,6 +22,11 @@ button {
   flex-wrap: wrap;
   justify-content: center;
 
+  &:link,
+  &:visited {
+    text-decoration: none;
+  }
+
   &--small {
     padding: var(--sds--space--1) var(--sds--space--3);
     min-height: rem(40px);
@@ -33,7 +38,12 @@ button {
 
   &--primary {
     background-color: var(--sds--palette--support-color--400);
-    color: var(--sds--color--white);
+
+    &,
+    &:link,
+    &:visited {
+      color: var(--sds--color--white);
+    }
 
     &:hover {
       background-color: var(--sds--palette--support-color--500);
@@ -52,7 +62,12 @@ button {
 
   &--secondary {
     border-color: var(--sds--color--gray--400);
-    color: var(--sds--color--gray--500);
+
+    &,
+    &:link,
+    &:visited {
+      color: var(--sds--color--gray--500);
+    }
 
     &:hover {
       border-color: var(--sds--palette--support-color--500);
@@ -74,7 +89,11 @@ button {
   }
 
   &--tertiary {
-    color: var(--sds--palette--support-color--400);
+    &,
+    &:link,
+    &:visited {
+      color: var(--sds--palette--support-color--400);
+    }
 
     &:hover {
       background-color: var(--sds--palette--support-color--100);
@@ -94,7 +113,12 @@ button {
 
   &--ghost--dark {
     border-color: var(--sds--color--gray--500);
-    color: var(--sds--color--black);
+
+    &,
+    &:link,
+    &:visited {
+      color: var(--sds--color--black);
+    }
 
     &:hover {
       background-color: var(--sds--color--black);
@@ -111,7 +135,12 @@ button {
 
   &--ghost--light {
     border-color: var(--sds--color--white);
-    color: var(--sds--color--white);
+
+    &,
+    &:link,
+    &:visited {
+      color: var(--sds--color--white);
+    }
 
     &:hover {
       background-color: var(--sds--color--white);

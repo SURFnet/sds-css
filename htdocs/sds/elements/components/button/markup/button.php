@@ -8,6 +8,7 @@
 <h5>Variants</h5>
 <div class="sds--actions--outer">
   <button type="button" class="sds--btn sds--btn--primary">Primary button</button>
+  <a href="#" class="sds--btn sds--btn--primary">Anchor as primary button</a>
   <button type="button" class="sds--btn sds--btn--primary" disabled>Primary button disabled</button>
   <button type="button" class="sds--btn sds--btn--secondary">Secondary button</button>
   <button type="button" class="sds--btn sds--btn--secondary" disabled>Secondary button disabled</button>
