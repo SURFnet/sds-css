@@ -41,7 +41,7 @@
         position: relative;
 
         > a {
-          font-family: $font-nunito-sans;
+          font-family: $font-nunito;
           font-weight: 700;
           @include align-icon-defaults(em(8px, 16), center);
           @include lnk-decoration(off);
