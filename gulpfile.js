@@ -28,6 +28,8 @@ var path = require('path');
 var del = require('del');
 // Merge-stream is for using multiple sources in one task.
 var merge = require('merge-stream');
+// Convert ttf fonts to woff2
+var ttf2woff2 = require('gulp-ttf2woff2');
 
 // Check if we should build for production or not.
 var isProduction = true;
@@ -111,6 +113,21 @@ function watchFiles() {
 }
 
 /**
+ * Task: Convert all ttf fonts to woff2
+ */
+function convertTTFFonts() {
+    const nunitoConversion = gulp.src(['htdocs/sds/assets/fonts/Nunito/*.ttf'])
+            .pipe(ttf2woff2())
+            .pipe(gulp.dest('htdocs/sds/assets/fonts/Nunito/'))
+            .pipe(plugins.notify({ message: 'Converted Nunito TTF files to WOFF2' }));
+    const sourceSansProConversion = gulp.src(['htdocs/sds/assets/fonts/Source_Sans_Pro/*.ttf'])
+            .pipe(ttf2woff2())
+            .pipe(gulp.dest('htdocs/sds/assets/fonts/Source_Sans_Pro/'))
+            .pipe(plugins.notify({ message: 'Converted Source Sans Pro TTF files to WOFF2' }));
+    return merge(nunitoConversion, sourceSansProConversion);
+}
+
+/**
  * Task: Watch file changes and serve with BrowserSync.
  */
 const watch = gulp.parallel(watchFiles, startBrowserSync);
@@ -118,7 +135,7 @@ const watch = gulp.parallel(watchFiles, startBrowserSync);
 /**
  * Task: Perform all tasks needed to build the assets directory.
  */
-const build = gulp.parallel(compileSass);
+const build = gulp.parallel(compileSass, convertTTFFonts);
 
 exports.sass = compileSass;
 exports.watchfiles = watchFiles;
