@@ -9,7 +9,7 @@
   }
 
   // Target input via class, because it can be of many types.
-  input#{$self}--input {
+  input#{$self}--input, textarea#{$self}--input {
     width: 100%;
     min-height: rem(48px);
     padding: var(--sds--space--1-and-a-half);

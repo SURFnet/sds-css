@@ -43,7 +43,8 @@
     "singularitygs": "^1.8.0"
   },
   "scripts": {
-    "postinstall": "find node_modules/ -name '*.info' -type f -delete"
+    "postinstall": "find node_modules/ -name '*.info' -type f -delete",
+    "install": "gulp build"
   },
   "browserslist": [
     "last 2 versions",
