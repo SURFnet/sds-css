@@ -12,5 +12,7 @@ Make sure to use the correct node-version (lts/fermium) when running gulp. This 
 Run "npm ci" to make sure the correct package versions will be used, from "package-lock.json".
 
 ### How to build
+```
 nvm use
 npm run install
+```

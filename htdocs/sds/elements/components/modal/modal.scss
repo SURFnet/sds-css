@@ -1,12 +1,12 @@
 .sds--modal {
   &.sds--backdrop {
-    padding: $space-page-padding;
     position: fixed;
     inset: 0;
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: auto;
+    z-index: 999;
   }
 
   &--container {
