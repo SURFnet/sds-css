@@ -133,9 +133,9 @@ function convertTTFFonts() {
 const watch = gulp.parallel(watchFiles, startBrowserSync);
 
 /**
- * Task: Perform all tasks needed to build the assets directory.
+ * Task: Perform all tasks needed to build the assets directory. The fonts will not change, so this task is commented out
  */
-const build = gulp.parallel(compileSass, convertTTFFonts);
+const build = gulp.parallel(compileSass);//, convertTTFFonts);
 
 exports.sass = compileSass;
 exports.watchfiles = watchFiles;

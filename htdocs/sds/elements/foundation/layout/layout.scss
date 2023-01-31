@@ -70,12 +70,7 @@ html {
   // Increments of base-value plus a half.
   @for $i from 1 through $space-half-scale-max {
     $value: rem($space-base-value*($i - 0.5));
-    @if($i == 1) {
-      --sds--space--half: #{$value};
-    }
-    @else {
-      --sds--space--#{$i - 1}-and-a-half: #{$value};
-    }
+    --sds--space--#{$i - 1}-and-a-half: #{$value};
   }
 }
 
