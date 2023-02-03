@@ -16,3 +16,6 @@ Run "npm ci" to make sure the correct package versions will be used, from "packa
 nvm use
 npm run install
 ```
+
+### License
+See license [here](LICENSE.md)
