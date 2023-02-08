@@ -1,4 +1,7 @@
 .sds--language-switcher {
+  // Prepare for when link color needs to be changed.
+  --lnk--base-color: var(--sds--palette--support-color--400);
+
   ul {
     @include align-icon-defaults(em(9px, 14), center);
 
@@ -14,7 +17,7 @@
 
         &:not(.is-active) {
           font-weight: 600;
-          @include lnk-color(var(--sds--palette--main-color--400));
+          @include lnk-color(var(--lnk--base-color));
         }
 
         &.is-active {

@@ -19,7 +19,7 @@
           &:link,
           &:visited {
             @include lnk-decoration(show);
-            @include lnk-color(var(--sds--palette--main-color--400));
+            @include lnk-color(var(--sds--palette--support-color--400));
           }
         }
       }

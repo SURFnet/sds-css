@@ -77,23 +77,23 @@
     text-decoration: none;
   }
 }
-@mixin text-link($uses-palette-colors: true) {
-  $color-main: var(--sds--color--black);
+@mixin text-link($uses-palette-colors: support) {
+  $color-default: var(--sds--color--black);
   $color-visited: var(--sds--color--gray--500);
 
   @if ($uses-palette-colors) {
-    $color-main: var(--sds--palette--support-color--400);
-    $color-visited: var(--sds--palette--support-color--500);
+    $color-default: var(--sds--palette--#{$uses-palette-colors}-color--400);
+    $color-visited: var(--sds--palette--#{$uses-palette-colors}-color--500);
   }
 
   font-weight: 700;
 
   &:not(:link) {
-    color: $color-main;
+    color: $color-default;
   }
 
   &:link {
-    @include lnk-color($color-main);
+    @include lnk-color($color-default, $color-visited);
   }
 
   &:visited {

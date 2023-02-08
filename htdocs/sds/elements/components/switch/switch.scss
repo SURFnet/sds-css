@@ -21,17 +21,17 @@
   }
 
   &--active {
-    background-color: var(--sds--palette--main-color--400);
+    background-color: var(--sds--palette--support-color--400);
 
     &:before {
       left: rem(24px);
     }
 
     &:hover {
-      background-color: var(--sds--palette--main-color--500);
+      background-color: var(--sds--palette--support-color--500);
 
       &:before {
-        background-color: var(--sds--palette--main-color--100);
+        background-color: var(--sds--palette--support-color--100);
       }
     }
   }

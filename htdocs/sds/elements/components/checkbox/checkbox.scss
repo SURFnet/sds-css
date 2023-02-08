@@ -48,7 +48,7 @@ input[type="checkbox"] {
       &:hover {
         + label {
           .sds--checkbox--visual {
-            border-color: var(--sds--palette--support-color--400);
+            border-color: var(--sds--palette--main-color--400);
           }
         }
       }
@@ -56,7 +56,7 @@ input[type="checkbox"] {
       @include focus {
         + label {
           .sds--checkbox--visual {
-            border-color: var(--sds--palette--support-color--500);
+            border-color: var(--sds--palette--main-color--500);
           }
         }
       }
@@ -65,7 +65,7 @@ input[type="checkbox"] {
     &:checked {
       + label {
         .sds--checkbox--visual {
-          background-color: var(--sds--palette--support-color--400);
+          background-color: var(--sds--palette--main-color--400);
           border-color: transparent;
           color: var(--sds--color--white);
         }
@@ -74,7 +74,7 @@ input[type="checkbox"] {
       &:hover {
         + label {
           .sds--checkbox--visual {
-            background-color: var(--sds--palette--support-color--500);
+            background-color: var(--sds--palette--main-color--500);
           }
         }
       }

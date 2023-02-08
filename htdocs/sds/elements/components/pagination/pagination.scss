@@ -33,9 +33,9 @@
         &.is-active,
         &:active,
         &:hover {
-          background-color: var(--sds--palette--support-color--100);
-          color: var(--sds--palette--support-color--500);
-          border-color: var(--sds--palette--support-color--500);
+          background-color: var(--sds--palette--main-color--100);
+          color: var(--sds--palette--main-color--500);
+          border-color: var(--sds--palette--main-color--500);
         }
       }
     }

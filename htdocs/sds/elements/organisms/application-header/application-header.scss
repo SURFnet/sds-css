@@ -19,6 +19,10 @@
     margin-left: auto;
     @include align-icon-defaults(var(--sds--space--5), center);
 
+    .sds--language-switcher {
+      --lnk--base-color: var(--sds--palette--main-color--400);
+    }
+
     .sds--user-info--dropdown {
       top: calc(100% + var(--sds--space--1-and-a-half));
     }
