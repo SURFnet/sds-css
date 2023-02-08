@@ -11,17 +11,40 @@
 </head>
 <body>
 
-<div class="demo-page sds--page-container sds--color-palette--blue">
+<div class="demo-page sds--page-container">
   <div class="demo-page--main-nav">
-    <ul>
-      <?php
-        // Quicklinks to existing SDS elements.
-        foreach (glob("./sds/elements/**/**/") as $foldername) {
-          $parts = pathinfo($foldername);
-          echo '<li><a href=#' . $parts["filename"] . '>' . ucfirst($parts["filename"]) . '</a></li>';
-        }
-      ?>
-    </ul>
+    <div class="demo-page--main-nav--top">
+      <ul>
+        <?php
+          // Quicklinks to existing SDS elements.
+          foreach (glob("./sds/elements/**/**/") as $foldername) {
+            $parts = pathinfo($foldername);
+            echo '<li><a href=#' . $parts["filename"] . '>' . ucfirst($parts["filename"]) . '</a></li>';
+          }
+        ?>
+      </ul>
+    </div>
+
+    <div class="demo-page--main-nav--bottom">
+      <form class="demo-color-switcher demo-row">
+        <p>Applied color palette:</p>
+        <div class="demo-color-switcher-options demo-row">
+          <?php
+            // Palette switcher.
+            $palettes = ['blue', 'green', 'neutral', 'orange'];
+            foreach ($palettes as $palette) {
+              $checked = '';
+              if ($palette === 'orange') {
+                $checked = 'checked';
+              }
+              echo '<input type="radio" id="' . $palette . '" name="palette" value="' . $palette . '"' . $checked . '>';
+              echo '<label for="' . $palette . '">' . ucfirst($palette) . '</label>';
+            }
+          ?>
+        </div>
+        <small>Note that applying color via this form is not the normal way to go, but is only for demo purposes.</small>
+      </form>
+    </div>
   </div>
 
   <h1>SURF Design System</h1>
