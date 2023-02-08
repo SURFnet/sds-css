@@ -1,5 +1,5 @@
 .sds--switch {
-  background-color: var(--sds--color--gray--300);
+  background-color: var(--sds--color--gray--400);
   width: rem(56px);
   height: rem(32px);
   border-radius: rem(16px);
@@ -7,7 +7,7 @@
   display: inline-block;
 
   &:hover {
-    background-color: var(--sds--color--gray--400);
+    background-color: var(--sds--color--gray--500);
   }
 
   &:before {
@@ -32,6 +32,22 @@
 
       &:before {
         background-color: var(--sds--palette--main-color--100);
+      }
+    }
+  }
+
+  &--disabled {
+    background-color: var(--sds--color--gray--300);
+
+    &:before {
+      left: rem(24px);
+    }
+
+    &:hover {
+      background-color: var(--sds--color--gray--300);
+
+      &:before {
+        background-color: var(--sds--color--white);
       }
     }
   }
