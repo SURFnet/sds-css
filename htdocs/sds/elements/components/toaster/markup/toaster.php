@@ -1,6 +1,6 @@
 <h5>Anatomy</h5>
 <div class="demo-row">
-  <div class="sds--toaster sds--toaster--status-success sds--toaster--has-action">
+  <div class="sds--toaster sds--toaster--status-success">
     <div class="sds--toaster--visual">
       <?php sizeable_svg("functional-icons/success", 22.5/16 . "em", 22.5/16 . "em"); ?>
     </div>

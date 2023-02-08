@@ -1,5 +1,5 @@
 <h5>Anatomy</h5>
-<div class="sds--alert sds--alert--status-default sds--alert--has-action">
+<div class="sds--alert sds--alert--status-default">
   <div class="sds--page-container">
     <div class="sds--alert--inner">
       <div class="sds--alert--visual">
@@ -16,7 +16,7 @@
     </div>
   </div>
 </div>
-<div class="sds--alert sds--alert--status-success sds--alert--has-action">
+<div class="sds--alert sds--alert--status-success">
   <div class="sds--page-container">
     <div class="sds--alert--inner">
       <div class="sds--alert--visual">
