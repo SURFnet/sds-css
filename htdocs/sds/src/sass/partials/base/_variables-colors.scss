@@ -5,11 +5,22 @@
 
 
 $color-palettes--support: (
-  green: yellow,
-  blue: green,
-  red: green,
-  orange: blue,
-  purple: blue,
+  blue: (
+    main: blue,
+    support: green,
+  ),
+  green: (
+    main: green,
+    support: blue,
+  ),
+  neutral: (
+    main: gray,
+    support: green,
+  ),
+  orange: (
+    main: orange,
+    support: blue,
+  ),
 );
 
 $status-colors: (

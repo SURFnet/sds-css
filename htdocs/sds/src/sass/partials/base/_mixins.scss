@@ -198,3 +198,33 @@
   outline: auto 2px Highlight; // for non-webkit browsers
   outline: auto 5px -webkit-focus-ring-color; // for webkit browsers
 }
+
+// See "$color-palettes--support" for defined color-palettes.
+@mixin create-sds-palette-colors($name, $values) {
+  // For some reason only one zero is printed when directly behind "--sds--color-palette--main--#{$i}".
+  // Therefore create a variable.
+  $suffix: "00";
+  // Set main values.
+  @each $main in map-get($values, main) {
+    @for $i from 1 through 5 {
+      $color: var(--sds--color--#{$main}--#{$i}#{$suffix});
+      // The neutral palette doesn't follow the normal logic for weights 400 and 500.
+      @if $name == "neutral" and $i == 4 {
+        $color: var(--sds--color--gray--500);
+      }
+      @if $name == "neutral" and $i == 5 {
+        $color: var(--sds--color--black);
+      }
+      --sds--palette--main-color--#{$i}#{$suffix}: #{$color};
+    }
+  }
+  // Set support values for some weights.
+  // This could be part of the for-loop above, but it's nicer to have two seperate lists than a merged one.
+  @each $support in map-get($values, support) {
+    @for $i from 1 through 5 {
+      @if $i == 1 or $i == 4 or $i == 5 {
+        --sds--palette--support-color--#{$i}#{$suffix}: var(--sds--color--#{$support}--#{$i}#{$suffix});
+      }
+    }
+  }
+}

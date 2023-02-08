@@ -1,22 +1,27 @@
 
-<h5>Support color</h5>
-<p>Normal text, with no support-color applied</p>
-<p style="color:var(--sds--palette--support-color--400);">Support color (default)</p>
-<div style="--sds--palette--support-color--400: var(--sds--color--gray--500);">
-  <p style="color:var(--sds--palette--support-color--400);">Support color (overridden)</p>
-</div>
+<h5>Available palettes</h5>
+<?php
+  $palettes = ['blue', 'green', 'neutral', 'orange'];
+  $main_weights = ['100', '200', '300', '400', '500'];
+  $support_weights = ['100', '400', '500'];
 
-<h5>Palette color</h5>
-<p>Normal text, with no color-palette applied</p>
-
-<div class="sds--color-palette--green">
-  <p style="color:var(--sds--palette--main-color--400);">Normal text, with palette-color applied.</p>
-</div>
-
-<div class="sds--color-palette--red">
-  <p style="color:var(--sds--palette--main-color--400);">Normal text, with palette-color applied.</p>
-</div>
-
-<div class="sds--color-palette--purple">
-  <p style="color:var(--sds--palette--main-color--400);">Normal text, with palette-color applied.</p>
-</div>
+  foreach ($palettes as $palette) {
+    echo '<div class="sds--color-palette--' . $palette . '">';
+    echo '<h6>' . ucfirst($palette) . '</h6>';
+    echo '<div class="demo-row">';
+    foreach ($main_weights as $main_weight) {
+      echo '<div>';
+      echo '<div style="background-color: var(--sds--palette--main-color--' . $main_weight . '); width: 100px; height: 50px;"></div>';
+      echo '<p>Main ' . $main_weight .'</p>';
+      echo '</div>';
+    }
+    foreach ($support_weights as $support_weight) {
+      echo '<div>';
+      echo '<div style="background-color: var(--sds--palette--support-color--' . $support_weight . '); width: 100px; height: 50px;"></div>';
+      echo '<p>Support ' . $support_weight .'</p>';
+      echo '</div>';
+    }
+    echo '</div>';
+    echo '</div>';
+  }
+?>
