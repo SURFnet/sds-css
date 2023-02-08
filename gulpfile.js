@@ -77,7 +77,7 @@ function optimizeImages() {
 }
 
 /**
- * Task: Compile our Sass.
+ * Task: Compile our Sass for all SDS elements.
  */
 function compileSass() {
   const sassMain = gulp.src('htdocs/sds/src/sass/*.scss')
@@ -102,11 +102,28 @@ function compileSass() {
 }
 
 /**
+ * Task: Compile our Sass for the SDS demo page.
+ */
+function compileSassDemoPage() {
+  const sassDemoPage = gulp.src('htdocs/assets/*.scss')
+    .pipe(plugins.plumber(plumberErrorHandler))
+    .pipe(plugins.sassGlob())
+    .pipe(plugins.sass())
+    .pipe(plugins.autoprefixer({remove: false}))
+    .pipe(gulp.dest('htdocs/assets/stylesheets/'))
+    .pipe(browserSync.stream())
+    .pipe(plugins.notify({ message: 'Sass DemoPage task complete!' }));
+
+  return merge(sassDemoPage);
+}
+
+/**
  * Task: Watch various files for changes and trigger the associated tasks.
  */
 function watchFiles() {
   // Watch scss files changes.
-  gulp.watch(["htdocs/sds/src/sass/*.scss", "htdocs/sds/src/sass/**/**/*.scss", "./htdocs/sds/elements/**/**/*.scss"] , compileSass);
+  gulp.watch(["htdocs/sds/src/sass/*.scss", "htdocs/sds/src/sass/**/**/*.scss", "./htdocs/sds/elements/**/**/*.scss"], compileSass);
+  gulp.watch(["htdocs/assets/*.scss"], compileSassDemoPage);
 
   // Watch image-optimizer file changes.
   gulp.watch("htdocs/sds/src/image-optimizer/**", optimizeImages);
@@ -135,9 +152,9 @@ const watch = gulp.parallel(watchFiles, startBrowserSync);
 /**
  * Task: Perform all tasks needed to build the assets directory. The fonts will not change, so this task is commented out
  */
-const build = gulp.parallel(compileSass);//, convertTTFFonts);
+const build = gulp.parallel(compileSass, compileSassDemoPage, optimizeImages); // convertTTFFonts
 
-exports.sass = compileSass;
+exports.sass = gulp.series(compileSass, compileSassDemoPage);
 exports.watchfiles = watchFiles;
 exports.watch = watch;
 exports.build = build;

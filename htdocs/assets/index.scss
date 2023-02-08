@@ -1,0 +1,142 @@
+
+// Base Import.
+@import '../sds/src/sass/partials/base/functions';
+@import '../sds/src/sass/partials/base/variables-colors';
+@import '../sds/src/sass/partials/base/variables-layout';
+@import '../sds/src/sass/partials/base/variables-typography';
+@import '../sds/src/sass/partials/base/mixins';
+
+.demo-page {
+  padding-bottom: var(--sds--space--10);
+
+  .demo-page--main-nav {
+    position: sticky;
+    top:  0;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+    box-shadow: 0 0 5px 0 rgba(0,0,0,0.3);
+    z-index: 10;
+    margin-bottom: var(--sds--space--10);
+
+    .demo-page--main-nav--top {
+      background-color: var(--sds--color--black);
+      color: var(--sds--color--white);
+
+      ul {
+        padding: var(--sds--space--2) var(--sds--space--4);
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0 var(--sds--space--3);
+        font-weight: 600;
+
+         a {
+          text-decoration: none;
+        }
+      }
+    }
+
+    .demo-page--main-nav--bottom {
+      background-color: var(--sds--palette--main-color--400);
+      color: var(--sds--color--white);
+      padding: var(--sds--space--1) var(--sds--space--4);
+
+      .demo-color-switcher {
+        align-items: baseline;
+
+        .demo-color-switcher-options {
+          gap: 0;
+        }
+
+        input + label {
+          padding: var(--sds--space--half) var(--sds--space--1);
+          cursor: pointer;
+          text-underline-offset: 25%;
+        }
+
+        input:checked + label {
+          text-decoration: underline;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+
+  xmp {
+    background-color: #eee;
+    overflow: auto;
+    word-wrap: normal;
+    padding: 30px;
+    line-height: 125%;
+  }
+
+  code {
+    background-color: #eee;
+    font-size: smaller;
+  }
+
+  .demo-bg {
+    background-color: var(--sds--palette--main-color--400);
+    color: white;
+    padding: 20px;
+  }
+
+  .demo-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .demo-comment {
+    margin-bottom: 30px;
+  }
+
+  .demo-content {
+    margin-bottom: 30px;
+
+    > * {
+      + * {
+        margin-top: 20px;
+      }
+    }
+  }
+
+  > h1 {
+    margin-bottom:  0.5em;
+  }
+  > h2 {
+    margin-top: var(--sds--space--10);
+  }
+
+  section {
+    margin-top: var(--sds--space--10);
+    border-top: 1px solid var(--sds--color--gray--300);
+    padding-top: var(--sds--space--10);
+
+    > h3,
+    > h4 {
+      margin-bottom:  0.5em;
+    }
+  }
+
+  // Adjust styling to make some components work for demo page.
+  .demo-section-background-blur .sds--background-blur,
+  .demo-section-backdrop .sds--backdrop,
+  .demo-section-modal .sds--modal {
+    position:  unset;
+  }
+  .demo-section-alert .demo-content .sds--alert,
+  .demo-section-footer .demo-content,
+  .demo-section-application-header .demo-content,
+  .demo-section-object-header .demo-content {
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+  }
+}
+
+
+// See "$color-palettes--support" for defined color-palettes.
+@each $name, $values in $color-palettes--support {
+  .demo-page:has(##{$name}:checked) {
+    @include create-sds-palette-colors($name, $values);
+  }
+}

@@ -6,7 +6,7 @@
   <meta name="description" content="SURF Design System - Demo site" />
   <meta name="generator" content="LimoenGroen" />
   <title>SURF Design System | Demo en Development</title>
-  <link rel="stylesheet" type="text/css" href="./assets/index.css">
+  <link rel="stylesheet" type="text/css" href="./assets/stylesheets/index.css">
   <link rel="stylesheet" type="text/css" href="./sds/assets/stylesheets/sds.css">
 </head>
 <body>
