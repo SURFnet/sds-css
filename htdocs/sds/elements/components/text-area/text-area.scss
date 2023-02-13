@@ -1,4 +1,4 @@
-.sds--text-field {
+.sds--text-area {
   // Set variable to be able to nest "&" inside "&".
   $self: &;
 
@@ -9,12 +9,15 @@
   }
 
   // Target input via class, because it can be of many types.
-  input#{$self}--input {
+  textarea {
     width: 100%;
     min-height: rem(48px);
     padding: var(--sds--space--1-and-a-half);
     border: rem(1px) solid transparent;
     border-radius: rem(6px);
+
+    // Take correct own height.
+    display: block;
 
     &::-moz-placeholder {
       opacity: 1;
@@ -38,11 +41,6 @@
     }
   }
 
-  &--shape {
-    display: flex;
-    gap: var(--sds--space--2);
-  }
-
   &--message {
     margin-top: var(--sds--space--1);
   }
@@ -52,32 +50,9 @@
       color: var(--sds--color--red--400);
     }
 
-    input#{$self}--input {
+    textarea {
       &:not(:disabled) {
         border-color: var(--sds--color--red--400);
-      }
-    }
-  }
-
-  &--has-icon {
-    #{$self}--input-and-icon {
-      flex-grow: 1;
-
-      // To position icon.
-      position: relative;
-
-      input#{$self}--input {
-        padding-right: calc(var(--sds--space--1-and-a-half) + #{rem(25px)});
-        flex-grow: 1;
-      }
-
-      #{$self}--icon {
-        position: absolute;
-        right: var(--sds--space--1-and-a-half);
-        top: 50%;
-        transform: translateY(-50%);
-        // Take correct own height.
-        display: flex;
       }
     }
   }
