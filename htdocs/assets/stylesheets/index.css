@@ -28,7 +28,7 @@
         .demo-page .demo-page--main-nav .demo-page--main-nav--bottom .demo-color-switcher .demo-color-switcher-options {
           gap: 0; }
         .demo-page .demo-page--main-nav .demo-page--main-nav--bottom .demo-color-switcher input + label {
-          padding: var(--sds--space--half) var(--sds--space--1);
+          padding: var(--sds--space--0-and-a-half) var(--sds--space--1);
           cursor: pointer;
           text-underline-offset: 25%; }
         .demo-page .demo-page--main-nav .demo-page--main-nav--bottom .demo-color-switcher input:checked + label {
