@@ -116,6 +116,29 @@
     background-color: var(--sds--palette--main-color--400);
     color: var(--sds--color--white);
 
+    #{$self}--user {
+      .sds--language-switcher {
+        --lnk--base-color: var(--sds--color--white);
+      }
+
+      .sds--user-info {
+        .sds--user-info--textual {
+          .role {
+            color: var(--sds--color--white);
+          }
+        }
+
+        .sds--user-info--button {
+          background-color: var(--sds--color--white);
+          color: var(--sds--palette--main-color--400);
+        }
+
+        .sds--user-info--dropdown {
+          color: var(--sds--color--black);
+        }
+      }
+    }
+
     #{$self}--nav {
       > ul {
         > li {
