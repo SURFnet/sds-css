@@ -1,0 +1,51 @@
+.sds--block-switch {
+  // Set variable to be able to nest "&" inside "&".
+  $self: &;
+
+  display: flex;
+  flex-direction: column;
+  gap: var(--sds--space--1);
+  padding: var(--sds--space--3);
+  border-radius: rem(8px);
+  border: rem(1px) solid var(--sds--color--gray--400);
+
+  &:link,
+  &:visited {
+    text-decoration: none;
+  }
+
+  .icon {
+    // Take correct own height.
+    display: inline-flex;
+  }
+
+  &--title {
+    @include align-icon-defaults(em(16px, 24), center);
+  }
+
+  &.is-active {
+    border-color: var(--sds--palette--support-color--400);
+    border-width: rem(3px);
+    padding: calc(var(--sds--space--3) - #{rem(2px)});
+
+    #{$self}--title {
+      color: var(--sds--palette--support-color--400);
+    }
+  }
+
+  &--vertical {
+    // Override for vertical layout.
+    @include align-icon-defaults(em(16px, 16), center);
+    flex-direction: row;
+
+    #{$self}--visual {
+      flex: 0 0 auto;
+    }
+
+    #{$self}--textual {
+      span {
+        display: block;
+      }
+    }
+  }
+}
