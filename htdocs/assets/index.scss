@@ -120,9 +120,12 @@
 
   // Adjust styling to make some components work for demo page.
   .demo-section-background-blur .sds--background-blur,
-  .demo-section-backdrop .sds--backdrop,
+  .demo-section-backdrop .sds--backdrop {
+    position:  unset;
+  }
   .demo-section-modal .sds--modal {
     position:  unset;
+    padding: $space-page-padding;
   }
   .demo-section-alert .demo-content .sds--alert,
   .demo-section-footer .demo-content,
