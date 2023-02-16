@@ -16,7 +16,6 @@
       </li>
     </ul>
     <ul>
-      </li>
       <li>
         <a href="#">Uitloggen</a>
       </li>
