@@ -1,0 +1,10 @@
+.sds--placeholder-image {
+  border: rem(1px) solid var(--sds--color--gray--300);
+  background-color: var(--sds--color--white);
+  color: var(--sds--color--gray--300);
+  display: inline-block;
+
+  svg {
+    display: block;
+  }
+}
