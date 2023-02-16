@@ -1,0 +1,35 @@
+.sds--file-upload {
+  // Set variable to be able to nest "&" inside "&".
+  $self: &;
+
+  border: rem(1px) dashed var(--sds--color--gray--300);
+  padding: var(--sds--space--2) var(--sds--space--3);
+  font-size: rem(18px);
+
+  &:hover {
+    border-color: var(--sds--palette--support-color--500);
+  }
+
+  input[type="file"] {
+    &::file-selector-button {
+      @include btn-reset();
+      color: var(--sds--palette--support-color--400);
+      font-weight: 600;
+    }
+  }
+
+  &--message {
+    margin-top: var(--sds--space--1);
+  }
+
+  &--status-error {
+    #{$self}--message {
+      color: var(--sds--color--red--400);
+    }
+  }
+
+  &--status-success {
+    border-color: transparent;
+    background-color: var(--sds--color--white);
+  }
+}
