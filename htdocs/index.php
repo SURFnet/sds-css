@@ -11,7 +11,7 @@
 </head>
 <body>
 
-<div class="demo-page sds--page-container">
+<div class="demo-page sds--page-container sds--color-palette--orange">
   <div class="demo-page--main-nav">
     <div class="demo-page--main-nav--top">
       <ul>
@@ -42,7 +42,7 @@
             }
           ?>
         </div>
-        <small>Note that applying color via this form is not the normal way to go, but is only for demo purposes.</small>
+        <small>Note that applying color via this form is not the normal way to go, but is only for demo purposes. Also note that this form doesn't work in Firefox yet.</small>
       </form>
     </div>
   </div>
