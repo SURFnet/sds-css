@@ -11,6 +11,7 @@
       </div>
       <div class="sds--object-header--main--textual">
         <h1>Detailpage title example with more than one line to show max length</h1>
+        <?php include("./sds/elements/additional/metadata-list/markup/metadata-list.php"); ?>
       </div>
       <div class="sds--object-header--actions">
         <button type="button" class="sds--btn sds--btn--primary">Primary button</button>

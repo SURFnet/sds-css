@@ -1,0 +1,33 @@
+.sds--metadata-list {
+  // Set variable to be able to nest "&" inside "&".
+  $self: &;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sds--space--2);
+
+  dt {
+    font-weight: 600;
+  }
+
+  dd {
+    margin: 0;
+  }
+
+  a {
+    font-weight: 600;
+
+    &:link,
+    &:visited {
+      @include lnk-decoration(show);
+      @include lnk-color(var(--sds--palette--support-color--400));
+    }
+  }
+
+  &--item {
+    &:not(:last-child) {
+      border-right: rem(1px) solid var(--sds--color--gray--300);
+      padding-right: var(--sds--space--2);
+    }
+  }
+}
