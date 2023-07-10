@@ -1,5 +1,5 @@
 
-<ul class="sds--link-list sds--link-list--lading">
+<ul class="sds--link-list sds--link-list--landing">
   <li>
     <a href="#">
       <?php sizeable_svg("functional-icons/arrow-right-2", 5.4/16 . "em", 11.14/16 . "em"); ?>
