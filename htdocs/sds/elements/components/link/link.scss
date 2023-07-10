@@ -7,4 +7,12 @@
   &:not(:link) {
     text-decoration: underline;
   }
+
+  &--no-underline {
+    @include text-link();
+
+    &:not(:hover) {
+      text-decoration: none;
+    }
+  }
 }
