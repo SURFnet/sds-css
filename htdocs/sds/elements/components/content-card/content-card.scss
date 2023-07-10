@@ -1,0 +1,50 @@
+.sds--content-card {
+  // Set variable to be able to nest "&" inside "&".
+  $self: &;
+
+  background-color: var(--sds--color--white);
+  border-radius: rem(6px);
+  box-shadow: 0 rem(4px) rem(4px) 0 var(--sds--color--pitch-black--dimmed--25);
+
+  &--main {
+    padding: var(--sds--space--3);
+    display: flex;
+    gap: var(--sds--space--3);
+
+    #{$self}--visual {
+      flex: 0 0 auto;
+    }
+
+    #{$self}--textual {
+      flex: 1 1 auto;
+    }
+
+    #{$self}--text-and-actions {
+      display: flex;
+      justify-content: space-between;
+      gap: var(--sds--space--3);
+    }
+
+    #{$self}--actions {
+      flex: 0 0 auto;
+    }
+  }
+
+  &--bottom {
+    background-color: var(--sds--color--gray--100);
+    border-radius: 0 0 rem(6px) rem(6px);
+    padding: var(--sds--space--2) var(--sds--space--3);
+
+    nav {
+      > ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: var(--sds--space--3);
+      }
+
+      a {
+        @include text-link();
+      }
+    }
+  }
+}
