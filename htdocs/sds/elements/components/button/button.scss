@@ -111,6 +111,83 @@ button {
     }
   }
 
+  &-destructive {
+    &--primary {
+      background-color: var(--sds--color--red--400);
+
+      &,
+      &:link,
+      &:visited {
+        color: var(--sds--color--white);
+      }
+
+      &:hover {
+        background-color: var(--sds--color--red--500);
+      }
+
+      &:active {
+        background-color: var(--sds--color--red--200);
+        color: var(--sds--color--red--500);
+      }
+
+      &:disabled {
+        background-color: var(--sds--color--gray--100);
+        color: var(--sds--color--gray--300);
+      }
+    }
+
+    &--secondary {
+      border-color: var(--sds--color--gray--400);
+
+      &,
+      &:link,
+      &:visited {
+        color: var(--sds--color--gray--500);
+      }
+
+      &:hover {
+        border-color: var(--sds--color--red--500);
+        background-color: var(--sds--color--red--200);
+        color: var(--sds--color--red--500);
+      }
+
+      &:active {
+        border-color: var(--sds--color--red--500);
+        background-color: var(--sds--color--red--400);
+        color: var(--sds--color--white);
+      }
+
+      &:disabled {
+        border-color: var(--sds--color--gray--300);
+        background-color: var(--sds--color--gray--100);
+        color: var(--sds--color--gray--300);
+      }
+    }
+
+    &--tertiary {
+      &,
+      &:link,
+      &:visited {
+        color: var(--sds--color--red--400);
+      }
+
+      &:hover {
+        background-color: var(--sds--color--red--200);
+        color: var(--sds--color--red--500);
+      }
+
+      &:active {
+        background-color: var(--sds--color--red--200);
+        color: var(--sds--color--red--500);
+      }
+
+      &:disabled {
+        background-color: var(--sds--color--gray--100);
+        color: var(--sds--color--gray--300);
+      }
+    }
+  }
+
   &--ghost--dark {
     border-color: var(--sds--color--gray--500);
 

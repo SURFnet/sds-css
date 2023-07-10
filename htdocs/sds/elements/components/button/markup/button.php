@@ -16,6 +16,14 @@
   <button type="button" class="sds--btn sds--btn--tertiary" disabled>Tertiary button disabled</button>
 </div>
 <div class="sds--actions--outer">
+  <button type="button" class="sds--btn sds--btn-destructive--primary">Destructive primary button</button>
+  <button type="button" class="sds--btn sds--btn-destructive--primary" disabled>Destructive primary button disabled</button>
+  <button type="button" class="sds--btn sds--btn-destructive--secondary">Destructive secondary button</button>
+  <button type="button" class="sds--btn sds--btn-destructive--secondary" disabled>Destructive secondary button disabled</button>
+  <button type="button" class="sds--btn sds--btn-destructive--tertiary">Destructive tertiary button</button>
+  <button type="button" class="sds--btn sds--btn-destructive--tertiary" disabled>Destructive tertiary button disabled</button>
+</div>
+<div class="sds--actions--outer">
   <button type="button" class="sds--btn sds--btn--ghost--dark">Ghost Dark button</button>
   <div class="demo-bg">
     <button type="button" class="sds--btn sds--btn--ghost--light">Ghost Light button</button>
