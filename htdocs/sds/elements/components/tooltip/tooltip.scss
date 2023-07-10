@@ -5,6 +5,7 @@
   color: var(--sds--color--white);
   display: inline-flex;
   align-items: center;
+  max-width: rem(272px);
 
   &--textual {
     padding: var(--sds--space--1) 0;
