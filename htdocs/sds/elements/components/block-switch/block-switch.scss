@@ -28,6 +28,10 @@
     border-width: rem(3px);
     padding: calc(var(--sds--space--3) - #{rem(2px)});
 
+    #{$self}--visual {
+      color: var(--sds--palette--support-color--400);
+    }
+
     #{$self}--title {
       color: var(--sds--palette--support-color--400);
     }
