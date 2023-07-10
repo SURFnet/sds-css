@@ -122,7 +122,9 @@ function compileSassDemoPage() {
  */
 function watchFiles() {
   // Watch scss files changes.
-  gulp.watch(["htdocs/sds/src/sass/*.scss", "htdocs/sds/src/sass/**/**/*.scss", "./htdocs/sds/elements/**/**/*.scss"], compileSass);
+  gulp.watch(["./htdocs/sds/src/sass/*.scss"], compileSass);
+  gulp.watch(["./htdocs/sds/src/sass/**/**/*.scss"], compileSass);
+  gulp.watch(["htdocs/sds/elements/**/**/*.scss"], compileSass);
   gulp.watch(["htdocs/assets/*.scss"], compileSassDemoPage);
 
   // Watch image-optimizer file changes.
