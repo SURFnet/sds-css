@@ -57,26 +57,26 @@
     top: 100%;
     width: rem(190px);
     background-color: var(--sds--color--white);
-    padding: var(--sds--space--3);
     border-radius: 0 0 rem(6px) rem(6px);
     box-shadow: 0 rem(4px) rem(4px) 0 var(--sds--color--pitch-black--dimmed--25);
 
     > ul {
       > li {
-        + li {
-          margin-top: var(--sds--space--3);
-        }
-
         > a {
+          display: block;
+          padding: var(--sds--space--2) var(--sds--space--3);
           font-weight: 600;
           @include lnk-decoration(off);
-        }
 
+          &:hover {
+            background-color: var(--sds--palette--main-color--400);
+            color: var(--sds--color--white);
+          }
+        }
       }
+
       + ul {
-        margin-top: var(--sds--space--3);
         border-top: rem(1px) solid var(--sds--color--gray--200);
-        padding-top: var(--sds--space--3);
       }
     }
   }
