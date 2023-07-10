@@ -13,6 +13,8 @@
       gap: var(--sds--space--3) var(--sds--space--4);
 
       nav.menu {
+        flex: 1 1 50%;
+
         a {
           font-weight: 600;
 
@@ -22,6 +24,16 @@
             @include lnk-color(var(--sds--palette--support-color--400));
           }
         }
+      }
+
+      .sds--language-switcher {
+        flex-shrink: 0;
+      }
+
+      .sds--branding {
+        flex: 1 1 50%;
+        display: flex;
+        justify-content: flex-end;
       }
     }
   }
@@ -48,15 +60,26 @@
 
       .sds--footer--bottom--inner {
         display: flex;
-        flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
         gap: var(--sds--space--3) var(--sds--space--4);
 
-        nav {
+        nav.menu {
+          flex: 1 1 50%;
+
           ul {
             gap: var(--sds--space--1) var(--sds--space--4);
           }
+        }
+
+        .sds--language-switcher {
+          flex-shrink: 0;
+        }
+
+        .sds--branding {
+          flex: 1 1 50%;
+          display: flex;
+          justify-content: flex-end;
         }
       }
     }

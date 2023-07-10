@@ -1,7 +1,7 @@
 <footer class="sds--footer sds--footer--multiple-bars">
   <div class="sds--footer--top">
     <div class="sds--page-container">
-      <nav>
+      <nav class="menu">
         <ul>
           <li>
             <a href="#">
@@ -24,7 +24,7 @@
   <div class="sds--footer--bottom">
     <div class="sds--page-container">
       <div class="sds--footer--bottom--inner">
-        <nav>
+        <nav class="menu">
           <ul>
             <li>
               <a href="#">Auteursrecht</a>
@@ -48,6 +48,7 @@
             </li>
           </ul>
         </nav>
+        <?php include("./sds/elements/additional/language-switcher/markup/language-switcher.php"); ?>
         <div class="sds--branding sds--branding--negative">
           <?php include("./sds/assets/images/logo-surf.svg"); ?>
         </div>
