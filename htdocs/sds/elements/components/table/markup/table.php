@@ -3,6 +3,15 @@
     <thead>
       <tr>
         <th>
+          <input id="unique-checkbox-id" type="checkbox"/>
+          <label for="unique-checkbox-id">
+            <span class="sds--checkbox--visual">
+              <?php sizeable_svg("functional-icons/checkbox-check", 13.62/16 . "em", 11.88/16 . "em"); ?>
+            </span>
+            <span class="checkbox--text sds--visually-hidden">Select all</span>
+          </label>
+        </th>
+        <th>
           <div class="sds--table-tr--actions">
             <button type="button" class="sds--btn-reset">
               <span class="text">Title</span>
@@ -21,6 +30,15 @@
     </thead>
     <tbody>
       <tr>
+        <td>
+          <input id="unique-checkbox-id--2" type="checkbox"/>
+          <label for="unique-checkbox-id--2">
+            <span class="sds--checkbox--visual">
+              <?php sizeable_svg("functional-icons/checkbox-check", 13.62/16 . "em", 11.88/16 . "em"); ?>
+            </span>
+            <span class="checkbox--text sds--visually-hidden">Select row</span>
+          </label>
+        </td>
         <td>Regular text</td>
         <td>Regular text</td>
         <td><a href="#">Hyperlink</a></td>
@@ -43,6 +61,15 @@
         </td>
       </tr>
       <tr>
+        <td>
+          <input id="unique-checkbox-id--3" type="checkbox" checked/>
+          <label for="unique-checkbox-id--3">
+            <span class="sds--checkbox--visual">
+              <?php sizeable_svg("functional-icons/checkbox-check", 13.62/16 . "em", 11.88/16 . "em"); ?>
+            </span>
+            <span class="checkbox--text sds--visually-hidden">Select row</span>
+          </label>
+        </td>
         <td>Regular text</td>
         <td>Regular text</td>
         <td><a href="#">Hyperlink</a></td>
@@ -65,6 +92,15 @@
         </td>
       </tr>
       <tr>
+        <td>
+          <input id="unique-checkbox-id--4" type="checkbox"/>
+          <label for="unique-checkbox-id--4">
+            <span class="sds--checkbox--visual">
+              <?php sizeable_svg("functional-icons/checkbox-check", 13.62/16 . "em", 11.88/16 . "em"); ?>
+            </span>
+            <span class="checkbox--text sds--visually-hidden">Select row</span>
+          </label>
+        </td>
         <td>Regular text</td>
         <td>Regular text</td>
         <td><a href="#">Hyperlink</a></td>
@@ -87,6 +123,15 @@
         </td>
       </tr>
       <tr>
+        <td>
+          <input id="unique-checkbox-id--5" type="checkbox"/>
+          <label for="unique-checkbox-id--5">
+            <span class="sds--checkbox--visual">
+              <?php sizeable_svg("functional-icons/checkbox-check", 13.62/16 . "em", 11.88/16 . "em"); ?>
+            </span>
+            <span class="checkbox--text sds--visually-hidden">Select row</span>
+          </label>
+        </td>
         <td>Regular text</td>
         <td>Regular text</td>
         <td><a href="#">Hyperlink</a></td>
@@ -109,6 +154,15 @@
         </td>
       </tr>
       <tr class="is-active">
+        <td>
+          <input id="unique-checkbox-id--6" type="checkbox"/>
+          <label for="unique-checkbox-id--6">
+            <span class="sds--checkbox--visual">
+              <?php sizeable_svg("functional-icons/checkbox-check", 13.62/16 . "em", 11.88/16 . "em"); ?>
+            </span>
+            <span class="checkbox--text sds--visually-hidden">Select row</span>
+          </label>
+        </td>
         <td>Regular text</td>
         <td>Regular text</td>
         <td><a href="#">Hyperlink</a></td>
