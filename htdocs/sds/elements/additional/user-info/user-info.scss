@@ -69,7 +69,7 @@
           @include lnk-decoration(off);
 
           &:hover {
-            background-color: var(--sds--palette--main-color--400);
+            background-color: var(--sds--color--gray--500);
             color: var(--sds--color--white);
           }
         }
