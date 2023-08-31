@@ -33,7 +33,7 @@
     }
 
     a {
-      @include text-link(main);
+      @include text-link();
     }
 
     #{$self}-tr--actions {
