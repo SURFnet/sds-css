@@ -77,6 +77,11 @@
 
       button {
         border-bottom: rem(4px) solid transparent;
+        color: var(--sds--palette--support-color--400);
+
+        &:hover {
+          color: var(--sds--palette--support-color--500);
+        }
 
         &.active {
           color: var(--sds--color--black);
