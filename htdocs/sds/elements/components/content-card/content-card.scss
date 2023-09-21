@@ -10,6 +10,8 @@
     padding: var(--sds--space--3);
     display: flex;
     gap: var(--sds--space--3);
+    border: rem(1px) solid var(--sds--color--gray--200);
+    border-radius: rem(6px);
 
     #{$self}--visual {
       flex: 0 0 auto;
@@ -45,6 +47,14 @@
       a {
         @include text-link();
       }
+    }
+  }
+
+  &--has-bottom {
+    #{$self}--main {
+      border-bottom-width: 0;
+      border-bottom-right-radius: 0;
+      border-bottom-left-radius: 0;
     }
   }
 }

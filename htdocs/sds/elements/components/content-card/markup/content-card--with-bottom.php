@@ -1,4 +1,4 @@
-<div class="sds--content-card">
+<div class="sds--content-card sds--content-card--has-bottom">
   <div class="sds--content-card--main">
     <div class="sds--content-card--textual">
       <h4 class="sds--space--bottom--1">Title or product name</h4>

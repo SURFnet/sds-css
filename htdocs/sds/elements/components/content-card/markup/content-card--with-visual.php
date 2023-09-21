@@ -1,4 +1,4 @@
-<div class="sds--content-card">
+<div class="sds--content-card sds--content-card--has-bottom">
   <div class="sds--content-card--main">
     <div class="sds--content-card--visual">
       <?php include("./sds/elements/components/placeholder-image/markup/placeholder-image.php"); ?>
